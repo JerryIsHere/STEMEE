@@ -458,37 +458,31 @@ h1, h2, p { margin-top: 0; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 @media print {
-  @page { size: A4 portrait; margin: 8mm; }
+  @page { size: A4 portrait; margin: 10mm; }
   body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body > *:not(.print-sheet) { display: none !important; }
   .print-sheet { display: block !important; }
   .print-page { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: 4mm; break-after: page; }
   .print-page:last-child { break-after: auto; }
-  .print-card { position: relative; display: grid; height: 130mm; grid-template-rows: 1fr 1fr; page-break-inside: avoid; break-inside: avoid; border: .2mm dashed #aab4bf; color: #1E295B; background: white; }
-  .print-card__back { min-height: 0; }
-  .print-card__back-content { display: flex; width: 100%; height: 100%; flex-direction: column; align-items: center; justify-content: center; gap: 2mm; padding: 4mm; transform: rotate(180deg); text-align: center; }
-  .print-card__back-content img { width: 18mm; height: 18mm; border-radius: 50%; object-fit: cover; }
-  .print-card__back-content strong { font-size: 8pt; line-height: 1.25; }
-  .print-card__back-content em { color: #0084D1; font-size: 7pt; }
-  .print-card__badge { padding: .8mm 2mm; border: .25mm solid #D91B23; border-radius: 1mm; color: #D91B23; font-size: 7pt; font-weight: 800; }
-  .print-card__back-content small { max-width: 75mm; color: #64748b; font-size: 6pt; line-height: 1.25; }
-  .print-card__fold { position: absolute; z-index: 1; top: 50%; right: 0; left: 0; display: flex; align-items: center; justify-content: center; border-top: .25mm dashed #64748b; color: #475569; font-size: 5pt; line-height: 1; text-align: center; }
-  .print-card__fold span { padding: 0 1mm; background: white; transform: translateY(-100%); }
-  .print-card__front { display: grid; min-height: 0; grid-template-rows: 9mm 1fr; }
+  .print-card { display: grid; height: 89mm; grid-template-rows: 9mm 1fr 18mm; break-inside: avoid; border: .2mm dashed #aab4bf; color: #1E295B; background: white; }
   .print-card__header { display: flex; min-width: 0; align-items: center; gap: 1.5mm; padding: 1mm 2mm; color: white; background: linear-gradient(110deg, #1E295B, #0084D1); font-family: "Be Vietnam Pro", sans-serif; font-size: 5.2pt; line-height: 1.15; }
+  .print-card__header img { width: 7mm; height: 7mm; flex: none; border-radius: 50%; object-fit: cover; }
   .print-card__header strong { flex: 1; }
   .print-card__header span { flex: none; padding: .8mm 1mm; border-radius: 1mm; color: #D91B23; background: white; font-weight: 800; white-space: nowrap; }
-  .print-card__body { display: grid; grid-template-columns: minmax(0, 1fr) 38mm; align-items: center; gap: 2mm; padding: 2mm; }
+  .print-card__body { display: grid; grid-template-columns: minmax(0, 1fr) 42mm; align-items: center; gap: 2mm; padding: 2mm; }
   .print-card__copy { min-width: 0; align-self: center; overflow-wrap: anywhere; }
   .print-card__copy h2 { margin: 0; color: #1E295B; font-family: "Be Vietnam Pro", sans-serif; font-size: 10pt; font-weight: 800; line-height: 1.16; }
   .print-card__copy h3 { margin: 1mm 0 0; color: #0084D1; font-family: "Montserrat", sans-serif; font-size: 7pt; font-style: italic; font-weight: 500; line-height: 1.2; }
   .print-card__divider { height: .4mm; margin: 2mm 0; background: linear-gradient(90deg, #c59b27, #0084D1); }
-  .print-card__copy p { margin: 0; color: #0F172A; font-size: 7pt; font-weight: 700; line-height: 1.25; }
-  .print-card__copy p + p { margin-top: 1mm; color: #475569; font-size: 6.5pt; font-style: italic; font-weight: 400; }
-  .print-card__target { display: flex; width: 38mm; height: 38mm; flex-direction: column; align-items: center; justify-content: center; border: .6mm solid #c59b27; border-radius: 50%; outline: .35mm solid #D91B23; outline-offset: -2mm; color: #D91B23; font-family: "Be Vietnam Pro", sans-serif; font-size: 6pt; line-height: 1.3; text-align: center; }
+  .print-card__copy p { margin: 0; color: #334155; font-size: 7pt; font-weight: 700; line-height: 1.25; }
+  .print-card__copy p + p { margin-top: 1mm; color: #64748b; font-size: 6.5pt; font-style: italic; font-weight: 400; }
+  .print-card__target { display: flex; width: 42mm; height: 42mm; flex-direction: column; align-items: center; justify-content: center; border: .6mm solid #c59b27; border-radius: 50%; outline: .35mm solid #D91B23; outline-offset: -2mm; color: #D91B23; font-family: "Be Vietnam Pro", sans-serif; font-size: 6pt; line-height: 1.3; text-align: center; }
   .print-card__target svg { width: 13mm; height: 13mm; margin-bottom: 1mm; fill: none; stroke: #c59b27; stroke-width: 2; }
   .print-card__target .nfc-signal { stroke: #D91B23; }
   .print-card__target em { font-size: 5.5pt; }
+  .print-card__base { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1mm; border-top: .2mm dashed #aab4bf; color: #1E295B; background: #f3f8fc; font-size: 7pt; line-height: 1.2; text-align: center; }
+  .print-card__fold { color: #64748b; font-size: 5.5pt; letter-spacing: .03em; }
+  .print-card__base em { color: #64748b; font-size: 6pt; }
 }
 
 /* Anniversary identity and photographic collection */

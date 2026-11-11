@@ -592,42 +592,37 @@ function renderStem() {
 }
 
 function renderPrintSheet() {
-  const pageSize = 4;
+  const pageSize = 6;
   const pages = [];
   for (let index = 0; index < ITEMS.length; index += pageSize) {
     pages.push(ITEMS.slice(index, index + pageSize));
   }
   const cards = pages.map((page, pageIndex) => `<section class="print-page">${page.map((item, index) => `
       <article class="print-card">
-        <div class="print-card__back">
-          <div class="print-card__back-content">
-            <img src="./photos/logo.jpg" alt="">
-            <strong>TRƯỜNG THPT HOÀNG VĂN THỤ (1966 – 2026)</strong>
-            <em>Tự hào truyền thống – Vững bước tương lai</em>
-            <span class="print-card__badge">#${String(pageIndex * pageSize + index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span>
-            <small>(Dán tem NFC ở mặt trong đối diện vòng cảm ứng / <span lang="en">Stick NFC tag inside behind the front target</span>)</small>
+        <header class="print-card__header">
+          <img src="./photos/logo.jpg" alt="">
+          <strong>60 NĂM THPT HOÀNG VĂN THỤ (1966 – 2026)</strong>
+          <span>#${String(pageIndex * pageSize + index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span>
+        </header>
+        <div class="print-card__body">
+          <div class="print-card__copy">
+            <h2>${escapeAttribute(item.nameVi)}</h2>
+            <h3>${escapeAttribute(item.nameEn)}</h3>
+            <div class="print-card__divider"></div>
+            <p>${escapeAttribute(item.shortVi)}</p>
+            <p lang="en">${escapeAttribute(item.shortEn)}</p>
+          </div>
+          <div class="print-card__target">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="12" width="17" height="27" rx="3"/><path d="M20 35h5M32 17l-5 5m0-5v5h5"/><path class="nfc-signal" d="M30 7c3 1 5 3 6 6m-5-10c5 1 9 5 10 10"/></svg>
+            <strong>CHẠM NFC TẠI ĐÂY</strong><em lang="en">TAP PHONE HERE</em>
           </div>
         </div>
-        <div class="print-card__fold"><span>ĐƯỜNG GẬP ĐỈNH CHỮ A (GẬP RA SAU) / TOP TENT FOLD LINE</span></div>
-        <div class="print-card__front">
-          <header class="print-card__header">
-            <strong>60 NĂM THPT HOÀNG VĂN THỤ</strong>
-            <span>${String(pageIndex * pageSize + index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span>
-          </header>
-          <div class="print-card__body">
-            <div class="print-card__copy">
-              <h2>${escapeAttribute(item.nameVi)}</h2>
-              <h3 lang="en">${escapeAttribute(item.nameEn)}</h3>
-              <div class="print-card__divider"></div>
-              <p>${escapeAttribute(item.shortVi)}</p>
-              <p lang="en">${escapeAttribute(item.shortEn)}</p>
-            </div>
-            <div class="print-card__target">
-              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="12" width="17" height="27" rx="3"/><path d="M20 35h5M32 17l-5 5m0-5v5h5"/><path class="nfc-signal" d="M30 7c3 1 5 3 6 6m-5-10c5 1 9 5 10 10"/></svg>
-              <strong>NFC • CHẠM</strong><em lang="en">TAP HERE</em>
-            </div>
-          </div>
-        </div>
+        <footer class="print-card__base">
+          <span class="print-card__fold">GẬP ĐẾ HOẶC CẮT RỜI / FOLD BASE OR TRIM</span>
+          <strong>Tự hào truyền thống – Vững bước tương lai</strong>
+          <em lang="en">Proud of our traditions – Stepping confidently into the future</em>
+          <span>• Dự án STEM 11A2 •</span>
+        </footer>
       </article>`).join("")}</section>`).join("");
   $("#print-sheet").innerHTML = cards;
 }
