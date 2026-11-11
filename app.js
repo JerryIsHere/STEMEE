@@ -153,11 +153,11 @@ const DEFAULT_ITEMS = [
     "stemVi": "Giấy gồm mạng sợi cellulose; ánh sáng, độ ẩm và nhiệt có thể thúc đẩy quá trình lão hóa. Bảo quản nơi khô, tránh ánh sáng mạnh giúp giảm hư hại.", "stemEn": "Paper consists of a network of cellulose fibres; light, humidity and heat can accelerate ageing. Dry storage away from strong light helps reduce damage."
   },
   {
-    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg", "images": ["./photos/tt2.jpg"],
-    "nameVi": "Hoa Phượng Đỏ Ép", "nameEn": "Pressed Red Flamboyant Flower",
-    "shortVi": "Cánh hoa phượng vĩ đỏ thắm ép khô tạo hình cánh bướm trên nền giấy sáng.", "shortEn": "Crimson royal poinciana petals pressed and shaped into a butterfly keepsake on light backing.",
-    "storyVi": "Hoa phượng đỏ từ lâu đã là biểu tượng của mùa chia tay và tuổi học trò. Những cánh phượng nhặt trên sân trường được ép phẳng giữa trang vở, khéo léo xếp thành hình cánh bướm kèm dòng chữ 'Kỷ Niệm !' ở mặt sau, gói trọn cả một mùa hè rực rỡ dưới mái trường THPT Hoàng Văn Thụ.", "storyEn": "The red flamboyant flower has long been the timeless symbol of school summers and farewells. Fallen petals gathered from the schoolyard were carefully pressed between notebook pages and arranged into a butterfly keepsake, preserving memories of vibrant summers at Hoang Van Thu High School.",
-    "stemVi": "Hóa sinh Sắc tố & Bảo quản Thực vật: Sắc đỏ của cánh hoa phượng tạo bởi hợp chất Anthocyanin (Pelargonidin và Cyanidin glycoside). Khi ép khô tách nước nhanh trong môi trường thiếu sáng và cán màng Polymer kín khí, hoạt tính của enzym oxy hóa Polyphenol oxidase bị ức chế, giúp giữ nguyên mạng mạch cánh hoa và sắc màu hoài cổ qua nhiều năm.", "stemEn": "Pigment Biochemistry & Botanical Preservation: The crimson hue of flamboyant petals comes from anthocyanin pigments. Rapid dehydration under pressure followed by airtight polymer lamination inhibits polyphenol oxidase enzymes, preserving the delicate petal veins and warm vintage color for years."
+    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg",
+    "nameVi": "Hoa Phượng Đỏ Ép Hình Bướm", "nameEn": "Pressed Royal Poinciana Flower Butterfly",
+    "shortVi": "Hoa phượng đỏ ép khô, được tạo hình bướm trên nền giấy sáng.", "shortEn": "A dried, pressed royal poinciana flower presented as a butterfly on a light backing.",
+    "storyVi": "Hoa phượng đỏ gắn với mùa hè và những ngày chia tay tuổi học trò. Bông hoa được ép khô và tạo hình bướm như một kỷ vật nhỏ lưu giữ ký ức sân trường.", "storyEn": "The red royal poinciana is associated with summer and schoolday farewells in Vietnam. Pressed and presented as a butterfly, the flower becomes a small keepsake of school memories.",
+    "stemVi": "Phượng đỏ (Delonix regia) là cây có hoa thuộc họ Đậu. Khi ép và làm khô, nước rời khỏi mô hoa, giúp hạn chế nấm mốc; sắc hoa vẫn có thể phai hoặc chuyển nâu theo thời gian và dưới ánh sáng.", "stemEn": "Royal poinciana (Delonix regia) is a flowering tree in the pea family. Pressing and drying remove water from flower tissues, helping limit mould; the colour can still fade or turn brown over time and with light exposure."
   },
   {
     "id": "tt3", "category": "education", "image": "./photos/tt3.jpg",
@@ -563,9 +563,6 @@ function renderDetail() {
     openLightbox(image, ...photoDescription(selectedItem, image), button);
   }));
   $("#detail-title").innerHTML = `<span class="vi-title">${escapeAttribute(selectedItem.nameVi)}</span><span class="en-title">${escapeAttribute(selectedItem.nameEn)}</span>`;
-  $("#tag-title-vi").textContent = selectedItem.nameVi;
-  $("#tag-title-en").textContent = selectedItem.nameEn;
-  $("#tag-index").textContent = index >= 0 ? `#${String(index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}` : "";
   for (const field of ["short", "story", "stem"]) {
     $(`#detail-${field}`).innerHTML = `<span class="bilingual-vi">${escapeAttribute(selectedItem[`${field}Vi`])}</span><span class="bilingual-en">${escapeAttribute(selectedItem[`${field}En`])}</span>`;
   }
@@ -592,37 +589,19 @@ function renderStem() {
 }
 
 function renderPrintSheet() {
-  const pageSize = 6;
+  const pageSize = 4;
   const pages = [];
   for (let index = 0; index < ITEMS.length; index += pageSize) {
     pages.push(ITEMS.slice(index, index + pageSize));
   }
-  const cards = pages.map((page, pageIndex) => `<section class="print-page">${page.map((item, index) => `
+  const cards = pages.map((page) => `<section class="print-page">${page.map((item) => `
       <article class="print-card">
-        <header class="print-card__header">
-          <img src="./photos/logo.jpg" alt="">
-          <strong>60 NĂM THPT HOÀNG VĂN THỤ (1966 – 2026)</strong>
-          <span>#${String(pageIndex * pageSize + index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span>
-        </header>
-        <div class="print-card__body">
-          <div class="print-card__copy">
-            <h2>${escapeAttribute(item.nameVi)}</h2>
-            <h3>${escapeAttribute(item.nameEn)}</h3>
-            <div class="print-card__divider"></div>
-            <p>${escapeAttribute(item.shortVi)}</p>
-            <p lang="en">${escapeAttribute(item.shortEn)}</p>
-          </div>
-          <div class="print-card__target">
-            <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="12" width="17" height="27" rx="3"/><path d="M20 35h5M32 17l-5 5m0-5v5h5"/><path class="nfc-signal" d="M30 7c3 1 5 3 6 6m-5-10c5 1 9 5 10 10"/></svg>
-            <strong>CHẠM NFC TẠI ĐÂY</strong><em lang="en">TAP PHONE HERE</em>
-          </div>
+        <div class="print-card__copy">
+          <h2>${escapeAttribute(item.nameVi)}</h2>
+          <h3>${escapeAttribute(item.nameEn)}</h3>
+          <p>${escapeAttribute(item.shortVi)}<br><em>${escapeAttribute(item.shortEn)}</em></p>
         </div>
-        <footer class="print-card__base">
-          <span class="print-card__fold">GẬP ĐẾ HOẶC CẮT RỜI / FOLD BASE OR TRIM</span>
-          <strong>Tự hào truyền thống – Vững bước tương lai</strong>
-          <em lang="en">Proud of our traditions – Stepping confidently into the future</em>
-          <span>• Dự án STEM 11A2 •</span>
-        </footer>
+        <div class="print-card__target"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8a6 6 0 0 1 8 0m-6-2a3.5 3.5 0 0 1 4 0M5 5a10 10 0 0 1 14 0m-7 5v8m-3-3 3 3 3-3"/></svg><span>NFC · CHẠM<br> TAP HERE</span></div>
       </article>`).join("")}</section>`).join("");
   $("#print-sheet").innerHTML = cards;
 }

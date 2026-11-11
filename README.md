@@ -16,7 +16,7 @@ Sau đó truy cập `http://localhost:8000`. Mở thẳng hiện vật bằng `?
 
 ## In và ghi thẻ
 
-Chọn **In thẻ NFC** để in tối đa sáu nhãn trên mỗi trang A4; gấp dải đế 18 mm hoặc cắt rời theo đường gấp. Chọn khổ A4, tỷ lệ 100%, bật in màu nền và tắt đầu trang/chân trang trong hộp thoại in để giữ vòng chạm đúng đường kính 42 mm và tránh ngày giờ hoặc URL của trình duyệt. Bản in không sử dụng mã QR. Trong trang, chọn **Sao chép URL NFC** trên một kỷ vật rồi ghi URL nhận được vào thẻ NTAG213/215 bằng ứng dụng NFC Tools.
+Chọn **In thẻ NFC** để in các thẻ gấp khổ A4; bản in không sử dụng mã QR. Trong trang, chọn **Sao chép URL NFC** trên một kỷ vật rồi ghi URL nhận được vào thẻ NTAG213/215 bằng ứng dụng NFC Tools.
 
 ## GitHub Pages
 
