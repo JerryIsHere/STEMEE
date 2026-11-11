@@ -20,7 +20,7 @@ Chọn **In thẻ NFC** để in các thẻ gấp khổ A4; bản in không sử
 
 ## GitHub Pages
 
-Workflow tại `.github/workflows/static.yml` bật GitHub Pages nếu cần và triển khai nội dung tĩnh khi có thay đổi trên nhánh `main` hoặc khi chạy thủ công từ tab **Actions**. Nếu repository không cấp quyền tự bật Pages, trong **Settings → Pages** hãy chọn nguồn **GitHub Actions**. Sau khi workflow hoàn tất, trang dự án có địa chỉ dạng `https://<owner>.github.io/STEMEE/`.
+Trước khi chạy workflow, quản trị viên repository cần vào **Settings → Pages** và chọn nguồn **GitHub Actions** để bật GitHub Pages. Workflow tại `.github/workflows/static.yml` triển khai nội dung tĩnh khi có thay đổi trên nhánh `main` hoặc khi chạy thủ công từ tab **Actions**. Sau khi cấu hình Pages, chạy lại workflow bị lỗi nếu cần. Khi workflow hoàn tất, trang dự án có địa chỉ dạng `https://<owner>.github.io/STEMEE/`. Workflow Azure chỉ chạy thủ công và cần cấu hình Azure riêng; không cần thiết cho GitHub Pages.
 
 ## CMS / Studio
 
