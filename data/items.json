@@ -7,11 +7,11 @@
     "stemVi": "Giấy gồm mạng sợi cellulose; ánh sáng, độ ẩm và nhiệt có thể thúc đẩy quá trình lão hóa. Bảo quản nơi khô, tránh ánh sáng mạnh giúp giảm hư hại.", "stemEn": "Paper consists of a network of cellulose fibres; light, humidity and heat can accelerate ageing. Dry storage away from strong light helps reduce damage."
   },
   {
-    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg",
-    "nameVi": "Bướm Trang Trí Làm Từ Lá Ép", "nameEn": "Pressed-Leaf Butterfly Decoration",
-    "shortVi": "Hình bướm với đôi cánh tạo từ lá ép trên nền giấy sáng.", "shortEn": "A butterfly with wings made from pressed leaves on a light backing.",
-    "storyVi": "Các cánh lá được xếp thành hình bướm, giữ lại đường nét và sắc nâu tự nhiên. Một vật liệu giản dị từ cây lá trở thành món trang trí gợi nhớ sự khéo léo của người làm.", "storyEn": "Leaves have been arranged as butterfly wings, preserving their natural veins and brown colour. A simple plant material becomes a keepsake of its maker's care.",
-    "stemVi": "Gân lá chứa bó mạch giúp vận chuyển nước và chất dinh dưỡng. Sau khi lá được ép và làm khô, các mô mất nước, trong khi mạng gân vẫn có thể nhìn thấy.", "stemEn": "Leaf veins contain vascular bundles that transport water and nutrients. Pressing and drying remove water from the tissues while leaving the vein pattern visible."
+    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg", "images": ["./photos/tt2.jpg"],
+    "nameVi": "Hoa Phượng Đỏ Ép", "nameEn": "Pressed Red Flamboyant Flower",
+    "shortVi": "Cánh hoa phượng vĩ đỏ thắm ép khô tạo hình cánh bướm trên nền giấy sáng.", "shortEn": "Crimson royal poinciana petals pressed and shaped into a butterfly keepsake on light backing.",
+    "storyVi": "Hoa phượng đỏ từ lâu đã là biểu tượng của mùa chia tay và tuổi học trò. Những cánh phượng nhặt trên sân trường được ép phẳng giữa trang vở, khéo léo xếp thành hình cánh bướm kèm dòng chữ 'Kỷ Niệm !' ở mặt sau, gói trọn cả một mùa hè rực rỡ dưới mái trường THPT Hoàng Văn Thụ.", "storyEn": "The red flamboyant flower has long been the timeless symbol of school summers and farewells. Fallen petals gathered from the schoolyard were carefully pressed between notebook pages and arranged into a butterfly keepsake, preserving memories of vibrant summers at Hoang Van Thu High School.",
+    "stemVi": "Hóa sinh Sắc tố & Bảo quản Thực vật: Sắc đỏ của cánh hoa phượng tạo bởi hợp chất Anthocyanin (Pelargonidin và Cyanidin glycoside). Khi ép khô tách nước nhanh trong môi trường thiếu sáng và cán màng Polymer kín khí, hoạt tính của enzym oxy hóa Polyphenol oxidase bị ức chế, giúp giữ nguyên mạng mạch cánh hoa và sắc màu hoài cổ qua nhiều năm.", "stemEn": "Pigment Biochemistry & Botanical Preservation: The crimson hue of flamboyant petals comes from anthocyanin pigments. Rapid dehydration under pressure followed by airtight polymer lamination inhibits polyphenol oxidase enzymes, preserving the delicate petal veins and warm vintage color for years."
   },
   {
     "id": "tt3", "category": "education", "image": "./photos/tt3.jpg",

@@ -151,10 +151,10 @@ h1, h2, p { margin-top: 0; }
 .explode-toggle { flex-shrink: 0; }
 .anatomy-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(230px, .7fr); gap: 50px; align-items: center; padding: 15px 0 10px; }
 .tag-stage { position: relative; display: grid; min-height: 380px; place-items: center; perspective: 900px; }
-.tag-model { position: relative; width: min(390px, 77%); height: 245px; transform: rotateX(56deg) rotateZ(-30deg); transform-style: preserve-3d; transition: transform .7s var(--ease); }
-.tag-stage.is-exploded .tag-model { transform: rotateX(56deg) rotateZ(-30deg) translateX(-8px); }
+.tag-model { position: relative; width: min(390px, 77%); height: 245px; transform: rotateX(40deg) rotateZ(-18deg); transform-style: preserve-3d; transition: transform .7s var(--ease); }
+.tag-stage.is-exploded .tag-model { transform: rotateX(40deg) rotateZ(-18deg) translateX(-8px); }
 .tag-layer { position: absolute; display: flex; width: 100%; height: 100%; align-items: center; justify-content: space-between; padding: 25px; border: 1px solid rgba(30, 27, 24, .33); border-radius: 15px; box-shadow: 4px 8px 0 rgba(30, 27, 24, .16); transition: transform .72s var(--ease); }
-.tag-layer--label { z-index: 3; color: var(--crimson); background: #fcf9f2; transform: translateZ(42px); }
+.tag-layer--label { z-index: 3; padding: 0; color: var(--logo-navy); background: #fff; transform: translateZ(42px); }
 .tag-layer--shield { z-index: 2; color: #5b5146; background: repeating-linear-gradient(135deg, #d6cec0 0 5px, #c9c0b0 5px 8px); transform: translateZ(0); }
 .tag-layer--chip { z-index: 1; color: var(--blueprint-green); background: #eee3c9; transform: translateZ(-42px); }
 .tag-stage.is-exploded .tag-layer--label { transform: translateZ(110px); }
@@ -165,10 +165,24 @@ h1, h2, p { margin-top: 0; }
 .tag-stage:not(.is-exploded):hover .tag-layer--chip,
 .tag-stage:not(.is-exploded):focus-visible .tag-layer--chip { transform: translateZ(-95px); }
 .tag-layer__edge { position: absolute; right: 10px; bottom: -7px; left: 10px; height: 8px; border-radius: 0 0 12px 12px; background: rgba(122, 28, 28, .23); transform: skewX(-38deg); transform-origin: top; }
-.tag-layer__name { max-width: 190px; transform: rotateZ(30deg) rotateX(-56deg); font-size: .8rem; font-weight: 800; }
-.tag-layer__glyph { color: var(--brass-gold); font-family: var(--serif); font-size: 3rem; font-weight: 600; transform: rotateZ(30deg) rotateX(-56deg); }
-.shield-mark { display: grid; width: 48px; height: 48px; place-items: center; border: 2px solid currentColor; border-radius: 50%; font-family: var(--serif); font-weight: 700; transform: rotateZ(30deg) rotateX(-56deg); }
-.tag-layer--chip svg { width: 125px; fill: none; stroke: var(--brass-gold); stroke-width: 2; transform: rotateZ(30deg) rotateX(-56deg); }
+.tag-layer__name { max-width: 190px; transform: rotateZ(18deg) rotateX(-40deg); font-size: .8rem; font-weight: 800; }
+.shield-mark { display: grid; width: 48px; height: 48px; place-items: center; border: 2px solid currentColor; border-radius: 50%; font-family: var(--serif); font-weight: 700; transform: rotateZ(18deg) rotateX(-40deg); }
+.tag-layer--chip svg { width: 125px; fill: none; stroke: var(--brass-gold); stroke-width: 2; transform: rotateZ(18deg) rotateX(-40deg); }
+.tag-label { display: flex; width: 100%; height: 100%; flex-direction: column; overflow: hidden; border-radius: 14px; container-type: inline-size; }
+.tag-label__header { display: flex; min-height: 20%; align-items: center; gap: 2%; padding: 2% 3%; color: white; background: linear-gradient(110deg, #1E295B, #0084D1); font-size: 2.4cqw; line-height: 1.2; }
+.tag-label__header img { width: 10%; aspect-ratio: 1; border-radius: 50%; object-fit: cover; }
+.tag-label__header strong { flex: 1; }
+.tag-label__header span { padding: 1% 2%; border-radius: 3px; color: #D91B23; background: white; font-weight: 800; white-space: nowrap; }
+.tag-label__body { display: flex; flex: 1; align-items: center; gap: 4%; padding: 4% 5%; }
+.tag-label__copy { flex: 1; min-width: 0; line-height: 1.15; overflow-wrap: anywhere; }
+.tag-label__copy strong, .tag-label__copy em { display: block; }
+.tag-label__copy strong { color: #1E295B; font-size: 5cqw; font-weight: 800; }
+.tag-label__copy em { margin-top: 4%; color: #0084D1; font-size: 3cqw; }
+.tag-label__divider { display: block; width: 75%; height: 2px; margin-top: 7%; background: linear-gradient(90deg, #c59b27, #0084D1); }
+.tag-label__target { display: flex; width: 35%; aspect-ratio: 1; flex: none; flex-direction: column; align-items: center; justify-content: center; border: 2px solid #c59b27; border-radius: 50%; outline: 1px solid #D91B23; outline-offset: -6px; color: #D91B23; text-align: center; font-size: 2cqw; line-height: 1.25; }
+.tag-label__target svg { width: 35%; height: 35%; margin-bottom: 3%; fill: none; stroke: #c59b27; stroke-width: 2; }
+.tag-label__target .nfc-signal { stroke: #D91B23; }
+.tag-label__target em { font-size: .9em; }
 .callout { position: absolute; z-index: 4; display: flex; align-items: center; gap: 8px; color: var(--blueprint-green); font-size: .68rem; font-weight: 700; opacity: 0; transition: opacity .3s .2s; }
 .callout i { display: block; width: 36px; height: 1px; background: var(--brass-gold); }
 .callout--one { top: 38px; right: 2%; }
@@ -444,20 +458,37 @@ h1, h2, p { margin-top: 0; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 @media print {
-  @page { size: A4 portrait; margin: 10mm; }
+  @page { size: A4 portrait; margin: 8mm; }
   body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body > *:not(.print-sheet) { display: none !important; }
   .print-sheet { display: block !important; }
-  .print-page { display: grid; grid-template-columns: 1fr 1fr; align-content: start; gap: 7mm; break-after: page; }
+  .print-page { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: start; gap: 4mm; break-after: page; }
   .print-page:last-child { break-after: auto; }
-  .print-card { position: relative; display: grid; grid-template-columns: 1fr 28mm; min-height: 120mm; align-items: start; gap: 3mm; padding: 6mm; break-inside: avoid; border: 1px solid #7a1c1c; outline: 1px solid #7a1c1c; outline-offset: -3mm; color: #1e1b18; }
-  .print-card::after { position: absolute; top: 50%; right: 0; left: 0; border-top: 1px dashed #81745e; content: ""; }
-  .print-card__copy { align-self: start; }
-  .print-card__copy h2 { margin: 0; color: #7a1c1c; font-family: "Be Vietnam Pro", sans-serif; font-size: 11pt; font-weight: 800; line-height: 1.3; }
-  .print-card__copy h3 { margin: 1mm 0 3mm; color: #51483d; font-family: "Montserrat", sans-serif; font-size: 8pt; font-style: italic; font-weight: 500; line-height: 1.35; }
-  .print-card__copy p { margin: 0; font-size: 7.2pt; line-height: 1.5; }
-  .print-card__target { display: grid; width: 26mm; height: 26mm; align-content: center; justify-items: center; border: 1px solid #c59b27; border-radius: 50%; color: #7a1c1c; font-family: "Be Vietnam Pro", sans-serif; font-size: 6pt; font-weight: 800; line-height: 1.35; text-align: center; }
-  .print-card__target svg { width: 9mm; height: 9mm; margin-bottom: 1mm; fill: none; stroke: #c59b27; stroke-width: 1.5; }
+  .print-card { position: relative; display: grid; height: 130mm; grid-template-rows: 1fr 1fr; page-break-inside: avoid; break-inside: avoid; border: .2mm dashed #aab4bf; color: #1E295B; background: white; }
+  .print-card__back { min-height: 0; }
+  .print-card__back-content { display: flex; width: 100%; height: 100%; flex-direction: column; align-items: center; justify-content: center; gap: 2mm; padding: 4mm; transform: rotate(180deg); text-align: center; }
+  .print-card__back-content img { width: 18mm; height: 18mm; border-radius: 50%; object-fit: cover; }
+  .print-card__back-content strong { font-size: 8pt; line-height: 1.25; }
+  .print-card__back-content em { color: #0084D1; font-size: 7pt; }
+  .print-card__badge { padding: .8mm 2mm; border: .25mm solid #D91B23; border-radius: 1mm; color: #D91B23; font-size: 7pt; font-weight: 800; }
+  .print-card__back-content small { max-width: 75mm; color: #64748b; font-size: 6pt; line-height: 1.25; }
+  .print-card__fold { position: absolute; z-index: 1; top: 50%; right: 0; left: 0; display: flex; align-items: center; justify-content: center; border-top: .25mm dashed #64748b; color: #475569; font-size: 5pt; line-height: 1; text-align: center; }
+  .print-card__fold span { padding: 0 1mm; background: white; transform: translateY(-100%); }
+  .print-card__front { display: grid; min-height: 0; grid-template-rows: 9mm 1fr; }
+  .print-card__header { display: flex; min-width: 0; align-items: center; gap: 1.5mm; padding: 1mm 2mm; color: white; background: linear-gradient(110deg, #1E295B, #0084D1); font-family: "Be Vietnam Pro", sans-serif; font-size: 5.2pt; line-height: 1.15; }
+  .print-card__header strong { flex: 1; }
+  .print-card__header span { flex: none; padding: .8mm 1mm; border-radius: 1mm; color: #D91B23; background: white; font-weight: 800; white-space: nowrap; }
+  .print-card__body { display: grid; grid-template-columns: minmax(0, 1fr) 38mm; align-items: center; gap: 2mm; padding: 2mm; }
+  .print-card__copy { min-width: 0; align-self: center; overflow-wrap: anywhere; }
+  .print-card__copy h2 { margin: 0; color: #1E295B; font-family: "Be Vietnam Pro", sans-serif; font-size: 10pt; font-weight: 800; line-height: 1.16; }
+  .print-card__copy h3 { margin: 1mm 0 0; color: #0084D1; font-family: "Montserrat", sans-serif; font-size: 7pt; font-style: italic; font-weight: 500; line-height: 1.2; }
+  .print-card__divider { height: .4mm; margin: 2mm 0; background: linear-gradient(90deg, #c59b27, #0084D1); }
+  .print-card__copy p { margin: 0; color: #0F172A; font-size: 7pt; font-weight: 700; line-height: 1.25; }
+  .print-card__copy p + p { margin-top: 1mm; color: #475569; font-size: 6.5pt; font-style: italic; font-weight: 400; }
+  .print-card__target { display: flex; width: 38mm; height: 38mm; flex-direction: column; align-items: center; justify-content: center; border: .6mm solid #c59b27; border-radius: 50%; outline: .35mm solid #D91B23; outline-offset: -2mm; color: #D91B23; font-family: "Be Vietnam Pro", sans-serif; font-size: 6pt; line-height: 1.3; text-align: center; }
+  .print-card__target svg { width: 13mm; height: 13mm; margin-bottom: 1mm; fill: none; stroke: #c59b27; stroke-width: 2; }
+  .print-card__target .nfc-signal { stroke: #D91B23; }
+  .print-card__target em { font-size: 5.5pt; }
 }
 
 /* Anniversary identity and photographic collection */
@@ -543,11 +574,4 @@ body { background: var(--bg-page); }
   .admin-layout { grid-template-columns: 1fr; }
   .admin-form { grid-template-columns: 1fr; }
   .admin-form label { grid-column: 1 / -1; }
-}
-@media print {
-  .print-card { border-color: var(--logo-navy); outline-color: var(--logo-sky); color: var(--text-primary); }
-  .print-card__copy h2 { color: var(--logo-navy); }
-  .print-card__copy h3 { color: var(--text-secondary); }
-  .print-card__target { border-color: var(--logo-gold); color: var(--logo-red); }
-  .print-card__target svg { stroke: var(--logo-gold); }
 }

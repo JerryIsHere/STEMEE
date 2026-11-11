@@ -153,11 +153,11 @@ const DEFAULT_ITEMS = [
     "stemVi": "Giấy gồm mạng sợi cellulose; ánh sáng, độ ẩm và nhiệt có thể thúc đẩy quá trình lão hóa. Bảo quản nơi khô, tránh ánh sáng mạnh giúp giảm hư hại.", "stemEn": "Paper consists of a network of cellulose fibres; light, humidity and heat can accelerate ageing. Dry storage away from strong light helps reduce damage."
   },
   {
-    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg",
-    "nameVi": "Bướm Trang Trí Làm Từ Lá Ép", "nameEn": "Pressed-Leaf Butterfly Decoration",
-    "shortVi": "Hình bướm với đôi cánh tạo từ lá ép trên nền giấy sáng.", "shortEn": "A butterfly with wings made from pressed leaves on a light backing.",
-    "storyVi": "Các cánh lá được xếp thành hình bướm, giữ lại đường nét và sắc nâu tự nhiên. Một vật liệu giản dị từ cây lá trở thành món trang trí gợi nhớ sự khéo léo của người làm.", "storyEn": "Leaves have been arranged as butterfly wings, preserving their natural veins and brown colour. A simple plant material becomes a keepsake of its maker's care.",
-    "stemVi": "Gân lá chứa bó mạch giúp vận chuyển nước và chất dinh dưỡng. Sau khi lá được ép và làm khô, các mô mất nước, trong khi mạng gân vẫn có thể nhìn thấy.", "stemEn": "Leaf veins contain vascular bundles that transport water and nutrients. Pressing and drying remove water from the tissues while leaving the vein pattern visible."
+    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg", "images": ["./photos/tt2.jpg"],
+    "nameVi": "Hoa Phượng Đỏ Ép", "nameEn": "Pressed Red Flamboyant Flower",
+    "shortVi": "Cánh hoa phượng vĩ đỏ thắm ép khô tạo hình cánh bướm trên nền giấy sáng.", "shortEn": "Crimson royal poinciana petals pressed and shaped into a butterfly keepsake on light backing.",
+    "storyVi": "Hoa phượng đỏ từ lâu đã là biểu tượng của mùa chia tay và tuổi học trò. Những cánh phượng nhặt trên sân trường được ép phẳng giữa trang vở, khéo léo xếp thành hình cánh bướm kèm dòng chữ 'Kỷ Niệm !' ở mặt sau, gói trọn cả một mùa hè rực rỡ dưới mái trường THPT Hoàng Văn Thụ.", "storyEn": "The red flamboyant flower has long been the timeless symbol of school summers and farewells. Fallen petals gathered from the schoolyard were carefully pressed between notebook pages and arranged into a butterfly keepsake, preserving memories of vibrant summers at Hoang Van Thu High School.",
+    "stemVi": "Hóa sinh Sắc tố & Bảo quản Thực vật: Sắc đỏ của cánh hoa phượng tạo bởi hợp chất Anthocyanin (Pelargonidin và Cyanidin glycoside). Khi ép khô tách nước nhanh trong môi trường thiếu sáng và cán màng Polymer kín khí, hoạt tính của enzym oxy hóa Polyphenol oxidase bị ức chế, giúp giữ nguyên mạng mạch cánh hoa và sắc màu hoài cổ qua nhiều năm.", "stemEn": "Pigment Biochemistry & Botanical Preservation: The crimson hue of flamboyant petals comes from anthocyanin pigments. Rapid dehydration under pressure followed by airtight polymer lamination inhibits polyphenol oxidase enzymes, preserving the delicate petal veins and warm vintage color for years."
   },
   {
     "id": "tt3", "category": "education", "image": "./photos/tt3.jpg",
@@ -563,6 +563,9 @@ function renderDetail() {
     openLightbox(image, ...photoDescription(selectedItem, image), button);
   }));
   $("#detail-title").innerHTML = `<span class="vi-title">${escapeAttribute(selectedItem.nameVi)}</span><span class="en-title">${escapeAttribute(selectedItem.nameEn)}</span>`;
+  $("#tag-title-vi").textContent = selectedItem.nameVi;
+  $("#tag-title-en").textContent = selectedItem.nameEn;
+  $("#tag-index").textContent = index >= 0 ? `#${String(index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}` : "";
   for (const field of ["short", "story", "stem"]) {
     $(`#detail-${field}`).innerHTML = `<span class="bilingual-vi">${escapeAttribute(selectedItem[`${field}Vi`])}</span><span class="bilingual-en">${escapeAttribute(selectedItem[`${field}En`])}</span>`;
   }
@@ -594,14 +597,37 @@ function renderPrintSheet() {
   for (let index = 0; index < ITEMS.length; index += pageSize) {
     pages.push(ITEMS.slice(index, index + pageSize));
   }
-  const cards = pages.map((page) => `<section class="print-page">${page.map((item) => `
+  const cards = pages.map((page, pageIndex) => `<section class="print-page">${page.map((item, index) => `
       <article class="print-card">
-        <div class="print-card__copy">
-          <h2>${escapeAttribute(item.nameVi)}</h2>
-          <h3>${escapeAttribute(item.nameEn)}</h3>
-          <p>${escapeAttribute(item.shortVi)}<br><em>${escapeAttribute(item.shortEn)}</em></p>
+        <div class="print-card__back">
+          <div class="print-card__back-content">
+            <img src="./photos/logo.jpg" alt="">
+            <strong>TRƯỜNG THPT HOÀNG VĂN THỤ (1966 – 2026)</strong>
+            <em>Tự hào truyền thống – Vững bước tương lai</em>
+            <span class="print-card__badge">#${String(pageIndex * pageSize + index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span>
+            <small>(Dán tem NFC ở mặt trong đối diện vòng cảm ứng / <span lang="en">Stick NFC tag inside behind the front target</span>)</small>
+          </div>
         </div>
-        <div class="print-card__target"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8a6 6 0 0 1 8 0m-6-2a3.5 3.5 0 0 1 4 0M5 5a10 10 0 0 1 14 0m-7 5v8m-3-3 3 3 3-3"/></svg><span>NFC · CHẠM<br> TAP HERE</span></div>
+        <div class="print-card__fold"><span>ĐƯỜNG GẬP ĐỈNH CHỮ A (GẬP RA SAU) / TOP TENT FOLD LINE</span></div>
+        <div class="print-card__front">
+          <header class="print-card__header">
+            <strong>60 NĂM THPT HOÀNG VĂN THỤ</strong>
+            <span>${String(pageIndex * pageSize + index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span>
+          </header>
+          <div class="print-card__body">
+            <div class="print-card__copy">
+              <h2>${escapeAttribute(item.nameVi)}</h2>
+              <h3 lang="en">${escapeAttribute(item.nameEn)}</h3>
+              <div class="print-card__divider"></div>
+              <p>${escapeAttribute(item.shortVi)}</p>
+              <p lang="en">${escapeAttribute(item.shortEn)}</p>
+            </div>
+            <div class="print-card__target">
+              <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="12" width="17" height="27" rx="3"/><path d="M20 35h5M32 17l-5 5m0-5v5h5"/><path class="nfc-signal" d="M30 7c3 1 5 3 6 6m-5-10c5 1 9 5 10 10"/></svg>
+              <strong>NFC • CHẠM</strong><em lang="en">TAP HERE</em>
+            </div>
+          </div>
+        </div>
       </article>`).join("")}</section>`).join("");
   $("#print-sheet").innerHTML = cards;
 }
