@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5efe0">
+    <meta name="description" content="Triển lãm STEM số hóa ký ức 60 năm THPT Hoàng Văn Thụ bằng thẻ tên NFC thông minh.">
+    <title>Dự án STEM: Thẻ tên NFC thông minh — 60 năm ký ức</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-copy="skip"></a>
+    <header class="topbar">
+      <a class="school-mark" href="./" aria-label="THPT Hoàng Văn Thụ">
+        <span class="school-mark__seal" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 3 43 14v20L24 45 5 34V14L24 3Z"/><path d="M15 31V17l9 8 9-8v14M11 37h26"/></svg>
+        </span>
+        <span class="school-mark__words"><strong>THPT HOÀNG VĂN THỤ</strong><small>60 NĂM — 1966 · 2026</small></span>
+      </a>
+      <nav class="topbar__actions" aria-label="Điều hướng">
+        <a class="nav-link" href="#collection" data-copy="collectionNav"></a>
+        <a class="nav-link" href="#blueprint" data-copy="stemNav"></a>
+        <button class="print-nav" id="print-button" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/><path d="M17 11h.01"/></svg>
+          <span class="print-nav__label" data-copy="print"></span>
+        </button>
+        <div class="language-switch" role="group" aria-label="Chọn ngôn ngữ">
+          <button type="button" class="language-switch__button is-active" data-language="vi" aria-pressed="true">VI</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" class="language-switch__button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero page-shell" aria-labelledby="page-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="eyebrow"></span></p>
+          <h1 id="page-title">
+            <span class="vi-title" data-copy="titleVi"></span>
+            <span class="en-title" data-copy="titleEn"></span>
+          </h1>
+          <p class="hero__description" data-copy="intro"></p>
+          <a class="text-link" href="#collection">
+            <span data-copy="browse"></span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="hero__seal" aria-label="60 năm truyền lửa">
+          <svg viewBox="0 0 240 240" aria-hidden="true">
+            <circle cx="120" cy="120" r="106"/><circle cx="120" cy="120" r="94"/>
+            <path d="M53 119h27l13-27 21 55 18-40 12 22h43"/>
+            <path d="M62 65 50 53M178 65l12-12M62 175l-12 12M178 175l12 12"/>
+          </svg>
+          <span class="hero__seal-number">60</span>
+          <span class="hero__seal-label" data-copy="anniversary"></span>
+        </div>
+        <div class="hero__baseline"><span>13.56 MHz</span><span data-copy="nfcLine"></span></div>
+      </section>
+
+      <section class="collection page-shell" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="collectionEyebrow"></span></p>
+            <h2 id="collection-title"><span class="vi-title" data-copy="collectionTitleVi"></span><span class="en-title" data-copy="collectionTitleEn"></span></h2>
+          </div>
+          <p class="section-heading__note" data-copy="collectionNote"></p>
+        </div>
+        <div class="artifact-grid" id="artifact-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="artifact-detail page-shell" id="artifact-detail" aria-live="polite" aria-labelledby="detail-title">
+        <div class="detail-divider"><span data-copy="detailDivider"></span><span class="detail-divider__line"></span></div>
+        <div class="nfc-intro" id="nfc-intro" aria-hidden="true">
+          <div class="nfc-intro__waves"><span>((</span><b>NFC</b><span>))</span></div>
+          <p>13.56 MHz <span data-copy="nfcTap"></span></p>
+          <button type="button" id="skip-intro" data-copy="skipIntro"></button>
+        </div>
+        <article class="detail-card" id="detail-card">
+          <div class="detail-card__art" id="detail-art"></div>
+          <div class="detail-card__content">
+            <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="memoryLabel"></span><span class="item-number" id="item-number"></span></p>
+            <h2 id="detail-title"></h2>
+            <p class="detail-short" id="detail-short"></p>
+            <div class="detail-story">
+              <p class="field-label" data-copy="storyLabel"></p>
+              <p id="detail-story"></p>
+            </div>
+            <div class="detail-stem">
+              <p class="field-label" data-copy="stemLabel"></p>
+              <p id="detail-stem"></p>
+            </div>
+            <div class="detail-actions">
+              <button class="button button--primary" id="speak-button" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="M17 9a5 5 0 0 1 0 6m2-9a9 9 0 0 1 0 12"/></svg>
+                <span data-copy="listen"></span>
+              </button>
+              <div class="equalizer" id="equalizer" aria-hidden="true"></div>
+              <button class="button button--outline" id="copy-button" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="1"/><path d="M16 5V3H4v13h2"/></svg>
+                <span data-copy="copyUrl"></span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="anatomy page-shell" aria-labelledby="anatomy-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="anatomyEyebrow"></span></p>
+            <h2 id="anatomy-title"><span class="vi-title" data-copy="anatomyTitleVi"></span><span class="en-title" data-copy="anatomyTitleEn"></span></h2>
+          </div>
+          <button class="button button--outline explode-toggle" id="explode-button" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.7 8-4.7M12 12.2V21"/></svg>
+            <span data-copy="explode"></span>
+          </button>
+        </div>
+        <div class="anatomy-layout">
+          <div class="tag-stage" id="tag-stage" tabindex="0" role="button" aria-label="Tách lớp mô hình thẻ NFC">
+            <div class="tag-model">
+              <div class="tag-layer tag-layer--label"><span class="tag-layer__edge"></span><span class="tag-layer__name" data-copy="layerLabel"></span><span class="tag-layer__glyph">60</span></div>
+              <div class="tag-layer tag-layer--shield"><span class="tag-layer__edge"></span><span class="tag-layer__name" data-copy="layerShield"></span><span class="shield-mark">Fe</span></div>
+              <div class="tag-layer tag-layer--chip"><span class="tag-layer__edge"></span><span class="tag-layer__name" data-copy="layerChip"></span><svg viewBox="0 0 140 70" aria-hidden="true"><path d="M7 35c0-17 16-28 33-28s33 11 33 28-16 28-33 28S7 52 7 35Zm12 0c0-11 10-18 21-18s21 7 21 18-10 18-21 18-21-7-21-18Zm12 0c0-5 4-8 9-8s9 3 9 8-4 8-9 8-9-3-9-8Zm43 0h25m-8-8 8 8-8 8"/></svg></div>
+            </div>
+            <span class="callout callout--one"><i></i><span data-copy="calloutTop"></span></span>
+            <span class="callout callout--two"><i></i><span data-copy="calloutMiddle"></span></span>
+            <span class="callout callout--three"><i></i><span data-copy="calloutBottom"></span></span>
+          </div>
+          <aside class="anatomy-note">
+            <span class="anatomy-note__index">01 / 03</span>
+            <p class="vi-title" data-copy="anatomyNoteVi"></p>
+            <p class="en-title" data-copy="anatomyNoteEn"></p>
+            <p class="anatomy-note__frequency">13.56 MHz <span>·</span> ISO/IEC 14443</p>
+            <p class="anatomy-note__text" data-copy="anatomyText"></p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="blueprint page-shell" id="blueprint" aria-labelledby="blueprint-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="blueprintEyebrow"></span></p>
+            <h2 id="blueprint-title"><span class="vi-title" data-copy="blueprintTitleVi"></span><span class="en-title" data-copy="blueprintTitleEn"></span></h2>
+          </div>
+          <p class="section-heading__note" data-copy="blueprintNote"></p>
+        </div>
+        <div class="stem-grid" id="stem-grid"></div>
+      </section>
+
+      <section class="print-section" aria-label="Printable NFC nametags">
+        <div class="page-shell print-section__inner">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="printEyebrow"></span></p>
+            <p class="vi-title" data-copy="printPromptVi"></p>
+            <p class="en-title" data-copy="printPromptEn"></p>
+          </div>
+          <button class="button button--primary" id="print-button-bottom" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8V3h10v5M7 17H5a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-2M7 14h10v7H7z"/></svg>
+            <span data-copy="print"></span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page-shell">
+      <div class="footer__seal">HVTh</div>
+      <p><strong data-copy="footerVi"></strong><span data-copy="footerEn"></span></p>
+      <span class="footer__frequency">13.56 MHz</span>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="print-sheet" id="print-sheet" aria-hidden="true"></div>
+  </body>
+</html>
