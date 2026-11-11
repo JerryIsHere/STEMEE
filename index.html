@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f5efe0">
+    <meta name="theme-color" content="#0084d1">
     <meta name="description" content="Triển lãm STEM số hóa ký ức 60 năm THPT Hoàng Văn Thụ bằng thẻ tên NFC thông minh.">
     <title>Dự án STEM: Thẻ tên NFC thông minh — 60 năm ký ức</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
     <header class="topbar">
       <a class="school-mark" href="./" aria-label="THPT Hoàng Văn Thụ">
         <span class="school-mark__seal" aria-hidden="true">
-          <svg viewBox="0 0 48 48"><path d="M24 3 43 14v20L24 45 5 34V14L24 3Z"/><path d="M15 31V17l9 8 9-8v14M11 37h26"/></svg>
+          <img src="./photos/logo.jpg" alt="">
         </span>
         <span class="school-mark__words"><strong>THPT HOÀNG VĂN THỤ</strong><small>60 NĂM — 1966 · 2026</small></span>
       </a>
@@ -37,29 +37,22 @@
     </header>
 
     <main id="main">
-      <section class="hero page-shell" aria-labelledby="page-title">
+      <section class="hero" aria-labelledby="page-title">
         <div class="hero__copy">
           <p class="eyebrow"><span class="eyebrow__rule"></span><span data-copy="eyebrow"></span></p>
           <h1 id="page-title">
-            <span class="vi-title" data-copy="titleVi"></span>
-            <span class="en-title" data-copy="titleEn"></span>
+            <span class="vi-title">TRƯỜNG THPT HOÀNG VĂN THỤ – TỈNH LÀO CAI<br>(60 NĂM: 1966 – 2026)</span>
+            <span class="en-title">Hoang Van Thu High School – 60th Anniversary Digital Heritage &amp; STEM Archive</span>
           </h1>
+          <p class="hero__motto"><strong>Tự hào truyền thống – Vững bước tương lai</strong><em>Proud of Tradition – Stepping Firmly into the Future</em></p>
           <p class="hero__description" data-copy="intro"></p>
           <a class="text-link" href="#collection">
             <span data-copy="browse"></span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg>
           </a>
         </div>
-        <div class="hero__seal" aria-label="60 năm truyền lửa">
-          <svg viewBox="0 0 240 240" aria-hidden="true">
-            <circle cx="120" cy="120" r="106"/><circle cx="120" cy="120" r="94"/>
-            <path d="M53 119h27l13-27 21 55 18-40 12 22h43"/>
-            <path d="M62 65 50 53M178 65l12-12M62 175l-12 12M178 175l12 12"/>
-          </svg>
-          <span class="hero__seal-number">60</span>
-          <span class="hero__seal-label" data-copy="anniversary"></span>
-        </div>
-        <div class="hero__baseline"><span>13.56 MHz</span><span data-copy="nfcLine"></span></div>
+        <button class="hero__seal" type="button" data-lightbox-src="./photos/logo.jpg" data-lightbox-vi="Biểu trưng kỷ niệm 60 năm" data-lightbox-en="60th anniversary emblem" aria-label="Phóng to biểu trưng kỷ niệm 60 năm"><img src="./photos/logo.jpg" alt="Biểu trưng 60 năm THPT Hoàng Văn Thụ"></button>
+        <svg class="hero__waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path fill="#38bdf8" fill-opacity=".7" d="M0 30C260 120 420 0 720 65s480 30 720-35v90H0z"/><path fill="#d9f3ff" fill-opacity=".9" d="M0 65c240-62 470 72 730 22s470-58 710-5v38H0z"/><path fill="#f0f8ff" d="M0 97c280 55 480-50 760-15s450 28 680 5v33H0z"/></svg>
       </section>
 
       <section class="collection page-shell" id="collection" aria-labelledby="collection-title">
@@ -170,8 +163,125 @@
     <footer class="footer page-shell">
       <div class="footer__seal">HVTh</div>
       <p><strong data-copy="footerVi"></strong><span data-copy="footerEn"></span></p>
+      <button class="admin-toggle" id="admin-toggle" type="button" aria-label="Open content studio">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V8a5 5 0 0 1 10 0v2M6 10h12v9H6z"/><path d="M12 13v3"/></svg>
+      </button>
       <span class="footer__frequency">13.56 MHz</span>
     </footer>
+    <aside class="admin-panel" id="admin-panel" hidden>
+      <div class="admin-panel__header">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__rule"></span><span>Studio</span></p>
+          <h3><span class="vi-title">Studio nội dung</span><span class="en-title">Content Studio</span></h3>
+        </div>
+        <button class="button button--outline" id="admin-close" type="button">Đóng / Close</button>
+      </div>
+      <div class="admin-toolbar">
+        <button class="button button--primary" id="admin-add" type="button">+ Thêm sản phẩm mới <em> / Add item</em></button>
+        <button class="button button--outline" id="admin-delete" type="button">Xóa / Delete</button>
+        <button class="button button--outline" id="admin-move-up" type="button">Lên / Up</button>
+        <button class="button button--outline" id="admin-move-down" type="button">Xuống / Down</button>
+      </div>
+      <label class="quick-edit-toggle"><input id="quick-edit-toggle" type="checkbox"> <span><strong>Chế độ chỉnh sửa nhanh</strong><em>Quick Edit Mode</em></span></label>
+      <div class="admin-layout">
+        <form class="admin-form" id="admin-form">
+          <label>
+            <span>Slug / id</span>
+            <input id="admin-id" name="id" type="text" />
+          </label>
+          <label>
+            <span>Danh mục / Category</span>
+            <input id="admin-category" name="category" type="text" />
+          </label>
+          <label>
+            <span>Tên tiếng Việt / Vietnamese name</span>
+            <input id="admin-name-vi" name="nameVi" type="text" />
+          </label>
+          <label>
+            <span>Tên tiếng Anh / English name</span>
+            <input id="admin-name-en" name="nameEn" type="text" />
+          </label>
+          <label>
+            <span>Mô tả ngắn tiếng Việt / Vietnamese summary</span>
+            <textarea id="admin-short-vi" name="shortVi"></textarea>
+          </label>
+          <label>
+            <span>Mô tả ngắn tiếng Anh / English summary</span>
+            <textarea id="admin-short-en" name="shortEn"></textarea>
+          </label>
+          <label>
+            <span>Câu chuyện tiếng Việt / Vietnamese story</span>
+            <textarea id="admin-story-vi" name="storyVi"></textarea>
+          </label>
+          <label>
+            <span>Câu chuyện tiếng Anh / English story</span>
+            <textarea id="admin-story-en" name="storyEn"></textarea>
+          </label>
+          <label>
+            <span>STEM tiếng Việt / Vietnamese STEM</span>
+            <textarea id="admin-stem-vi" name="stemVi"></textarea>
+          </label>
+          <label>
+            <span>STEM tiếng Anh / English STEM</span>
+            <textarea id="admin-stem-en" name="stemEn"></textarea>
+          </label>
+          <label>
+            <span>Đường dẫn ảnh (mỗi dòng một ảnh) / Image paths, one per line</span>
+            <textarea id="admin-image-url" name="images" placeholder="./photos/tt20.jpg"></textarea>
+          </label>
+          <fieldset class="photo-picker"><legend>Chọn ảnh / <em>Choose photos</em></legend><p>Chọn nhiều ảnh; chọn lại để bỏ. Ảnh đầu tiên là ảnh bìa.</p><div id="photo-picker-grid" class="photo-picker__grid"></div></fieldset>
+          <label>
+            <span>Tải ảnh lên / Upload photos</span>
+            <input id="admin-image-upload" type="file" accept="image/*" multiple />
+          </label>
+          <div class="admin-actions">
+            <button class="button button--primary" id="admin-save-local" type="button">Lưu trên thiết bị / Save local</button>
+            <button class="button button--outline" id="admin-export" type="button">Tải JSON / Export</button>
+            <button class="button button--outline" id="admin-import" type="button">Nhập JSON / Import</button>
+            <button class="button button--outline" id="admin-reset" type="button">Đồng bộ dữ liệu gốc / Reset</button>
+            <button class="button button--outline" id="admin-publish" type="button">Xuất bản / Publish to GitHub</button>
+          </div>
+        </form>
+        <div class="admin-list-panel">
+          <h4><span class="vi-title">Danh sách hiện vật</span><span class="en-title">Artifact list</span></h4>
+          <ul id="admin-list" class="admin-list"></ul>
+        </div>
+      </div>
+    </aside>
+    <div class="modal-backdrop" id="admin-modal-backdrop" hidden>
+      <div class="modal-card" aria-modal="true" role="dialog" aria-labelledby="github-dialog-title">
+        <div class="modal-card__header">
+          <h3 id="github-dialog-title"><span class="vi-title">Xuất bản lên GitHub</span><span class="en-title">Publish to GitHub</span></h3>
+          <button class="modal-close" id="modal-close" type="button" aria-label="Close dialog">×</button>
+        </div>
+        <div class="modal-card__body">
+          <label>
+            <span>Mã truy cập GitHub / GitHub token</span>
+            <input id="github-token" type="password" placeholder="ghp_..." />
+          </label>
+          <label>
+            <span>Chủ sở hữu / Owner</span>
+            <input id="github-owner" type="text" value="JerryIsHere" />
+          </label>
+          <label>
+            <span>Kho mã / Repository</span>
+            <input id="github-repo" type="text" value="STEMEE" />
+          </label>
+          <label>
+            <span>Nhánh / Branch</span>
+            <input id="github-branch" type="text" value="main" />
+          </label>
+        </div>
+        <div class="modal-card__actions">
+          <button class="button button--outline" id="modal-cancel" type="button">Hủy / Cancel</button>
+          <button class="button button--primary" id="modal-publish" type="button">Xuất bản / Publish</button>
+        </div>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox__close" id="lightbox-close" type="button" aria-label="Đóng / Close">×</button>
+      <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-title"><span class="vi-title"></span><span class="en-title"></span></figcaption></figure>
+    </div>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
     <div class="print-sheet" id="print-sheet" aria-hidden="true"></div>
   </body>

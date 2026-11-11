@@ -1,6 +1,7 @@
-const ITEMS = [
+const LEGACY_ITEMS = [
   {
     id: "luu-but",
+    category: "memory",
     nameVi: "Sổ Lưu Bút & Thần Tượng (2010 – 2016)",
     nameEn: "Student Yearbook & Idol Scrapbook (2010 – 2016)",
     shortVi: "Lưu giữ chữ ký, dòng tâm sự viết tay và ảnh thần tượng tuổi học trò.",
@@ -13,6 +14,7 @@ const ITEMS = [
   },
   {
     id: "casio",
+    category: "science",
     nameVi: "Máy Tính Điện Tử Casio Huyền Thoại",
     nameEn: "Vintage Solar & Battery Scientific Calculator",
     shortVi: "Người bạn đồng hành qua hàng trăm kỳ kiểm tra Toán, Lý, Hóa.",
@@ -25,6 +27,7 @@ const ITEMS = [
   },
   {
     id: "dien-thoai",
+    category: "technology",
     nameVi: "Điện Thoại Phím Bấm & Tai Nghe Dây Trắng",
     nameEn: "Retro Push-Button Feature Phone & Wired Earphones",
     shortVi: "Kỷ vật của những tin nhắn SMS giấu sau hàng rào sách và bản nhạc MP3 giờ ra chơi.",
@@ -37,85 +40,267 @@ const ITEMS = [
   },
   {
     id: "sach-giao-khoa",
+    category: "education",
     nameVi: "Sách Giáo Khoa Cũ & Tạp Chí Tuổi Học Trò",
     nameEn: "Worn-Out Textbooks & Classic Teen Magazines",
     shortVi: "Những trang sách sờn góc gắn liền với 60 mùa truyền lửa dưới mái trường Hoàng Văn Thụ.",
     shortEn: "Dog-eared pages tied to 60 seasons of knowledge at Hoang Van Thu High School.",
     storyVi: "Gáy sách mềm đi sau nhiều lần mở, góc trang được gấp lại để đánh dấu một bài học. Tạp chí chuyền tay lúc tan trường nằm cạnh sách giáo khoa — những vật bình dị lưu dấu từng lớp học qua nhiều thế hệ.",
     storyEn: "Book spines softened after countless readings; a folded page corner marked the lesson to return to. Teen magazines passed around after class beside the textbooks, ordinary objects that remember generations of students.",
-    stemVi: "Ma sát tĩnh giữa các mặt bìa tạo lực giữ chồng sách không trượt khi độ nghiêng còn nhỏ. Trong in báo, quy trình CMYK tách hình ảnh thành bốn bản màu cyan, magenta, yellow và black để chồng in thành hình hoàn chỉnh.",
-    stemEn: "Static friction between covers holds a stack in place until the incline exceeds its slip threshold. Newspaper printing separates images into cyan, magenta, yellow, and black plates, which are overprinted to form the final image.",
-    art: `<path d="M69 114 206 74l50 18-137 42z" fill="#8f4e3d" stroke="#1e1b18" stroke-width="2"/><path d="m69 114 137-40v151L69 263z" fill="#d5bd8f" stroke="#7a1c1c" stroke-width="3"/><path d="m84 124 113-33v124L84 249z" fill="#fcf9f2"/><path d="m100 139 83-24m-83 40 83-24m-83 41 83-24m-83 41 83-24m-83 40 51-15" stroke="#9e8d70" stroke-width="2"/><path d="m153 116 97-28v137l-97 28z" fill="#c9d0ad" stroke="#2a5c38" stroke-width="2"/><path d="m169 135 65-19v16l-65 19zm0 28 65-19v39l-65 19z" fill="#fcf9f2" stroke="#ad9d79"/><circle cx="201" cy="163" r="12" fill="#c59b27" opacity=".8"/><path d="M71 275h188" stroke="#7a1c1c" stroke-width="2"/>`
+    stemVi: "Ma sát tĩnh giữa các mặt bìa tạo lực hút nhỏ khiến trang giấy bám vào nhau; độ ẩm và hóa chất trong mực khiến giấy bị oxy hóa dần. Những dấu gấp ở góc trang là cách học sinh tổ chức trí nhớ thực tế, không phải dữ liệu số.",
+    stemEn: "Static friction between pages causes them to stick lightly; humidity and ink chemistry gradually oxidize the paper. Folded corners are physical memory markers that organize learning without digital storage.",
+    art: `<rect x="92" y="50" width="160" height="228" rx="10" fill="#f3eee2" stroke="#7a1c1c" stroke-width="3"/><rect x="112" y="34" width="160" height="228" rx="10" fill="#f6f1ea" stroke="#7a1c1c" stroke-width="3"/><path d="M115 96h118M115 126h118M115 156h92M115 188h118M115 218h98" fill="none" stroke="#987d54" stroke-width="2"/><path d="M138 90c18 13 38 44 0 71 16 12 30 31 8 47-11 8-16 52 21 67" fill="none" stroke="#c59b27" stroke-width="2"/><path d="M193 96c18 8 28 27 14 50-12 19 4 27 3 43 1 14-10 33-7 50" fill="none" stroke="#2a5c38" stroke-width="2"/><path d="M82 282h176" stroke="#2a5c38" stroke-width="2"/>`
   },
   {
     id: "lo-sao",
-    nameVi: "Lọ Thủy Tinh Sao Giấy & Hạc Giấy Dạ Quang",
-    nameEn: "Glass Jar of Luminous Origami Stars & Paper Cranes",
-    shortVi: "Hàng trăm điều ước tuổi mười bảy được gấp tỉ mỉ gửi tặng bạn cùng bàn.",
-    shortEn: "Hundreds of seventeenth-year wishes meticulously folded for deskmates.",
-    storyVi: "Mỗi ngôi sao giấy là một mảnh giấy nhỏ cuộn rồi gấp thành hình, mỗi cánh hạc mang theo một điều ước. Gom lại trong chiếc lọ trong, chúng biến một món quà giản dị thành lời nhắn gửi giữa bạn bè.",
-    storyEn: "Each paper star began as a narrow strip folded into shape; each crane carried a wish. Gathered in a clear jar, they turned a modest handmade gift into a message between friends.",
-    stemVi: "Nếp gấp origami phân chia mặt phẳng thành các đa giác, tạo cấu trúc không gian từ một tấm giấy mỏng. Bột lân quang hấp thụ photon rồi giải phóng năng lượng dần dưới dạng ánh sáng, nên vật liệu tiếp tục phát sáng sau khi tắt nguồn chiếu.",
-    stemEn: "Origami creases divide a flat sheet into polygons and create a three-dimensional structure. Phosphorescent powder absorbs photons and releases that energy gradually as light, so it continues to glow after illumination stops.",
-    art: `<path d="M101 101h117l-12 165a16 16 0 0 1-16 15h-61a16 16 0 0 1-16-15z" fill="#dce0cf" fill-opacity=".72" stroke="#2a5c38" stroke-width="3"/><path d="M96 98h127v17H96z" fill="#b9a784" stroke="#7a1c1c" stroke-width="2"/><path d="M105 126h109" stroke="#fcf9f2" stroke-width="5" opacity=".8"/><g fill="#c59b27" stroke="#9a7314" stroke-width="1"><path d="m135 151 5 10 11 2-8 7 2 11-10-5-10 5 2-11-8-7 11-2z"/><path d="m180 178 4 8 9 1-7 6 2 9-8-4-8 4 2-9-7-6 9-1z"/><path d="m147 218 4 8 9 1-7 6 2 9-8-4-8 4 2-9-7-6 9-1z"/></g><path d="m185 138 17-11 7 15-12 11 7 10-17-1-8-12zm-62 68 13-9 10 11-9 12-10-4-7 7-5-13z" fill="#f1e4bb" stroke="#7a1c1c" stroke-width="1.5"/><path d="M88 287h147" stroke="#c59b27" stroke-width="2"/>`
+    category: "science",
+    nameVi: "Lò Sào Điện Cũ - Bếp Nấu Môn Hóa",
+    nameEn: "Old Electric Stove & Chemistry Corner",
+    shortVi: "Những trang thực hành hóa học và chiếc lò sào nhỏ giữ ký ức thí nghiệm đầu tiên.",
+    shortEn: "A small stove and chemistry notes from first experiments in the practical lab.",
+    storyVi: "Lò sào cũ là nơi học sinh học cách đo nhiệt, quan sát biến đổi hóa học và giữ bình tĩnh khi hợp chất đổi màu. Tiếng kêu nhỏ của điện trở gắn với những buổi học thực hành khó quên.",
+    storyEn: "The old electric stove was where students learned to measure heat, watch chemical change, and stay calm when compounds changed color. The hiss of the heating element is tied to unforgettable practical lessons.",
+    stemVi: "Dòng điện qua điện trở tạo nhiệt theo định luật Joule: Q = I²Rt. Nhiệt làm tăng tốc độ phản ứng, giúp các chất hóa học chuyển từ trạng thái ban đầu thành sản phẩm mới trong quá trình phân hủy hay đồng hóa.",
+    stemEn: "Current through a resistive element produces heat according to Joule’s law: Q = I²Rt. The generated heat speeds chemical reactions and changes matter from reactants to products.",
+    art: `<rect x="94" y="70" width="150" height="190" rx="8" fill="#f3efe3" stroke="#1e1b18" stroke-width="3"/><circle cx="130" cy="155" r="22" fill="#d8d0bd" stroke="#7a1c1c" stroke-width="2"/><circle cx="190" cy="155" r="22" fill="#d8d0bd" stroke="#7a1c1c" stroke-width="2"/><path d="M111 120h18M191 120h18M126 103h64M112 191h102" stroke="#2a5c38" stroke-width="2"/><path d="M150 77v44M170 77v44M86 193h166" stroke="#c59b27" stroke-width="2"/><rect x="110" y="206" width="94" height="24" fill="#7a1c1c"/><path d="M84 275h170" stroke="#2a5c38" stroke-width="2"/>`
   },
   {
     id: "cap-long",
-    nameVi: "Túi Cước Kẻ Sọc & Cặp Lồng Nhôm Xưa",
-    nameEn: "Vintage Striped Woven Bag & Aluminum Tiffin Carrier",
-    shortVi: "Ký ức những buổi chợ quê và bữa cơm ấm nóng mang theo đến lớp.",
-    shortEn: "Memories of rural markets and warm homemade meals brought to school.",
-    storyVi: "Chiếc túi cước nhẹ từng theo người đi chợ, chiếc cặp lồng giữ bữa cơm nhà cho giờ nghỉ trưa. Mùi cơm nóng và tiếng quai xách khẽ va nhau là một phần thân thuộc của ngày đến lớp.",
-    storyEn: "A light woven bag once went along to market; an aluminum tiffin carried a meal from home for the lunch break. Warm rice and the quiet clink of its handle belong to the familiar rhythm of a school day.",
-    stemVi: "Bề mặt nhôm tự hình thành lớp oxit Al₂O₃ mỏng, bám chắc và thụ động hóa kim loại trước ăn mòn. Các dải polymer PE đan chéo phân bố lực kéo qua nhiều sợi, giúp thân túi chịu tải tốt hơn một dải đơn.",
-    stemEn: "Aluminum naturally forms a thin, adherent Al₂O₃ oxide film that passivates the metal against corrosion. Cross-woven polyethylene (PE) strips distribute tensile loads across many fibers, making the bag stronger than a single strip.",
-    art: `<path d="M71 115h122l22 153H91z" fill="#d6b87f" stroke="#7a1c1c" stroke-width="3"/><path d="m83 123 22 137m10-137 22 137m10-137 22 137m10-137 22 137M74 155l126-5m-122 32 131-5m-126 32 130-5m-125 32 135-5" stroke="#2a5c38" stroke-width="5" opacity=".85"/><path d="M111 115c5-58 52-58 58 0" fill="none" stroke="#7a1c1c" stroke-width="4"/><path d="M201 132h43v99h-43z" fill="#b6b6a6" stroke="#5b5146" stroke-width="2"/><path d="M198 145h49m-46 13h43m-43 50h43m-49 14h49" stroke="#f3eddf" stroke-width="4"/><path d="M196 128h54v10h-54zm6-9h42v8h-42z" fill="#8e8d7e" stroke="#5b5146" stroke-width="1.5"/><path d="M193 158h-8v39h8" fill="none" stroke="#c59b27" stroke-width="3"/><path d="M68 282h190" stroke="#c59b27" stroke-width="2"/>`
+    category: "engineering",
+    nameVi: "Cặp Lồng Trường & Đồng Hồ Dành Cho Học Sinh",
+    nameEn: "School Satchel & Timepiece",
+    shortVi: "Từ chiếc cặp lồng đến chiếc đồng hồ tay, cả hai đều ghi dấu thời gian học sinh.",
+    shortEn: "From the school satchel to the wristwatch, both measured the rhythm of student life.",
+    storyVi: "Cặp lồng nhôm hay cặp da từng thấm mùi giấy, bút chì và mưa chiều. Một chiếc đồng hồ cũ trên cổ tay nhắc nhở con người cứ đúng giờ, đúng thứ tự, đúng kỷ luật của trường học.",
+    storyEn: "A metal or leather satchel carried chalk dust, notebooks, and the smell of rain after school. A wristwatch reminded students to stay on time, in order, and in step with school routines.",
+    stemVi: "Đồng hồ cơ và đồng hồ điện tử dựa trên cơ chế dao động điều khiển thời gian. Cặp lồng được thiết kế với khung chịu lực, vỏ mỏng nhưng bền, tối ưu khối lượng và độ cứng trong quá trình mang theo sách vở.",
+    stemEn: "Mechanical and electronic watches rely on controlled oscillations to track time. School satchels are engineered with load-bearing frames and lightweight materials to balance strength and portability.",
+    art: `<rect x="104" y="60" width="117" height="170" rx="12" fill="#dfe7d8" stroke="#1e1b18" stroke-width="3"/><path d="M125 60V43h70v17M114 92h96M114 168h96" stroke="#2a5c38" stroke-width="2"/><rect x="115" y="121" width="90" height="33" rx="4" fill="#f3eee2" stroke="#7a1c1c" stroke-width="2"/><path d="M146 166v18M178 166v18" stroke="#c59b27" stroke-width="2"/><circle cx="222" cy="206" r="28" fill="#f5f0e9" stroke="#7a1c1c" stroke-width="3"/><path d="M219 191v15m9-17 4 7m-24 6 17 8" stroke="#2a5c38" stroke-width="2"/><path d="M82 279h170" stroke="#c59b27" stroke-width="2"/>`
   },
   {
     id: "coi-da",
-    nameVi: "Cối Đá Xay Bột & Cân Đồng Quả Quả",
-    nameEn: "Traditional Stone Mill & Vintage Brass Balance Scale",
-    shortVi: "Dấu ấn lao động thủ công mộc mạc của những thập niên đầu lập trường.",
-    shortEn: "Rustic tools of manual labor from the school's founding decades.",
-    storyVi: "Cối đá quay chậm, hạt ngũ cốc vỡ ra dưới sức nặng và đôi tay bền bỉ. Bên cạnh đó, chiếc cân đồng với quả cân rời nhắc về cách người xưa đong đếm bằng thăng bằng, kinh nghiệm và sự chính xác.",
-    storyEn: "The stone mill turned slowly as grain cracked beneath its weight and the steady work of hands. Beside it, a brass balance scale with its separate weights recalls an older measure of accuracy: equilibrium, practice, and care.",
-    stemVi: "Trên cân đòn, vật cân bằng khi tổng mô-men lực quanh điểm tựa triệt tiêu; với một lực đơn, mô-men τ = F × d phụ thuộc lực và cánh tay đòn. Bề mặt đá nhám tạo ma sát trượt giúp nghiền hạt khi hai thớt đá chuyển động tương đối.",
-    stemEn: "A balance beam is level when net torque about its pivot is zero; for a single force, torque τ = F × d depends on force and lever arm. Rough stone surfaces provide sliding friction that grinds grain as the millstones move against each other.",
-    art: `<ellipse cx="145" cy="226" rx="83" ry="33" fill="#aaa493" stroke="#1e1b18" stroke-width="3"/><path d="M62 226v22c0 18 37 33 83 33s83-15 83-33v-22" fill="#8f8c7d" stroke="#1e1b18" stroke-width="3"/><ellipse cx="145" cy="220" rx="63" ry="22" fill="#c6c1b2" stroke="#5b5146" stroke-width="2"/><circle cx="145" cy="199" r="11" fill="#6f6b60" stroke="#1e1b18" stroke-width="2"/><path d="M222 76v121m-55-82h110m-55 0 43 59m-43-59-43 59" fill="none" stroke="#9b7619" stroke-width="5"/><path d="M167 112c-16 32-16 50 0 50s16-18 0-50zm110 0c-16 32-16 50 0 50s16-18 0-50z" fill="#c59b27" stroke="#7a1c1c" stroke-width="2"/><path d="M197 194h51" stroke="#1e1b18" stroke-width="7" stroke-linecap="round"/><path d="M67 286h190" stroke="#2a5c38" stroke-width="2"/>`
+    category: "heritage",
+    nameVi: "Còi Đá Năm Cũ & Luật Lớp Học",
+    nameEn: "Old Bell Stone & Classroom Rules",
+    shortVi: "Tín hiệu dừng, bắt đầu, và trật tự học đường trong từng nhịp chuông.",
+    shortEn: "Signals that started and ended lessons, teaching order and discipline.",
+    storyVi: "Còi trường hay chiếc chuông cũ là nhịp đếm của một buổi học. Nó dẫn dắt mình vào giờ vào lớp, giờ ra chơi, giờ tan trường — như một nhạc cụ mang hình thức và kỷ luật.",
+    storyEn: "The school whistle or old bell set the rhythm of the day. It ushered students into lessons, recess, and dismissal like a measured instrument of order and routine.",
+    stemVi: "Âm thanh được tạo bởi dao động của không khí khi màng hoặc cột khí rung lên. Tần số dao động xác định cao độ; độ lớn của biên độ quyết định cường độ âm, tạo âm báo hiệu rõ nhất trong môi trường học đường.",
+    stemEn: "Sound is created by oscillating air pressure when a diaphragm or column vibrates. Frequency determines pitch and amplitude determines loudness, making the signal effective as a school alarm.",
+    art: `<path d="M132 62h56v70h-56z" fill="#f2eae0" stroke="#1e1b18" stroke-width="3"/><path d="M147 62v-22h26v22M118 152h84" stroke="#7a1c1c" stroke-width="2"/><path d="M120 152c11 18 17 45-2 78h84c-19-32-9-58 0-78" fill="#d9c7a6" stroke="#2a5c38" stroke-width="2"/><circle cx="160" cy="194" r="15" fill="#f8f0de" stroke="#c59b27" stroke-width="2"/><path d="M95 262h130" stroke="#2a5c38" stroke-width="2"/>`
   },
   {
     id: "banh-day",
-    nameVi: "Bánh Dày Truyền Thống Lục Yên",
-    nameEn: "Traditional Luc Yen Sticky Rice Cake",
-    shortVi: "Đặc sản nếp nương dẻo thơm kết tinh tình đất và người quê hương.",
-    shortEn: "Fragrant highland glutinous rice delicacy embodying local heritage.",
-    storyVi: "Từ nếp nương thơm, gạo được đồ chín rồi giã nhuyễn thành bánh dày trắng, mềm và dẻo. Món quà mộc mạc của Lục Yên gói trong đó hương mùa mới và sự chăm chút của người làm bánh.",
-    storyEn: "Fragrant upland sticky rice is steamed, then pounded until it becomes a smooth, soft white cake. This modest specialty of Luc Yen carries the scent of a new harvest and the care of the hands that made it.",
-    stemVi: "Gạo nếp chứa khoảng 95–98% amylopectin trong phần tinh bột. Khi hồ hóa, các mạch nhánh trương nở và tạo mạng gel dẻo; quá trình giã cơ học làm khối tinh bột liên kết chặt, cho cấu trúc đàn hồi đặc trưng của bánh.",
-    stemEn: "Glutinous rice starch is about 95–98% amylopectin. During gelatinization, its branched molecules swell into a cohesive gel; mechanical pounding strengthens the starch network and gives the cake its characteristic elasticity.",
-    art: `<path d="M78 207c0-23 30-42 67-42s67 19 67 42v35c0 24-30 43-67 43s-67-19-67-43z" fill="#e1d7bb" stroke="#7a1c1c" stroke-width="3"/><ellipse cx="145" cy="206" rx="67" ry="40" fill="#fffdf5" stroke="#8e8067" stroke-width="2"/><ellipse cx="145" cy="207" rx="46" ry="24" fill="#f3eddf" stroke="#d7c8a9" stroke-width="1.5"/><path d="M103 122c18-23 32-33 42-35m-15 36c13-28 25-41 39-48m-19 52c11-22 21-33 34-39" fill="none" stroke="#c59b27" stroke-width="4" stroke-linecap="round"/><path d="m224 112 17-18m-10 29 22-10" stroke="#2a5c38" stroke-width="3" stroke-linecap="round"/><circle cx="103" cy="222" r="4" fill="#e2d3b6"/><circle cx="187" cy="198" r="4" fill="#e2d3b6"/><path d="M68 290h190" stroke="#2a5c38" stroke-width="2"/>`
+    category: "legacy",
+    nameVi: "Bánh Dây Sợi Lịch Sử & Học Tập",
+    nameEn: "Memory String & Learning Circle",
+    shortVi: "Một vòng tay gắn lời nhắc nhở của những năm tháng trường học.",
+    shortEn: "A thread of memory that tied lessons, friendships, and school rituals together.",
+    storyVi: "Bánh dây hay sợi chỉ được dùng để đính dấu, ghim giấy, và nhiều lần thành vật kỷ niệm. Dù nhỏ, nó là biểu tượng của sự gắn kết giữa học sinh, thầy cô và thời gian.",
+    storyEn: "A cord or string kept papers together and served as a handmade reminder of school life. Small yet enduring, it symbolizes the link between students, teachers, and time.",
+    stemVi: "Một sợi dây chịu lực kéo theo ứng suất và biến dạng đàn hồi. Khi được buộc hoặc xoắn, nó lưu trữ năng lượng biến dạng và cho thấy ứng dụng của độ bền vật liệu, lực căng và ma sát ở lớp học thực tế.",
+    stemEn: "A cord bears tension and elastic strain. When tied or twisted, it stores potential energy and demonstrates material strength, tension, and friction in a tangible form.",
+    art: `<path d="M130 83c0-18 22-32 43-32s43 14 43 32-22 32-43 32-43-14-43-32zm8 0c0 12 16 21 35 21 19 0 35-9 35-21M116 97c0-21 21-37 45-37s45 16 45 37-21 37-45 37-45-16-45-37ZM110 177c16-18 58-25 101 0M116 202c18-12 52-18 88 0M98 239h132" stroke="#7a1c1c" stroke-width="2" fill="none"/><circle cx="160" cy="120" r="14" fill="#f5c66e" stroke="#c59b27" stroke-width="2"/><path d="M80 272h162" stroke="#2a5c38" stroke-width="2"/>`
+  },
+  {
+    id: "bang-ten",
+    category: "identity",
+    nameVi: "Bảng Tên Trường & Bài Học Tự Khẳng Định",
+    nameEn: "School Name Plate & Self-Identity Lesson",
+    shortVi: "Bảng tên là lời nhắc rằng mỗi học sinh đều mang một tên, một giá trị và một truyền thống.",
+    shortEn: "A name plate reminds every student that identity and belonging are built through care and discipline.",
+    storyVi: "Một tấm bảng tên nhỏ đặt ở góc bàn, gần chiếc bút và vở, nhắc tới trách nhiệm của người học với bản thân và cộng đồng. Nó là vật biểu tượng cho sự hiện diện, kỷ luật và tự tin.",
+    storyEn: "A small name plate placed beside a notebook and a pen reminds students of responsibility to self and community. It is a symbol of presence, discipline, and quiet confidence.",
+    stemVi: "Bề mặt bảng tên sử dụng vật liệu gia cố cùng bề mặt in rõ để chống mòn và dễ đọc. Các nguyên lý thiết kế thông tin nhấn mạnh độ tương phản, kích thước, và khoảng cách để truyền tải rõ nghĩa trong môi trường trường học.",
+    stemEn: "The name plate uses durable material and high-contrast printing to resist wear and remain readable. Information design principles use contrast, scale, and spacing to communicate clearly in school settings.",
+    art: `<rect x="98" y="70" width="126" height="175" rx="8" fill="#f9f5ee" stroke="#1e1b18" stroke-width="3"/><rect x="114" y="91" width="94" height="38" rx="4" fill="#ddeaf8" stroke="#0084d1" stroke-width="2"/><path d="M125 110h74" stroke="#1b2a5e" stroke-width="2"/><path d="M130 143h58M130 161h64M130 179h72" stroke="#7a1c1c" stroke-width="2"/><path d="M116 210h90" stroke="#2a5c38" stroke-width="2"/><path d="M84 267h156" stroke="#c59b27" stroke-width="2"/>`
+  },
+  {
+    id: "thung-mau",
+    category: "laboratory",
+    nameVi: "Thùng Mẫu Tài Liệu & Băng Giấy Khoa Học",
+    nameEn: "Lab Document Box & Scientific Tape",
+    shortVi: "Ký ức của những giờ thí nghiệm, báo cáo và sổ tay khoa học đầy đầu mối ghi chép.",
+    shortEn: "A memory of experiments, lab reports, and neatly organized scientific notes.",
+    storyVi: "Thùng tài liệu và băng giấy hoạt động như một kho lưu trữ khối lượng lớn kiến thức từng được học sinh dán lên tường, cột sổ, hoặc đặt trong hộp. Mỗi mảnh giấy là một phần của quá trình đồng hóa tri thức.",
+    storyEn: "The document box and scientific tape function like a compact archive of knowledge pinned to walls and tucked into folders. Each sheet recalls a lesson in analyzing and retaining information.",
+    stemVi: "Băng dính và chất liệu giấy dựa trên lực bám cơ học và độ dính bề mặt. Khi tiếp xúc với vật liệu khác, lực liên phân tử quyết định độ bền của lớp dán, đóng vai trò trong thí nghiệm và ghi chép khoa học.",
+    stemEn: "Tape and paper rely on mechanical adhesion and surface interactions. Molecular forces between materials determine the strength of the bond and help turn notes into stable, testable records.",
+    art: `<rect x="92" y="53" width="150" height="198" rx="12" fill="#f5efe6" stroke="#1e1b18" stroke-width="3"/><rect x="110" y="80" width="114" height="128" rx="6" fill="#f9f8f4" stroke="#0084d1" stroke-width="2"/><path d="M120 100h94M120 122h94M120 144h70M120 166h65" stroke="#7a1c1c" stroke-width="2"/><path d="M110 214h116" stroke="#2a5c38" stroke-width="2"/><path d="M88 246h150" stroke="#c59b27" stroke-width="2"/>`
+  },
+  {
+    id: "cam-hoa",
+    category: "culture",
+    nameVi: "Cắm Hoa Tại Lễ Khai Giảng & Tết Trường",
+    nameEn: "School Ceremony Flowers & Festival Rituals",
+    shortVi: "Hoa tươi, sự trang nghiêm và những khoảnh khắc lễ nghi trường học gắn với cảm xúc lớn.",
+    shortEn: "Fresh flowers, ceremony, and school rituals remembered with warmth and pride.",
+    storyVi: "Hoa được đặt trong các lễ khai giảng hay ngày hội trường không chỉ để đẹp mắt, mà còn để nhắc nhở về sự trân trọng, lòng biết ơn và giá trị của từng mùa học mới.",
+    storyEn: "Flowers arranged for opening ceremonies or school festivals were not just beautiful; they signaled respect, gratitude, and the arrival of a new academic season.",
+    stemVi: "Cấu trúc hoa và sự thấm hút của thân cây là ví dụ về truyền dẫn nước và quang hợp. Những sắc màu sặc sỡ dẫn tới quá trình hấp thụ ánh sáng và phục vụ cho sự sinh trưởng, là hiện tượng tự nhiên có tính thẩm mỹ cao.",
+    stemEn: "Flower structure and capillary water transport are examples of plant physiology. Their bright colors and petals also draw attention to the sun and support growth, combining natural beauty with scientific function.",
+    art: `<path d="M160 70c-18 0-30 14-30 29 0 12 9 22 20 30-10 3-17 13-17 24 0 18 15 31 35 31s35-13 35-31c0-11-7-21-17-24 11-8 20-18 20-30 0-15-12-29-30-29Z" fill="#f5d77b" stroke="#7a1c1c" stroke-width="2"/><circle cx="145" cy="100" r="12" fill="#f59e0b"/><circle cx="176" cy="111" r="12" fill="#0084d1"/><circle cx="160" cy="135" r="11" fill="#0a6836"/><path d="M160 152v50M130 190c14-13 24-6 30 0 6 6 16 13 30 0" fill="none" stroke="#2a5c38" stroke-width="2"/><path d="M90 258h140" stroke="#7a1c1c" stroke-width="2"/>`
   }
 ];
 
+const DEFAULT_ITEMS = [
+  {
+    "id": "tt1", "category": "education", "image": "./photos/tt1.jpg",
+    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 2/2002", "nameEn": "Literature and Youth Magazine – February 2002",
+    "shortVi": "Số 2 (68) của đặc san Văn học và Tuổi trẻ, xuất bản tháng 2 năm 2002.", "shortEn": "Issue 2 (68) of Literature and Youth, published in February 2002.",
+    "storyVi": "Trang bìa ghi lại một ấn phẩm văn học dành cho tuổi trẻ đầu những năm 2000. Những cuốn đặc san như thế có thể đưa người đọc trở lại không khí đọc sách và học văn của một thời.", "storyEn": "The cover preserves a literary publication for young readers from the early 2000s. Issues like this evoke the reading and literature lessons of an earlier time.",
+    "stemVi": "Giấy gồm mạng sợi cellulose; ánh sáng, độ ẩm và nhiệt có thể thúc đẩy quá trình lão hóa. Bảo quản nơi khô, tránh ánh sáng mạnh giúp giảm hư hại.", "stemEn": "Paper consists of a network of cellulose fibres; light, humidity and heat can accelerate ageing. Dry storage away from strong light helps reduce damage."
+  },
+  {
+    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg",
+    "nameVi": "Bướm Trang Trí Làm Từ Lá Ép", "nameEn": "Pressed-Leaf Butterfly Decoration",
+    "shortVi": "Hình bướm với đôi cánh tạo từ lá ép trên nền giấy sáng.", "shortEn": "A butterfly with wings made from pressed leaves on a light backing.",
+    "storyVi": "Các cánh lá được xếp thành hình bướm, giữ lại đường nét và sắc nâu tự nhiên. Một vật liệu giản dị từ cây lá trở thành món trang trí gợi nhớ sự khéo léo của người làm.", "storyEn": "Leaves have been arranged as butterfly wings, preserving their natural veins and brown colour. A simple plant material becomes a keepsake of its maker's care.",
+    "stemVi": "Gân lá chứa bó mạch giúp vận chuyển nước và chất dinh dưỡng. Sau khi lá được ép và làm khô, các mô mất nước, trong khi mạng gân vẫn có thể nhìn thấy.", "stemEn": "Leaf veins contain vascular bundles that transport water and nutrients. Pressing and drying remove water from the tissues while leaving the vein pattern visible."
+  },
+  {
+    "id": "tt3", "category": "education", "image": "./photos/tt3.jpg",
+    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 3/2002", "nameEn": "Literature and Youth Magazine – March 2002",
+    "shortVi": "Số 3 (69), tháng 3 năm 2002, với bìa hình học sinh áo dài trắng.", "shortEn": "Issue 3 (69), March 2002, with students in white áo dài on the cover.",
+    "storyVi": "Hình ảnh học sinh trên bìa gợi đến những giờ học, tình bạn và thói quen đọc của tuổi trẻ. Số báo là một mảnh tư liệu của văn hóa học đường năm 2002.", "storyEn": "The students on the cover evoke classes, friendships and youthful reading habits. The issue is a small record of school culture in 2002.",
+    "stemVi": "Trong in màu, các lớp mực cyan, magenta, vàng và đen thường được chồng lên nhau. Các chấm in nhỏ tạo nên hình ảnh và những sắc độ mà mắt cảm nhận.", "stemEn": "Colour printing commonly layers cyan, magenta, yellow and black inks. Small printed dots combine to produce the image and tones perceived by the eye."
+  },
+  {
+    "id": "tt4", "category": "education", "image": "./photos/tt4.jpg",
+    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 10/2002", "nameEn": "Literature and Youth Magazine – October 2002",
+    "shortVi": "Số 10 (76), tháng 10 năm 2002, với tranh minh họa trên bìa.", "shortEn": "Issue 10 (76), October 2002, with an illustrated cover.",
+    "storyVi": "Một bìa báo khác trong bộ đặc san lưu lại nét minh họa và thiết kế của đầu thập niên 2000. Những trang giấy cũ mở ra cơ hội khám phá cách văn học từng đến với học sinh.", "storyEn": "Another cover in the series preserves the illustration and design of the early 2000s. Its old pages invite us to explore how literature reached students.",
+    "stemVi": "Mực in và sợi giấy thay đổi theo thời gian do ánh sáng, oxy và độ ẩm. Lưu trữ ổn định, tránh ánh nắng trực tiếp, giúp làm chậm các quá trình này.", "stemEn": "Printing inks and paper fibres change over time through exposure to light, oxygen and moisture. Stable storage away from direct sun slows these processes."
+  },
+  {
+    "id": "tt5", "category": "memory", "image": "./photos/tt5.jpg",
+    "nameVi": "Giấy Viết Thư Hình Mèo và Chó", "nameEn": "Cat-and-Dog Decorative Letter Paper",
+    "shortVi": "Tờ giấy viết thư có viền xanh và hình thú cưng.", "shortEn": "Letter paper with a green border and pet illustrations.",
+    "storyVi": "Tờ giấy trang trí gợi lại thời học trò chọn giấy thật đẹp trước khi viết một lời nhắn. Khoảng trắng ở giữa dành cho những câu chuyện và tình cảm của người viết.", "storyEn": "This decorative sheet recalls choosing special stationery before writing a note. The blank centre leaves room for the writer's stories and feelings.",
+    "stemVi": "Giấy được tạo từ các sợi cellulose liên kết thành mạng. Thiết kế viền giúp phân chia không gian thị giác giữa hình trang trí và phần dành để viết.", "stemEn": "Paper is made from cellulose fibres bonded into a network. The border visually separates the decoration from the space intended for writing."
+  },
+  {
+    "id": "tt6", "category": "memory", "image": "./photos/tt6.jpg",
+    "nameVi": "Giấy Viết Thư Hoa và Thú Bông", "nameEn": "Floral and Teddy Bear Letter Paper",
+    "shortVi": "Giấy viết thư kẻ dòng, trang trí hoa và hình thú bông.", "shortEn": "Lined writing paper decorated with flowers and teddy bears.",
+    "storyVi": "Những đường kẻ và hình trang trí đầy màu sắc gợi những lá thư viết tay gửi bạn bè. Một tờ giấy nhỏ có thể là nơi lưu giữ những lời hỏi thăm gần gũi.", "storyEn": "Colourful illustrations and ruled lines recall handwritten letters to friends. A small sheet can hold a thoughtful message across time.",
+    "stemVi": "Các đường kẻ song song tạo chuẩn căn hàng cho chữ viết. Hoa văn nhiều màu được tạo bằng mực in; sắc màu nhìn thấy phụ thuộc vào ánh sáng phản xạ từ bề mặt giấy.", "stemEn": "Parallel ruled lines provide a guide for handwriting. Printed colours are perceived through the light reflected from the paper's surface."
+  },
+  {
+    "id": "tt7", "category": "education", "image": "./photos/tt7.jpg",
+    "nameVi": "Thiệp Chúc Mừng Ngày Nhà Giáo Việt Nam", "nameEn": "Vietnamese Teachers' Day Greeting Card",
+    "shortVi": "Thiệp gấp có hình thầy cô, học sinh và lời chúc Ngày Nhà giáo.", "shortEn": "A folded card featuring teachers, students and a Teachers' Day greeting.",
+    "storyVi": "Tấm thiệp gợi dịp học sinh bày tỏ lòng biết ơn với thầy cô nhân Ngày Nhà giáo Việt Nam. Nếp gấp và phần bên trong chừa chỗ cho những lời nhắn riêng.", "storyEn": "The card evokes the occasion when students express gratitude to teachers on Vietnamese Teachers' Day. Its folded form leaves space inside for a personal note.",
+    "stemVi": "Nếp gấp biến một tấm bìa phẳng thành cấu trúc mở–đóng. Sợi giấy bị biến dạng tại đường gấp, vì vậy tạo rãnh trước khi gấp có thể giúp hạn chế rách.", "stemEn": "A fold turns a flat piece of card into an opening structure. Paper fibres deform at the crease, so scoring before folding can help prevent tearing."
+  },
+  {
+    "id": "tt8", "category": "memory", "image": "./photos/tt8.jpg",
+    "nameVi": "Giấy Viết Thư Họa Tiết Hoa và Ngôi Sao", "nameEn": "Flower and Star Letter Paper",
+    "shortVi": "Tờ giấy kẻ dòng màu tím nhạt, có hoa và họa tiết ngôi sao.", "shortEn": "Pale purple ruled letter paper with flowers and stars.",
+    "storyVi": "Một mẫu giấy viết thư khác lưu lại gu trang trí đầy màu sắc của thời thư tay. Những dòng kẻ từng chờ đợi một câu chuyện được gửi tới người nhận.", "storyEn": "Another letter-paper design preserves the colourful style of handwritten correspondence. Its lines waited for a story to be sent to someone.",
+    "stemVi": "Khi ánh sáng chiếu lên giấy, mực hấp thụ một phần bước sóng và phản xạ phần còn lại, tạo nên màu sắc quan sát được. Các đường kẻ giúp giữ chữ viết ngay hàng.", "stemEn": "When light falls on the paper, inks absorb some wavelengths and reflect others, producing the colours we see. The lines help keep handwriting aligned."
+  },
+  {
+    "id": "tt9", "category": "design", "image": "./photos/tt9.jpg",
+    "nameVi": "Giá Treo Đồ Hình Cành Cây Màu Xanh", "nameEn": "Green Branch-Shaped Desk Stand",
+    "shortVi": "Giá treo nhỏ có các nhánh và chân đế loe.", "shortEn": "A small branch-shaped stand with a flared base.",
+    "storyVi": "Hình cành cây đưa một nét tự nhiên vào góc bàn học. Các nhánh có thể dùng để treo những vật nhỏ và giúp sắp xếp không gian gọn gàng.", "storyEn": "The branch form brings a touch of nature to a desk. Its branches can hold small objects and help keep a space organised.",
+    "stemVi": "Chân đế rộng giúp giá ổn định hơn khi trọng tâm nằm trên vùng tiếp xúc. Vật treo lệch tạo mô-men lực và có thể khiến giá bị lật nếu quá nặng.", "stemEn": "A wider base improves stability when the centre of mass remains above the support area. An uneven hanging load creates torque and can tip the stand if too heavy."
+  },
+  {
+    "id": "tt10", "category": "art", "image": "./photos/tt10.jpg",
+    "nameVi": "Tượng Trang Trí Người Mặc Áo Dài và Nón Lá", "nameEn": "Decorative Figure in Áo Dài and Conical Hat",
+    "shortVi": "Tượng nhỏ mô tả một người mặc áo dài trắng và đội nón lá.", "shortEn": "A small figure depicting a person in a white áo dài and conical hat.",
+    "storyVi": "Tượng tái hiện trang phục và hình ảnh quen thuộc trong văn hóa Việt Nam. Những nét vẽ nhỏ trên bề mặt tạo nên vẻ riêng cho vật trang trí.", "storyEn": "The figure depicts familiar elements of Vietnamese dress and culture. Small painted details give this decorative object its individual character.",
+    "stemVi": "Sắc tố trong lớp sơn hấp thụ và phản xạ ánh sáng để tạo màu. Bề mặt, độ dày và điều kiện lưu trữ đều ảnh hưởng đến độ bền của lớp trang trí.", "stemEn": "Pigments in paint absorb and reflect light to produce colour. The surface, layer thickness and storage conditions all affect the durability of the decoration."
+  },
+  {
+    "id": "tt11", "category": "technology", "image": "./photos/tt11.jpg",
+    "nameVi": "Băng Cát-Xét Maxell UR 90", "nameEn": "Maxell UR 90 Audio Cassette",
+    "shortVi": "Băng cát-xét Maxell UR 90 với hai cuộn băng trong vỏ nhựa.", "shortEn": "A Maxell UR 90 cassette with two reels inside a plastic shell.",
+    "storyVi": "Cuộn băng gợi lại cách nghe và ghi âm trước thời phát nhạc trực tuyến: lắp băng, tua tới bài hát và lắng nghe. Nhãn viết tay cũng có thể giúp nhận diện nội dung từng được lưu trên băng.", "storyEn": "The cassette recalls listening and recording before streaming: inserting a tape, winding to a track and pressing play. A handwritten label could help identify what was recorded.",
+    "stemVi": "Băng từ chứa các hạt vật liệu từ trên lớp phủ. Đầu ghi thay đổi sự từ hóa theo tín hiệu âm thanh; khi phát, đầu đọc chuyển biến thiên từ trường thành tín hiệu điện.", "stemEn": "Magnetic tape has magnetic particles in its coating. A recording head changes their magnetisation with the audio signal; during playback, a head converts changing magnetic flux into an electrical signal."
+  },
+  {
+    "id": "tt12", "category": "memory", "image": "./photos/tt12.jpg",
+    "nameVi": "Ống Đựng Trang Trí Chữ “Love”", "nameEn": "Decorative “Love” Container",
+    "shortVi": "Ống đựng hình trụ có hình đôi bạn và chữ Love trên trái tim.", "shortEn": "A cylindrical container decorated with two figures and a heart reading Love.",
+    "storyVi": "Ống đựng nhỏ với hình đôi bạn gợi một món quà trang trí hoặc vật dụng để bàn. Các chi tiết nổi và chữ trên trái tim tạo điểm nhấn cho kỷ vật.", "storyEn": "The small container, decorated with a pair of figures, suggests a gift or desk accessory. Raised details and lettering on the heart give it a distinctive character.",
+    "stemVi": "Hình trụ bao quanh một khoảng rỗng để chứa đồ. Các chi tiết nổi tạo bóng khác nhau theo hướng chiếu sáng, giúp mắt nhận biết hình dạng bề mặt.", "stemEn": "A cylindrical wall encloses a hollow space for holding objects. Raised details cast different shadows as lighting changes, helping the eye perceive surface shape."
+  },
+  {
+    "id": "tt13", "category": "education", "image": "./photos/tt13.jpg",
+    "nameVi": "Bút Kim Loại Trong Hộp Trưng Bày", "nameEn": "Metal Pen in a Display Case",
+    "shortVi": "Một cây bút màu kim loại được đặt trong hộp có nắp trong.", "shortEn": "A metallic-coloured pen displayed in a transparent-lidded case.",
+    "storyVi": "Cây bút được giữ trong hộp, gợi những món quà lưu niệm và công việc viết lách. Hộp giúp người xem nhìn thấy hình dáng cây bút mà không cần trực tiếp cầm vào.", "storyEn": "Kept in its case, the pen recalls commemorative gifts and the work of writing. The case lets visitors see its shape without handling it directly.",
+    "stemVi": "Vỏ bút tạo kết cấu bảo vệ và điểm cầm. Nắp trong cho ánh sáng truyền qua, đồng thời giúp hạn chế bụi tiếp xúc trực tiếp với vật bên trong.", "stemEn": "The pen body provides a protective structure and a grip. The transparent lid transmits light while helping limit direct dust exposure to the object inside."
+  },
+  {
+    "id": "tt14", "category": "heritage", "image": "./photos/tt14.jpg",
+    "nameVi": "Đĩa Kỷ Niệm 50 Năm Thành Lập Trường (1966 – 2016)", "nameEn": "School 50th Anniversary Commemorative Plate (1966–2016)",
+    "shortVi": "Đĩa kỷ niệm có hình ngôi trường và dòng chữ kỷ niệm 50 năm.", "shortEn": "A commemorative plate showing the school and its 50th-anniversary dates.",
+    "storyVi": "Dòng chữ trên đĩa ghi dấu 50 năm thành lập trường từ 1966 đến 2016. Hình ảnh ngôi trường trên hiện vật đưa người xem trở về một cột mốc trong hành trình của nhiều thế hệ.", "storyEn": "The inscription marks the school's 50th anniversary from 1966 to 2016. Its image of the school takes visitors back to a milestone shared by generations.",
+    "stemVi": "Đồ gốm sứ được tạo hình từ nguyên liệu khoáng và nung ở nhiệt độ cao. Lớp men thủy tinh trên bề mặt có thể giúp giảm độ thấm và bảo vệ trang trí.", "stemEn": "Ceramics are shaped from mineral materials and fired at high temperature. A glassy glaze can reduce surface porosity and protect decoration."
+  },
+  {
+    "id": "tt15", "category": "art", "image": "./photos/tt15.jpg",
+    "nameVi": "Vòng Hoa Trang Trí Tím Trắng", "nameEn": "Purple and White Decorative Flower Wreath",
+    "shortVi": "Vòng hoa nhỏ với các bông tím, trắng và dây ruy băng.", "shortEn": "A small wreath of purple and white flowers with ribbon ties.",
+    "storyVi": "Các bông hoa được xếp quanh một vòng, kết hợp dây ruy băng mềm. Vật trang trí gợi không khí của những buổi chụp ảnh và dịp gặp gỡ.", "storyEn": "Flowers are arranged around a ring and paired with soft ribbons. The decoration evokes photographs and special gatherings.",
+    "stemVi": "Khung vòng giữ các phần trang trí theo một đường cong. Màu tím và trắng tạo tương phản thị giác, còn dây buộc giúp điều chỉnh cách cố định vòng.", "stemEn": "The ring supports the decorations along a curve. Purple and white provide visual contrast, while the ribbons allow the wreath to be tied in place."
+  },
+  {
+    "id": "tt16", "category": "art", "image": "./photos/tt16.jpg",
+    "nameVi": "Quạt Xếp Tranh Phong Cảnh", "nameEn": "Landscape Folding Fan",
+    "shortVi": "Quạt xếp có nan màu gỗ và tranh phong cảnh nhiều màu.", "shortEn": "A folding fan with wood-coloured ribs and a colourful landscape.",
+    "storyVi": "Bức tranh trải rộng khi quạt mở và thu lại thành một dải nhỏ khi gấp. Quạt vừa là vật dụng quen thuộc vừa mang một hình ảnh phong cảnh trang trí.", "storyEn": "The landscape spreads out when the fan opens and folds into a narrow bundle when closed. The fan is both a familiar tool and a decorative image.",
+    "stemVi": "Các nan quạt quay quanh một chốt chung, tạo thành hình gần một hình quạt tròn. Khi phe phẩy, quạt đẩy không khí qua da và tăng trao đổi nhiệt đối lưu.", "stemEn": "The ribs pivot around a common pin to form a sector-like shape. Waving the fan moves air across the skin and increases convective heat transfer."
+  },
+  {
+    "id": "tt17", "category": "technology", "image": "./photos/tt17.jpg",
+    "nameVi": "Mô Hình Xe Máy Màu Đen", "nameEn": "Black Motorcycle Model",
+    "shortVi": "Mô hình xe máy có bánh xe, yên và các chi tiết màu kim loại.", "shortEn": "A motorcycle model with wheels, seats and metallic details.",
+    "storyVi": "Mô hình thu nhỏ một chiếc xe máy kiểu cổ điển, từ tay lái đến bánh và động cơ. Việc quan sát các bộ phận giúp hình dung cấu tạo của phương tiện quen thuộc.", "storyEn": "The miniature reproduces a classic-style motorcycle from its handlebars to its wheels and engine. Examining its parts helps us understand a familiar vehicle.",
+    "stemVi": "Bánh xe quay quanh trục và tiếp xúc với mặt đường. Trên xe thực, hệ truyền động đưa mô-men từ động cơ đến bánh chủ động; mô hình thể hiện hình dáng một số bộ phận ấy.", "stemEn": "Wheels rotate around axles and contact the road. On a real motorcycle, the drivetrain transfers torque from the engine to the driven wheel; the model depicts some of those parts."
+  },
+  {
+    "id": "tt18", "category": "technology", "image": "./photos/tt18.jpg",
+    "nameVi": "Mô Hình Xe Đạp Màu Đen", "nameEn": "Black Bicycle Model",
+    "shortVi": "Xe đạp thu nhỏ với giỏ, yên và hai bánh có nan hoa.", "shortEn": "A miniature bicycle with a basket, saddle and spoked wheels.",
+    "storyVi": "Chiếc xe đạp mô hình gợi những con đường đến trường và những chuyến đi gần gũi. Kích thước thu nhỏ cho phép quan sát khung, bàn đạp và bánh xe cùng lúc.", "storyEn": "The miniature bicycle recalls journeys to school and familiar local rides. Its small scale lets visitors view the frame, pedals and wheels together.",
+    "stemVi": "Nan hoa chịu lực kéo và giúp vành bánh giữ hình dạng. Trên xe đạp vận hành bằng xích, tỉ số số răng của hai đĩa xích liên quan đến tỉ số tốc độ quay của chúng.", "stemEn": "Spokes carry tension and help the wheel rim retain its shape. On a chain-driven bicycle, the sprockets' tooth counts determine their rotational speed ratio."
+  },
+  {
+    "id": "tt19", "category": "nature", "image": "./photos/tt19.jpg",
+    "nameVi": "Hộp Hoa Khô Trang Trí", "nameEn": "Dried Botanical Decoration Box",
+    "shortVi": "Hộp trong chứa cánh hoa và các phần thực vật đã làm khô.", "shortEn": "A clear box containing dried petals and other botanical material.",
+    "storyVi": "Những phần hoa và lá khô được giữ trong một hộp nhỏ, lưu lại màu sắc và hình dáng sau khi tươi. Cách sắp đặt gợi một món trang trí lấy cảm hứng từ thiên nhiên.", "storyEn": "Dried flowers and leaves are kept in a small box, preserving shapes and colours after drying. The arrangement suggests a decoration inspired by nature.",
+    "stemVi": "Làm khô loại bớt nước khỏi mô thực vật, làm chậm nhiều quá trình phân hủy. Ánh sáng và độ ẩm vẫn có thể làm vật liệu đổi màu hoặc hư hại theo thời gian.", "stemEn": "Drying removes water from plant tissues and slows many processes of decay. Light and moisture can still cause fading or damage over time."
+  }
+];
+
+const STORAGE_KEY = "stemee-items-v3";
+const $ = (selector) => document.querySelector(selector);
 const COPY = {
   vi: {
-    skip: "Bỏ qua và đến nội dung",
+    skip: "Bỏ qua nội dung",
     collectionNav: "Bộ sưu tập",
     stemNav: "Bản vẽ STEM",
     print: "In thẻ NFC",
     eyebrow: "Triển lãm STEM · THPT Hoàng Văn Thụ",
     titleVi: "Thẻ tên NFC thông minh — Số hóa ký ức 60 năm",
     titleEn: "Smart NFC Nametag — A 60-Year Digital Memory Archive",
-    intro: "Tám kỷ vật, tám câu chuyện từ những năm tháng học trò đến ngày đầu lập trường. Chạm thẻ NFC để nghe ký ức và tìm hiểu khoa học ẩn sau mỗi vật thân quen.",
-    browse: "Xem bộ sưu tập",
-    anniversary: "Năm truyền lửa",
-    nfcLine: "CHẠM KỶ VẬT · MỞ KÝ ỨC",
-    collectionEyebrow: "Bộ sưu tập kỷ vật · 08 hiện vật",
+    intro: "Những hiện vật, câu chuyện học trò và khoa học đằng sau mỗi kỷ niệm. Chạm thẻ NFC để mở một ký ức.",
+    browse: "Khám phá bộ sưu tập",
+    anniversary: "Năm tháng học trò",
+    nfcLine: "CHẠM THẺ · MỞ KÝ ỨC",
+    collectionEyebrow: "Bộ sưu tập · Ký ức học đường",
     collectionTitleVi: "Những vật nhỏ, chuyện dài",
     collectionTitleEn: "Small Things, Long Stories",
-    collectionNote: "Chọn một kỷ vật để mở câu chuyện, nghe thuyết minh và xem phân tích STEM.",
-    detailDivider: "Chạm để ghi nhớ",
-    nfcTap: "CHẠM THẺ",
+    collectionNote: "Chọn một hiện vật để xem câu chuyện, nghe thuyết minh và khám phá mối nối STEM.",
+    detailDivider: "Chạm để nhớ",
+    nfcTap: "CHẠM ĐỂ MỞ",
     skipIntro: "Bỏ qua",
     memoryLabel: "Ký ức được lưu giữ",
     storyLabel: "Câu chuyện · Story",
@@ -143,7 +328,7 @@ const COPY = {
     printPromptVi: "In bảng tên song ngữ cho bàn trưng bày",
     printPromptEn: "Print Bilingual NFC Nametags",
     footerVi: "Dự án STEM · Trường THPT Hoàng Văn Thụ",
-    footerEn: "A school archive made tangible through science.",
+    footerEn: "Một kho lưu trữ trường học hiện hữu qua khoa học.",
     speechUnavailable: "Trình duyệt này không hỗ trợ tổng hợp giọng nói.",
     speechError: "Không thể phát thuyết minh. Hãy thử lại hoặc kiểm tra cài đặt giọng nói.",
     speechDone: "Đã đọc xong câu chuyện.",
@@ -167,11 +352,11 @@ const COPY = {
     eyebrow: "STEM exhibition · Hoang Van Thu High School",
     titleVi: "Thẻ tên NFC thông minh — Số hóa ký ức 60 năm",
     titleEn: "Smart NFC Nametag — A 60-Year Digital Memory Archive",
-    intro: "Eight objects, eight stories stretching from student days to the school’s founding. Tap an NFC tag to hear a memory and discover the science inside an everyday keepsake.",
+    intro: "Explore student memories and the science behind each keepsake. Tap an NFC tag to open a story from the school's heritage.",
     browse: "Browse the collection",
     anniversary: "Years of learning",
     nfcLine: "TAP A KEEPSAKE · OPEN A MEMORY",
-    collectionEyebrow: "Keepsake collection · 08 objects",
+    collectionEyebrow: "Keepsake collection · School memories",
     collectionTitleVi: "Những vật nhỏ, chuyện dài",
     collectionTitleEn: "Small Things, Long Stories",
     collectionNote: "Choose an object to open its story, hear the guide, and explore its STEM connections.",
@@ -229,14 +414,87 @@ const STEM_ICONS = [
   `<path d="M4 19 12 4l8 15H4Z"/><path d="M8 15h8M10 11h4m-5 5h6"/>`
 ];
 const STEM_NAMES = [["S", "Science"], ["T", "Technology"], ["E", "Engineering"], ["M", "Mathematics"]];
-const $ = (selector) => document.querySelector(selector);
 let language = "vi";
-let selectedItem = ITEMS[0];
+let selectedItem = null;
 let toastTimer;
 let introTimer;
+let introExitTimer;
+let quickEdit = false;
+let resetPending = false;
+let ITEMS = loadPersistedItems();
+
+function getSearchParams() {
+  const queryString = typeof window !== "undefined" && window.location ? (window.location.search || "") : "";
+  if (typeof URLSearchParams === "function") return new URLSearchParams(queryString);
+  return { get: () => null };
+}
+
+function getUrlParam(name) {
+  return getSearchParams().get(name);
+}
+
+function loadPersistedItems() {
+  try {
+    if (typeof localStorage === "undefined") return normalizeItems(DEFAULT_ITEMS);
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length) return normalizeItems(parsed);
+    }
+  } catch (error) {
+    console.warn("Unable to read stored item data.", error);
+  }
+  return normalizeItems(DEFAULT_ITEMS);
+}
+
+async function hydrateDefaultItemsFromRemote() {
+  if (typeof fetch !== "function" || window.location.protocol === "file:") return;
+  try {
+    const response = await fetch("./data/items.json");
+    if (!response.ok) throw new Error(`Catalog HTTP ${response.status}`);
+    const remoteItems = await response.json();
+    if (!Array.isArray(remoteItems) || !remoteItems.length) throw new Error("Empty or invalid catalog");
+    const saved = typeof localStorage === "undefined" ? null : localStorage.getItem(STORAGE_KEY);
+    if (!saved) {
+      ITEMS = normalizeItems(remoteItems);
+      selectedItem = ITEMS[0] || null;
+    }
+  } catch (error) {
+    console.warn("Unable to load remote item dataset.", error);
+  }
+}
+
+function normalizeItems(items) {
+  return items.map((item, index) => ({
+    id: String(item.id || `item-${index + 1}`),
+    category: item.category || "memory",
+    nameVi: item.nameVi || "",
+    nameEn: item.nameEn || "",
+    shortVi: item.shortVi || "",
+    shortEn: item.shortEn || "",
+    storyVi: item.storyVi || "",
+    storyEn: item.storyEn || "",
+    stemVi: item.stemVi || "",
+    stemEn: item.stemEn || "",
+    image: typeof item.image === "string" ? item.image : "",
+    images: Array.isArray(item.images) ? item.images.filter((image) => typeof image === "string" && image) : (item.image ? [item.image] : [])
+  }));
+}
+
+function itemImages(item) {
+  return item.images && item.images.length ? item.images : (item.image ? [item.image] : []);
+}
+
+function photoDescription(item) {
+  return [item.nameVi, item.nameEn];
+}
+
+function resolveItem(id) {
+  return ITEMS.find((item) => item.id === id) || LEGACY_ITEMS.find((item) => item.id === id);
+}
 
 function currentCopy(key) {
-  return COPY[language][key];
+  return COPY[language][key] || key;
 }
 
 function setLanguage(nextLanguage) {
@@ -256,43 +514,64 @@ function setLanguage(nextLanguage) {
   renderDetail();
   renderStem();
   renderPrintSheet();
-  $("#tag-stage").setAttribute("aria-label", currentCopy("layerInstruction"));
+  if ($("#tag-stage")) $("#tag-stage").setAttribute("aria-label", currentCopy("layerInstruction"));
 }
 
 function makeIllustration(item, className = "") {
-  return `<svg class="${className}" viewBox="0 0 320 320" role="img" aria-label="${escapeAttribute(language === "vi" ? item.nameVi : item.nameEn)}" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="320" fill="#efe5d0"/><path d="M20 20h25M20 20v25M300 20h-25M300 20v25M20 300h25M20 300v-25M300 300h-25M300 300v-25" fill="none" stroke="#c59b27" stroke-width="1.5"/><path d="M35 42h250M35 278h250" stroke="#cdbd9f" stroke-width="1"/>${item.art}<circle cx="160" cy="303" r="2" fill="#c59b27"/></svg>`;
+  const image = itemImages(item)[0];
+  if (image) return `<img class="${escapeAttribute(className)}" src="${escapeAttribute(image)}" alt="${escapeAttribute(photoDescription(item, image)[0])}" loading="lazy">`;
+  if (LEGACY_ITEMS.includes(item)) return `<svg class="${escapeAttribute(className)}" viewBox="0 0 320 320" role="img" aria-label="${escapeAttribute(item.nameVi)}" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="320" fill="#f0f8ff"/>${item.art}</svg>`;
+  return `<span class="photo-empty">Chưa có ảnh / No photo</span>`;
 }
 
-function escapeAttribute(value) {
-  return value.replace(/[&<>"']/g, (character) => ({
+function escapeAttribute(value = "") {
+  return String(value).replace(/[&<>\"']/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
   })[character]);
 }
 
 function renderCollection() {
+  if (!$("#artifact-grid")) return;
   $("#artifact-grid").innerHTML = ITEMS.map((item, index) => `
-    <button class="artifact-card${item.id === selectedItem.id ? " is-selected" : ""}" type="button" data-item-id="${item.id}" aria-pressed="${item.id === selectedItem.id}">
-      <span class="artifact-card__art">${makeIllustration(item)}</span>
-      <span class="artifact-card__meta"><span>${String(index + 1).padStart(2, "0")} / 08</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
+    <article class="artifact-card${item.id === selectedItem?.id ? " is-selected" : ""}">
+      <button class="artifact-card__photo" type="button" data-zoom-item="${escapeAttribute(item.id)}" aria-label="Phóng to ảnh ${escapeAttribute(photoDescription(item, itemImages(item)[0])[0])}" ${itemImages(item).length ? "" : "disabled"}><span class="artifact-card__art">${makeIllustration(item)}</span>${itemImages(item).length ? '<span class="photo-zoom">Xem ảnh / Zoom</span>' : ""}</button>
+      <button class="artifact-card__select" type="button" data-item-id="${escapeAttribute(item.id)}" aria-pressed="${item.id === selectedItem?.id}">
+      <span class="artifact-card__meta"><span>${String(index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
       <span class="artifact-card__title"><span class="vi-title">${escapeAttribute(item.nameVi)}</span><span class="en-title">${escapeAttribute(item.nameEn)}</span></span>
-    </button>`).join("");
+      </button>${quickEdit ? `<button class="quick-edit-button" type="button" data-edit-item="${escapeAttribute(item.id)}">Chỉnh sửa / <em>Edit</em></button>` : ""}
+    </article>`).join("");
   $("#artifact-grid").querySelectorAll("[data-item-id]").forEach((button) => {
-    button.addEventListener("click", () => selectItem(button.dataset.itemId, true));
+    button.addEventListener("click", () => selectItem(button.dataset.itemId, true, true));
   });
+  $("#artifact-grid").querySelectorAll("[data-zoom-item]").forEach((button) => button.addEventListener("click", () => {
+    const item = ITEMS.find((entry) => entry.id === button.dataset.zoomItem);
+    if (item && itemImages(item)[0]) openLightbox(itemImages(item)[0], ...photoDescription(item, itemImages(item)[0]), button);
+  }));
+  $("#artifact-grid").querySelectorAll("[data-edit-item]").forEach((button) => button.addEventListener("click", () => {
+    selectItem(button.dataset.editItem);
+    openAdminPanel();
+  }));
 }
 
 function renderDetail() {
+  if (!selectedItem) return;
   const index = ITEMS.findIndex((item) => item.id === selectedItem.id);
-  $("#detail-art").innerHTML = makeIllustration(selectedItem);
+  const photos = itemImages(selectedItem);
+  $("#detail-art").innerHTML = photos.length ? photos.map((image, index) => `<div><button type="button" class="detail-photo" data-photo-index="${index}" aria-label="Phóng to ảnh ${escapeAttribute(photoDescription(selectedItem, image)[0])}"><img src="${escapeAttribute(image)}" alt="${escapeAttribute(photoDescription(selectedItem, image)[0])}"></button></div>`).join("") : makeIllustration(selectedItem);
+  $("#detail-art").querySelectorAll("[data-photo-index]").forEach((button) => button.addEventListener("click", () => {
+    const image = photos[Number(button.dataset.photoIndex)];
+    openLightbox(image, ...photoDescription(selectedItem, image), button);
+  }));
   $("#detail-title").innerHTML = `<span class="vi-title">${escapeAttribute(selectedItem.nameVi)}</span><span class="en-title">${escapeAttribute(selectedItem.nameEn)}</span>`;
-  $("#detail-short").textContent = selectedItem[language === "vi" ? "shortVi" : "shortEn"];
-  $("#detail-story").textContent = selectedItem[language === "vi" ? "storyVi" : "storyEn"];
-  $("#detail-stem").textContent = selectedItem[language === "vi" ? "stemVi" : "stemEn"];
-  $("#item-number").textContent = `${String(index + 1).padStart(2, "0")} / 08`;
+  for (const field of ["short", "story", "stem"]) {
+    $(`#detail-${field}`).innerHTML = `<span class="bilingual-vi">${escapeAttribute(selectedItem[`${field}Vi`])}</span><span class="bilingual-en">${escapeAttribute(selectedItem[`${field}En`])}</span>`;
+  }
+  $("#item-number").textContent = index >= 0 ? `${String(index + 1).padStart(2, "0")} / ${String(ITEMS.length).padStart(2, "0")}` : "Lưu trữ / Archive";
   updateSpeechText();
 }
 
 function updateSpeechText() {
+  if (!selectedItem) return;
   const title = selectedItem[language === "vi" ? "nameVi" : "nameEn"];
   const story = selectedItem[language === "vi" ? "storyVi" : "storyEn"];
   const stem = selectedItem[language === "vi" ? "stemVi" : "stemEn"];
@@ -310,7 +589,12 @@ function renderStem() {
 }
 
 function renderPrintSheet() {
-  const cards = ITEMS.map((item) => `
+  const pageSize = 4;
+  const pages = [];
+  for (let index = 0; index < ITEMS.length; index += pageSize) {
+    pages.push(ITEMS.slice(index, index + pageSize));
+  }
+  const cards = pages.map((page) => `<section class="print-page">${page.map((item) => `
       <article class="print-card">
         <div class="print-card__copy">
           <h2>${escapeAttribute(item.nameVi)}</h2>
@@ -318,12 +602,12 @@ function renderPrintSheet() {
           <p>${escapeAttribute(item.shortVi)}<br><em>${escapeAttribute(item.shortEn)}</em></p>
         </div>
         <div class="print-card__target"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8a6 6 0 0 1 8 0m-6-2a3.5 3.5 0 0 1 4 0M5 5a10 10 0 0 1 14 0m-7 5v8m-3-3 3 3 3-3"/></svg><span>NFC · CHẠM<br> TAP HERE</span></div>
-      </article>`).join("");
-  $("#print-sheet").innerHTML = [cards.slice(0, 4), cards.slice(4)].map((page) => `<section class="print-page">${page}</section>`).join("");
+      </article>`).join("")}</section>`).join("");
+  $("#print-sheet").innerHTML = cards;
 }
 
 function selectItem(id, updateHistory = false, animateIntro = false) {
-  const item = ITEMS.find((entry) => entry.id === id);
+  const item = resolveItem(id);
   if (!item) return;
   if (window.speechSynthesis) window.speechSynthesis.cancel();
   setSpeaking(false);
@@ -335,11 +619,31 @@ function selectItem(id, updateHistory = false, animateIntro = false) {
     nextUrl.searchParams.set("id", item.id);
     window.history.pushState({ itemId: item.id }, "", nextUrl);
   }
-  if (animateIntro) startIntro();
+  if (animateIntro) {
+    startIntro();
+    $("#artifact-detail").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+let lightboxReturnFocus;
+function openLightbox(src, vi, en, trigger) {
+  lightboxReturnFocus = trigger;
+  $("#lightbox-image").src = src;
+  $("#lightbox-image").alt = vi;
+  $("#lightbox-title .vi-title").textContent = vi;
+  $("#lightbox-title .en-title").textContent = en;
+  $("#lightbox").hidden = false;
+  $("#lightbox-close").focus();
+}
+
+function closeLightbox() {
+  $("#lightbox").hidden = true;
+  if (lightboxReturnFocus) lightboxReturnFocus.focus();
 }
 
 function startIntro() {
   window.clearTimeout(introTimer);
+  window.clearTimeout(introExitTimer);
   const intro = $("#nfc-intro");
   $("#detail-card").classList.add("is-hidden");
   intro.classList.remove("is-leaving");
@@ -351,9 +655,9 @@ function startIntro() {
 function finishIntro() {
   window.clearTimeout(introTimer);
   const intro = $("#nfc-intro");
-  if (!intro.classList.contains("is-active")) return;
+  if (!intro.classList.contains("is-active") || intro.classList.contains("is-leaving")) return;
   intro.classList.add("is-leaving");
-  window.setTimeout(() => {
+  introExitTimer = window.setTimeout(() => {
     intro.classList.remove("is-active", "is-leaving");
     intro.setAttribute("aria-hidden", "true");
     $("#detail-card").classList.remove("is-hidden");
@@ -382,7 +686,7 @@ function speakItem() {
     return;
   }
   window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance($("#speak-button").dataset.speech);
+  const utterance = new SpeechSynthesisUtterance($("#speak-button").dataset.speech || "");
   utterance.lang = language === "vi" ? "vi-VN" : "en-US";
   utterance.onstart = () => setSpeaking(true);
   utterance.onend = () => {
@@ -397,13 +701,16 @@ function speakItem() {
 }
 
 async function copyNfcUrl() {
-  const url = `${window.location.origin}${window.location.pathname}?id=${selectedItem.id}`;
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.hash = "";
+  url.searchParams.set("id", selectedItem.id);
   try {
     if (navigator.clipboard && window.isSecureContext) {
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(url.toString());
     } else {
       const input = document.createElement("textarea");
-      input.value = url;
+      input.value = url.toString();
       input.setAttribute("readonly", "");
       input.style.position = "fixed";
       input.style.opacity = "0";
@@ -431,13 +738,360 @@ function printNametags() {
   window.print();
 }
 
-function init() {
-  const requestedId = new URLSearchParams(window.location.search).get("id");
-  const hasValidQuery = ITEMS.some((item) => item.id === requestedId);
-  selectedItem = ITEMS.find((item) => item.id === requestedId) || ITEMS[0];
+function persistItems(items = ITEMS) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    return true;
+  } catch (error) {
+    console.error("Unable to save item data.", error);
+    showToast("Không thể lưu trên thiết bị. Kiểm tra dung lượng hoặc quyền lưu trữ.");
+    return false;
+  }
+}
+
+function loadItemIntoForm(item) {
+  if (!item) return;
+  $("#admin-id").value = item.id || "";
+  $("#admin-category").value = item.category || "memory";
+  $("#admin-name-vi").value = item.nameVi || "";
+  $("#admin-name-en").value = item.nameEn || "";
+  $("#admin-short-vi").value = item.shortVi || "";
+  $("#admin-short-en").value = item.shortEn || "";
+  $("#admin-story-vi").value = item.storyVi || "";
+  $("#admin-story-en").value = item.storyEn || "";
+  $("#admin-stem-vi").value = item.stemVi || "";
+  $("#admin-stem-en").value = item.stemEn || "";
+  $("#admin-image-url").value = itemImages(item).join("\n");
+  updatePhotoPicker();
+}
+
+function collectAdminFormData() {
+  const item = {
+    id: $("#admin-id").value.trim(),
+    category: $("#admin-category").value.trim() || "memory",
+    nameVi: $("#admin-name-vi").value.trim(),
+    nameEn: $("#admin-name-en").value.trim(),
+    shortVi: $("#admin-short-vi").value.trim(),
+    shortEn: $("#admin-short-en").value.trim(),
+    storyVi: $("#admin-story-vi").value.trim(),
+    storyEn: $("#admin-story-en").value.trim(),
+    stemVi: $("#admin-stem-vi").value.trim(),
+    stemEn: $("#admin-stem-en").value.trim(),
+    images: [...new Set($("#admin-image-url").value.split("\n").map((image) => image.trim()).filter(Boolean))]
+  };
+  item.image = item.images[0] || "";
+  return item;
+}
+
+function validImagePath(value) {
+  if (/^data:image\/(?:jpeg|png|webp|gif);base64,[a-z0-9+/=]+$/i.test(value)) return true;
+  try {
+    const url = new URL(value, window.location.href);
+    return ["http:", "https:", "file:"].includes(url.protocol);
+  } catch {
+    return false;
+  }
+}
+
+function updatePhotoPicker() {
+  const selected = $("#admin-image-url").value.split("\n").map((value) => value.trim());
+  $("#photo-picker-grid").querySelectorAll("[data-photo-path]").forEach((button) => {
+    button.setAttribute("aria-pressed", String(selected.includes(button.dataset.photoPath)));
+  });
+}
+
+function buildPhotoPicker() {
+  const paths = Array.from({ length: 19 }, (_, index) => `./photos/tt${index + 1}.jpg`).concat("./photos/logo.jpg");
+  $("#photo-picker-grid").innerHTML = paths.map((path) => `<button type="button" data-photo-path="${path}" aria-label="${path}" aria-pressed="false"><img src="${path}" alt="" loading="lazy"><span>${path.split("/").pop()}</span></button>`).join("");
+  $("#photo-picker-grid").querySelectorAll("[data-photo-path]").forEach((button) => button.addEventListener("click", () => {
+    const paths = $("#admin-image-url").value.split("\n").map((value) => value.trim()).filter(Boolean);
+    const index = paths.indexOf(button.dataset.photoPath);
+    if (index >= 0) paths.splice(index, 1);
+    else paths.push(button.dataset.photoPath);
+    $("#admin-image-url").value = paths.join("\n");
+    updatePhotoPicker();
+  }));
+}
+
+function renderAdminList() {
+  const list = $("#admin-list");
+  if (!list) return;
+  list.innerHTML = ITEMS.map((item) => `<li><button type="button" class="${selectedItem && item.id === selectedItem.id ? "is-selected" : ""}" data-admin-item="${escapeAttribute(item.id)}"><span class="vi-title">${escapeAttribute(item.nameVi || item.id)}</span><span class="en-title">${escapeAttribute(item.nameEn)}</span></button></li>`).join("");
+  list.querySelectorAll("[data-admin-item]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const target = ITEMS.find((item) => item.id === button.dataset.adminItem);
+      if (!target) return;
+      selectedItem = target;
+      loadItemIntoForm(target);
+      renderCollection();
+      renderDetail();
+      renderAdminList();
+    });
+  });
+}
+
+function openAdminPanel() {
+  $("#admin-panel").hidden = false;
+  if (selectedItem) loadItemIntoForm(selectedItem);
+  renderAdminList();
+}
+
+function closeAdminPanel() {
+  $("#admin-panel").hidden = true;
+}
+
+function saveEditedItem() {
+  const item = collectAdminFormData();
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) {
+    showToast("ID chỉ được chứa chữ thường, số và dấu gạch nối.");
+    return;
+  }
+  if (!item.nameVi || !item.nameEn) {
+    showToast("Vui lòng nhập tên tiếng Việt và tiếng Anh.");
+    return;
+  }
+  if (item.images.some((image) => !validImagePath(image))) {
+    showToast("Đường dẫn ảnh không hợp lệ. Dùng đường dẫn tương đối, HTTPS hoặc ảnh tải lên.");
+    return;
+  }
+  const index = ITEMS.findIndex((entry) => entry.id === selectedItem?.id);
+  if (ITEMS.some((entry, entryIndex) => entry.id === item.id && entryIndex !== index)) {
+    showToast("ID đã tồn tại. Vui lòng chọn ID khác.");
+    return;
+  }
+  const updated = [...ITEMS];
+  if (index >= 0) updated[index] = item;
+  else updated.push(item);
+  if (!persistItems(updated)) return;
+  ITEMS = updated;
+  selectedItem = item;
+  renderCollection();
+  renderDetail();
+  renderPrintSheet();
+  renderAdminList();
+  showToast("Item saved locally.");
+}
+
+async function handleImageUpload(event) {
+  const files = Array.from(event.target.files || []);
+  if (!files.length) return;
+  try {
+    const converted = await Promise.all(files.map((file) => new Promise((resolve, reject) => {
+      if (!file.type.startsWith("image/")) { reject(new Error("Not an image")); return; }
+      const reader = new FileReader();
+      reader.onerror = () => reject(new Error("Unable to read image"));
+      reader.onload = () => {
+        const image = new Image();
+        image.onerror = () => reject(new Error("Unable to decode image"));
+        image.onload = () => {
+          try {
+            const canvas = document.createElement("canvas");
+            const scale = Math.min(1, 1200 / Math.max(image.width, image.height));
+            canvas.width = Math.max(1, Math.round(image.width * scale));
+            canvas.height = Math.max(1, Math.round(image.height * scale));
+            const context = canvas.getContext("2d");
+            if (!context) throw new Error("Canvas unavailable");
+            context.fillStyle = "#ffffff";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            context.drawImage(image, 0, 0, canvas.width, canvas.height);
+            resolve(canvas.toDataURL("image/jpeg", 0.82));
+          } catch (error) { reject(error); }
+        };
+        image.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    })));
+    const paths = $("#admin-image-url").value.split("\n").map((value) => value.trim()).filter(Boolean);
+    $("#admin-image-url").value = paths.concat(converted).join("\n");
+    updatePhotoPicker();
+    showToast("Đã nén ảnh. Nhấn Lưu để cập nhật.");
+  } catch (error) {
+    console.error("Image upload failed.", error);
+    showToast("Không thể đọc ảnh. Vui lòng thử tệp khác.");
+  } finally {
+    event.target.value = "";
+  }
+}
+
+function addAdminItem() {
+  const highest = ITEMS.reduce((max, item) => {
+    const match = /^tt(\d+)$/.exec(item.id);
+    return match ? Math.max(max, Number(match[1])) : max;
+  }, 19);
+  const slug = `tt${highest + 1}`;
+  const newItem = {
+    id: slug,
+    category: "memory",
+    nameVi: "",
+    nameEn: "",
+    shortVi: "",
+    shortEn: "",
+    storyVi: "",
+    storyEn: "",
+    stemVi: "",
+    stemEn: "",
+    image: "",
+    images: []
+  };
+  selectedItem = newItem;
+  renderAdminList();
+  loadItemIntoForm(newItem);
+  $("#admin-name-vi").focus();
+  showToast(`Điền thông tin ${slug}, sau đó nhấn Lưu.`);
+}
+
+function removeSelectedAdminItem() {
+  if (!selectedItem) return;
+  if (!ITEMS.some((item) => item.id === selectedItem.id)) {
+    selectedItem = ITEMS[0];
+    loadItemIntoForm(selectedItem);
+    renderAdminList();
+    showToast("Đã bỏ bản nháp chưa lưu.");
+    return;
+  }
+  if (ITEMS.length <= 1) { showToast("Cần giữ lại ít nhất một hiện vật."); return; }
+  const updated = ITEMS.filter((item) => item.id !== selectedItem.id);
+  if (!persistItems(updated)) return;
+  ITEMS = updated;
+  selectedItem = ITEMS[0] || null;
+  if (selectedItem) {
+    loadItemIntoForm(selectedItem);
+  }
+  renderCollection();
+  renderDetail();
+  renderPrintSheet();
+  renderAdminList();
+  showToast("Item removed.");
+}
+
+function moveSelectedItem(direction) {
+  if (!selectedItem) return;
+  const index = ITEMS.findIndex((item) => item.id === selectedItem.id);
+  const newIndex = Math.min(ITEMS.length - 1, Math.max(0, index + direction));
+  if (newIndex === index) return;
+  if (index < 0) return;
+  const updated = [...ITEMS];
+  const [item] = updated.splice(index, 1);
+  updated.splice(newIndex, 0, item);
+  if (!persistItems(updated)) return;
+  ITEMS = updated;
+  selectedItem = item;
+  renderCollection();
+  renderDetail();
+  renderPrintSheet();
+  renderAdminList();
+}
+
+function exportItems() {
+  const payload = JSON.stringify(ITEMS, null, 2);
+  const blob = new Blob([payload], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = "items.json";
+  anchor.click();
+  URL.revokeObjectURL(url);
+  showToast("items.json downloaded.");
+}
+
+function importItems() {
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "application/json";
+  input.addEventListener("change", async () => {
+    const file = input.files && input.files[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const parsed = JSON.parse(text);
+      if (!Array.isArray(parsed) || !parsed.length || parsed.some((item) => !item || typeof item !== "object" || typeof item.id !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id) || typeof item.nameVi !== "string" || typeof item.nameEn !== "string" || ["shortVi", "shortEn", "storyVi", "storyEn", "stemVi", "stemEn"].some((key) => item[key] !== undefined && typeof item[key] !== "string") || (item.image !== undefined && typeof item.image !== "string") || (item.images !== undefined && (!Array.isArray(item.images) || item.images.some((image) => typeof image !== "string" || !validImagePath(image)))) || (item.image && !validImagePath(item.image))) || new Set(parsed.map((item) => item.id)).size !== parsed.length) throw new Error("Invalid file format or duplicate IDs");
+      const imported = normalizeItems(parsed);
+      if (!persistItems(imported)) return;
+      ITEMS = imported;
+      selectedItem = ITEMS[0];
+      renderCollection();
+      renderDetail();
+      renderPrintSheet();
+      renderAdminList();
+      loadItemIntoForm(selectedItem);
+      showToast("Items imported.");
+    } catch (error) {
+      console.error(error);
+      showToast("Import failed. Use a valid items.json file.");
+    }
+  });
+  input.click();
+}
+
+function openGithubModal() {
+  $("#admin-modal-backdrop").hidden = false;
+}
+
+function closeGithubModal() {
+  $("#admin-modal-backdrop").hidden = true;
+}
+
+async function publishToGithub() {
+  const token = $("#github-token").value.trim();
+  const owner = $("#github-owner").value.trim() || "JerryIsHere";
+  const repo = $("#github-repo").value.trim() || "STEMEE";
+  const branch = $("#github-branch").value.trim() || "main";
+  if (!token) {
+    showToast("Add a GitHub token to publish.");
+    return;
+  }
+
+  try {
+    const payload = JSON.stringify(ITEMS, null, 2);
+    const base64 = btoa(unescape(encodeURIComponent(payload)));
+    const headers = {
+      "Authorization": `token ${token}`,
+      "Accept": "application/vnd.github+json",
+      "X-GitHub-Api-Version": "2022-11-28",
+      "Content-Type": "application/json"
+    };
+    const endpoint = `https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents/data/items.json`;
+    const getResponse = await fetch(`${endpoint}?ref=${encodeURIComponent(branch)}`, { headers });
+    if (!getResponse.ok && getResponse.status !== 404) throw new Error(`GitHub read failed: ${getResponse.status}`);
+    const existing = getResponse.ok ? await getResponse.json() : null;
+    const body = {
+      message: "Update exhibition item catalog",
+      content: base64,
+      branch,
+      sha: existing && existing.sha ? existing.sha : undefined
+    };
+    const response = await fetch(endpoint, {
+      method: "PUT",
+      headers,
+      body: JSON.stringify(body)
+    });
+    if (!response.ok) {
+      const errorText = await response.text();
+      throw new Error(errorText || "GitHub publish failed.");
+    }
+    closeGithubModal();
+    $("#github-token").value = "";
+    showToast("Published to GitHub.");
+  } catch (error) {
+    console.error(error);
+    showToast("Unable to publish to GitHub. Check token and repo access.");
+  }
+}
+
+async function init() {
+  await hydrateDefaultItemsFromRemote();
+  const requestedId = getUrlParam("id");
+  const requestedItem = resolveItem(requestedId);
+  const hasValidQuery = Boolean(requestedItem);
+  selectedItem = requestedItem || ITEMS[0];
   buildEqualizer();
+  buildPhotoPicker();
   setLanguage(language);
-  if (hasValidQuery) startIntro();
+  if (hasValidQuery) {
+    startIntro();
+    $("#artifact-detail").scrollIntoView({ block: "start" });
+  }
+  if (getUrlParam("admin") === "true") openAdminPanel();
 
   document.querySelectorAll(".language-switch__button").forEach((button) => {
     button.addEventListener("click", () => setLanguage(button.dataset.language));
@@ -455,9 +1109,63 @@ function init() {
   });
   $("#print-button").addEventListener("click", printNametags);
   $("#print-button-bottom").addEventListener("click", printNametags);
+  $("#admin-toggle").addEventListener("click", openAdminPanel);
+  $("#admin-close").addEventListener("click", closeAdminPanel);
+  $("#admin-add").addEventListener("click", addAdminItem);
+  $("#admin-delete").addEventListener("click", removeSelectedAdminItem);
+  $("#admin-move-up").addEventListener("click", () => moveSelectedItem(-1));
+  $("#admin-move-down").addEventListener("click", () => moveSelectedItem(1));
+  $("#admin-save-local").addEventListener("click", saveEditedItem);
+  $("#admin-export").addEventListener("click", exportItems);
+  $("#admin-import").addEventListener("click", importItems);
+  $("#admin-image-upload").addEventListener("change", handleImageUpload);
+  $("#admin-image-url").addEventListener("input", updatePhotoPicker);
+  $("#quick-edit-toggle").addEventListener("change", (event) => {
+    quickEdit = event.target.checked;
+    renderCollection();
+  });
+  $("#admin-reset").addEventListener("click", async () => {
+    if (!resetPending) {
+      resetPending = true;
+      $("#admin-reset").textContent = "Nhấn lần nữa để thay bản nháp / Confirm reset";
+      return;
+    }
+    resetPending = false;
+    $("#admin-reset").textContent = "Đồng bộ dữ liệu gốc / Reset";
+    try {
+      let defaults = DEFAULT_ITEMS;
+      if (window.location.protocol !== "file:") {
+        const response = await fetch("./data/items.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`Catalog HTTP ${response.status}`);
+        defaults = await response.json();
+        if (!Array.isArray(defaults) || !defaults.length) throw new Error("Invalid catalog");
+      }
+      const updated = normalizeItems(defaults);
+      if (!persistItems(updated)) return;
+      ITEMS = updated;
+      selectedItem = ITEMS[0];
+      setLanguage(language);
+      loadItemIntoForm(selectedItem);
+      renderAdminList();
+      showToast("Đã đồng bộ dữ liệu gốc.");
+    } catch (error) {
+      console.error("Catalog sync failed.", error);
+      showToast("Không thể đồng bộ. Vui lòng kiểm tra kết nối và dữ liệu.");
+    }
+  });
+  $("#admin-publish").addEventListener("click", openGithubModal);
+  $("#modal-close").addEventListener("click", closeGithubModal);
+  $("#modal-cancel").addEventListener("click", closeGithubModal);
+  $("#modal-publish").addEventListener("click", publishToGithub);
+  document.querySelectorAll("[data-lightbox-src]").forEach((button) => button.addEventListener("click", () => openLightbox(button.dataset.lightboxSrc, button.dataset.lightboxVi, button.dataset.lightboxEn, button)));
+  $("#lightbox-close").addEventListener("click", closeLightbox);
+  $("#lightbox").addEventListener("click", (event) => { if (event.target === $("#lightbox")) closeLightbox(); });
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !$("#lightbox").hidden) closeLightbox(); });
+  loadItemIntoForm(selectedItem);
+  renderAdminList();
   window.addEventListener("popstate", () => {
-    const id = new URLSearchParams(window.location.search).get("id");
-    selectItem(ITEMS.some((item) => item.id === id) ? id : ITEMS[0].id);
+    const id = getUrlParam("id");
+    selectItem(resolveItem(id) ? id : ITEMS[0].id);
   });
 }
 

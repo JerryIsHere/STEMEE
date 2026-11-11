@@ -1,0 +1,135 @@
+[
+  {
+    "id": "tt1", "category": "education", "image": "./photos/tt1.jpg",
+    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 2/2002", "nameEn": "Literature and Youth Magazine – February 2002",
+    "shortVi": "Số 2 (68) của đặc san Văn học và Tuổi trẻ, xuất bản tháng 2 năm 2002.", "shortEn": "Issue 2 (68) of Literature and Youth, published in February 2002.",
+    "storyVi": "Trang bìa ghi lại một ấn phẩm văn học dành cho tuổi trẻ đầu những năm 2000. Những cuốn đặc san như thế có thể đưa người đọc trở lại không khí đọc sách và học văn của một thời.", "storyEn": "The cover preserves a literary publication for young readers from the early 2000s. Issues like this evoke the reading and literature lessons of an earlier time.",
+    "stemVi": "Giấy gồm mạng sợi cellulose; ánh sáng, độ ẩm và nhiệt có thể thúc đẩy quá trình lão hóa. Bảo quản nơi khô, tránh ánh sáng mạnh giúp giảm hư hại.", "stemEn": "Paper consists of a network of cellulose fibres; light, humidity and heat can accelerate ageing. Dry storage away from strong light helps reduce damage."
+  },
+  {
+    "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg",
+    "nameVi": "Bướm Trang Trí Làm Từ Lá Ép", "nameEn": "Pressed-Leaf Butterfly Decoration",
+    "shortVi": "Hình bướm với đôi cánh tạo từ lá ép trên nền giấy sáng.", "shortEn": "A butterfly with wings made from pressed leaves on a light backing.",
+    "storyVi": "Các cánh lá được xếp thành hình bướm, giữ lại đường nét và sắc nâu tự nhiên. Một vật liệu giản dị từ cây lá trở thành món trang trí gợi nhớ sự khéo léo của người làm.", "storyEn": "Leaves have been arranged as butterfly wings, preserving their natural veins and brown colour. A simple plant material becomes a keepsake of its maker's care.",
+    "stemVi": "Gân lá chứa bó mạch giúp vận chuyển nước và chất dinh dưỡng. Sau khi lá được ép và làm khô, các mô mất nước, trong khi mạng gân vẫn có thể nhìn thấy.", "stemEn": "Leaf veins contain vascular bundles that transport water and nutrients. Pressing and drying remove water from the tissues while leaving the vein pattern visible."
+  },
+  {
+    "id": "tt3", "category": "education", "image": "./photos/tt3.jpg",
+    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 3/2002", "nameEn": "Literature and Youth Magazine – March 2002",
+    "shortVi": "Số 3 (69), tháng 3 năm 2002, với bìa hình học sinh áo dài trắng.", "shortEn": "Issue 3 (69), March 2002, with students in white áo dài on the cover.",
+    "storyVi": "Hình ảnh học sinh trên bìa gợi đến những giờ học, tình bạn và thói quen đọc của tuổi trẻ. Số báo là một mảnh tư liệu của văn hóa học đường năm 2002.", "storyEn": "The students on the cover evoke classes, friendships and youthful reading habits. The issue is a small record of school culture in 2002.",
+    "stemVi": "Trong in màu, các lớp mực cyan, magenta, vàng và đen thường được chồng lên nhau. Các chấm in nhỏ tạo nên hình ảnh và những sắc độ mà mắt cảm nhận.", "stemEn": "Colour printing commonly layers cyan, magenta, yellow and black inks. Small printed dots combine to produce the image and tones perceived by the eye."
+  },
+  {
+    "id": "tt4", "category": "education", "image": "./photos/tt4.jpg",
+    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 10/2002", "nameEn": "Literature and Youth Magazine – October 2002",
+    "shortVi": "Số 10 (76), tháng 10 năm 2002, với tranh minh họa trên bìa.", "shortEn": "Issue 10 (76), October 2002, with an illustrated cover.",
+    "storyVi": "Một bìa báo khác trong bộ đặc san lưu lại nét minh họa và thiết kế của đầu thập niên 2000. Những trang giấy cũ mở ra cơ hội khám phá cách văn học từng đến với học sinh.", "storyEn": "Another cover in the series preserves the illustration and design of the early 2000s. Its old pages invite us to explore how literature reached students.",
+    "stemVi": "Mực in và sợi giấy thay đổi theo thời gian do ánh sáng, oxy và độ ẩm. Lưu trữ ổn định, tránh ánh nắng trực tiếp, giúp làm chậm các quá trình này.", "stemEn": "Printing inks and paper fibres change over time through exposure to light, oxygen and moisture. Stable storage away from direct sun slows these processes."
+  },
+  {
+    "id": "tt5", "category": "memory", "image": "./photos/tt5.jpg",
+    "nameVi": "Giấy Viết Thư Hình Mèo và Chó", "nameEn": "Cat-and-Dog Decorative Letter Paper",
+    "shortVi": "Tờ giấy viết thư có viền xanh và hình thú cưng.", "shortEn": "Letter paper with a green border and pet illustrations.",
+    "storyVi": "Tờ giấy trang trí gợi lại thời học trò chọn giấy thật đẹp trước khi viết một lời nhắn. Khoảng trắng ở giữa dành cho những câu chuyện và tình cảm của người viết.", "storyEn": "This decorative sheet recalls choosing special stationery before writing a note. The blank centre leaves room for the writer's stories and feelings.",
+    "stemVi": "Giấy được tạo từ các sợi cellulose liên kết thành mạng. Thiết kế viền giúp phân chia không gian thị giác giữa hình trang trí và phần dành để viết.", "stemEn": "Paper is made from cellulose fibres bonded into a network. The border visually separates the decoration from the space intended for writing."
+  },
+  {
+    "id": "tt6", "category": "memory", "image": "./photos/tt6.jpg",
+    "nameVi": "Giấy Viết Thư Hoa và Thú Bông", "nameEn": "Floral and Teddy Bear Letter Paper",
+    "shortVi": "Giấy viết thư kẻ dòng, trang trí hoa và hình thú bông.", "shortEn": "Lined writing paper decorated with flowers and teddy bears.",
+    "storyVi": "Những đường kẻ và hình trang trí đầy màu sắc gợi những lá thư viết tay gửi bạn bè. Một tờ giấy nhỏ có thể là nơi lưu giữ những lời hỏi thăm gần gũi.", "storyEn": "Colourful illustrations and ruled lines recall handwritten letters to friends. A small sheet can hold a thoughtful message across time.",
+    "stemVi": "Các đường kẻ song song tạo chuẩn căn hàng cho chữ viết. Hoa văn nhiều màu được tạo bằng mực in; sắc màu nhìn thấy phụ thuộc vào ánh sáng phản xạ từ bề mặt giấy.", "stemEn": "Parallel ruled lines provide a guide for handwriting. Printed colours are perceived through the light reflected from the paper's surface."
+  },
+  {
+    "id": "tt7", "category": "education", "image": "./photos/tt7.jpg",
+    "nameVi": "Thiệp Chúc Mừng Ngày Nhà Giáo Việt Nam", "nameEn": "Vietnamese Teachers' Day Greeting Card",
+    "shortVi": "Thiệp gấp có hình thầy cô, học sinh và lời chúc Ngày Nhà giáo.", "shortEn": "A folded card featuring teachers, students and a Teachers' Day greeting.",
+    "storyVi": "Tấm thiệp gợi dịp học sinh bày tỏ lòng biết ơn với thầy cô nhân Ngày Nhà giáo Việt Nam. Nếp gấp và phần bên trong chừa chỗ cho những lời nhắn riêng.", "storyEn": "The card evokes the occasion when students express gratitude to teachers on Vietnamese Teachers' Day. Its folded form leaves space inside for a personal note.",
+    "stemVi": "Nếp gấp biến một tấm bìa phẳng thành cấu trúc mở–đóng. Sợi giấy bị biến dạng tại đường gấp, vì vậy tạo rãnh trước khi gấp có thể giúp hạn chế rách.", "stemEn": "A fold turns a flat piece of card into an opening structure. Paper fibres deform at the crease, so scoring before folding can help prevent tearing."
+  },
+  {
+    "id": "tt8", "category": "memory", "image": "./photos/tt8.jpg",
+    "nameVi": "Giấy Viết Thư Họa Tiết Hoa và Ngôi Sao", "nameEn": "Flower and Star Letter Paper",
+    "shortVi": "Tờ giấy kẻ dòng màu tím nhạt, có hoa và họa tiết ngôi sao.", "shortEn": "Pale purple ruled letter paper with flowers and stars.",
+    "storyVi": "Một mẫu giấy viết thư khác lưu lại gu trang trí đầy màu sắc của thời thư tay. Những dòng kẻ từng chờ đợi một câu chuyện được gửi tới người nhận.", "storyEn": "Another letter-paper design preserves the colourful style of handwritten correspondence. Its lines waited for a story to be sent to someone.",
+    "stemVi": "Khi ánh sáng chiếu lên giấy, mực hấp thụ một phần bước sóng và phản xạ phần còn lại, tạo nên màu sắc quan sát được. Các đường kẻ giúp giữ chữ viết ngay hàng.", "stemEn": "When light falls on the paper, inks absorb some wavelengths and reflect others, producing the colours we see. The lines help keep handwriting aligned."
+  },
+  {
+    "id": "tt9", "category": "design", "image": "./photos/tt9.jpg",
+    "nameVi": "Giá Treo Đồ Hình Cành Cây Màu Xanh", "nameEn": "Green Branch-Shaped Desk Stand",
+    "shortVi": "Giá treo nhỏ có các nhánh và chân đế loe.", "shortEn": "A small branch-shaped stand with a flared base.",
+    "storyVi": "Hình cành cây đưa một nét tự nhiên vào góc bàn học. Các nhánh có thể dùng để treo những vật nhỏ và giúp sắp xếp không gian gọn gàng.", "storyEn": "The branch form brings a touch of nature to a desk. Its branches can hold small objects and help keep a space organised.",
+    "stemVi": "Chân đế rộng giúp giá ổn định hơn khi trọng tâm nằm trên vùng tiếp xúc. Vật treo lệch tạo mô-men lực và có thể khiến giá bị lật nếu quá nặng.", "stemEn": "A wider base improves stability when the centre of mass remains above the support area. An uneven hanging load creates torque and can tip the stand if too heavy."
+  },
+  {
+    "id": "tt10", "category": "art", "image": "./photos/tt10.jpg",
+    "nameVi": "Tượng Trang Trí Người Mặc Áo Dài và Nón Lá", "nameEn": "Decorative Figure in Áo Dài and Conical Hat",
+    "shortVi": "Tượng nhỏ mô tả một người mặc áo dài trắng và đội nón lá.", "shortEn": "A small figure depicting a person in a white áo dài and conical hat.",
+    "storyVi": "Tượng tái hiện trang phục và hình ảnh quen thuộc trong văn hóa Việt Nam. Những nét vẽ nhỏ trên bề mặt tạo nên vẻ riêng cho vật trang trí.", "storyEn": "The figure depicts familiar elements of Vietnamese dress and culture. Small painted details give this decorative object its individual character.",
+    "stemVi": "Sắc tố trong lớp sơn hấp thụ và phản xạ ánh sáng để tạo màu. Bề mặt, độ dày và điều kiện lưu trữ đều ảnh hưởng đến độ bền của lớp trang trí.", "stemEn": "Pigments in paint absorb and reflect light to produce colour. The surface, layer thickness and storage conditions all affect the durability of the decoration."
+  },
+  {
+    "id": "tt11", "category": "technology", "image": "./photos/tt11.jpg",
+    "nameVi": "Băng Cát-Xét Maxell UR 90", "nameEn": "Maxell UR 90 Audio Cassette",
+    "shortVi": "Băng cát-xét Maxell UR 90 với hai cuộn băng trong vỏ nhựa.", "shortEn": "A Maxell UR 90 cassette with two reels inside a plastic shell.",
+    "storyVi": "Cuộn băng gợi lại cách nghe và ghi âm trước thời phát nhạc trực tuyến: lắp băng, tua tới bài hát và lắng nghe. Nhãn viết tay cũng có thể giúp nhận diện nội dung từng được lưu trên băng.", "storyEn": "The cassette recalls listening and recording before streaming: inserting a tape, winding to a track and pressing play. A handwritten label could help identify what was recorded.",
+    "stemVi": "Băng từ chứa các hạt vật liệu từ trên lớp phủ. Đầu ghi thay đổi sự từ hóa theo tín hiệu âm thanh; khi phát, đầu đọc chuyển biến thiên từ trường thành tín hiệu điện.", "stemEn": "Magnetic tape has magnetic particles in its coating. A recording head changes their magnetisation with the audio signal; during playback, a head converts changing magnetic flux into an electrical signal."
+  },
+  {
+    "id": "tt12", "category": "memory", "image": "./photos/tt12.jpg",
+    "nameVi": "Ống Đựng Trang Trí Chữ “Love”", "nameEn": "Decorative “Love” Container",
+    "shortVi": "Ống đựng hình trụ có hình đôi bạn và chữ Love trên trái tim.", "shortEn": "A cylindrical container decorated with two figures and a heart reading Love.",
+    "storyVi": "Ống đựng nhỏ với hình đôi bạn gợi một món quà trang trí hoặc vật dụng để bàn. Các chi tiết nổi và chữ trên trái tim tạo điểm nhấn cho kỷ vật.", "storyEn": "The small container, decorated with a pair of figures, suggests a gift or desk accessory. Raised details and lettering on the heart give it a distinctive character.",
+    "stemVi": "Hình trụ bao quanh một khoảng rỗng để chứa đồ. Các chi tiết nổi tạo bóng khác nhau theo hướng chiếu sáng, giúp mắt nhận biết hình dạng bề mặt.", "stemEn": "A cylindrical wall encloses a hollow space for holding objects. Raised details cast different shadows as lighting changes, helping the eye perceive surface shape."
+  },
+  {
+    "id": "tt13", "category": "education", "image": "./photos/tt13.jpg",
+    "nameVi": "Bút Kim Loại Trong Hộp Trưng Bày", "nameEn": "Metal Pen in a Display Case",
+    "shortVi": "Một cây bút màu kim loại được đặt trong hộp có nắp trong.", "shortEn": "A metallic-coloured pen displayed in a transparent-lidded case.",
+    "storyVi": "Cây bút được giữ trong hộp, gợi những món quà lưu niệm và công việc viết lách. Hộp giúp người xem nhìn thấy hình dáng cây bút mà không cần trực tiếp cầm vào.", "storyEn": "Kept in its case, the pen recalls commemorative gifts and the work of writing. The case lets visitors see its shape without handling it directly.",
+    "stemVi": "Vỏ bút tạo kết cấu bảo vệ và điểm cầm. Nắp trong cho ánh sáng truyền qua, đồng thời giúp hạn chế bụi tiếp xúc trực tiếp với vật bên trong.", "stemEn": "The pen body provides a protective structure and a grip. The transparent lid transmits light while helping limit direct dust exposure to the object inside."
+  },
+  {
+    "id": "tt14", "category": "heritage", "image": "./photos/tt14.jpg",
+    "nameVi": "Đĩa Kỷ Niệm 50 Năm Thành Lập Trường (1966 – 2016)", "nameEn": "School 50th Anniversary Commemorative Plate (1966–2016)",
+    "shortVi": "Đĩa kỷ niệm có hình ngôi trường và dòng chữ kỷ niệm 50 năm.", "shortEn": "A commemorative plate showing the school and its 50th-anniversary dates.",
+    "storyVi": "Dòng chữ trên đĩa ghi dấu 50 năm thành lập trường từ 1966 đến 2016. Hình ảnh ngôi trường trên hiện vật đưa người xem trở về một cột mốc trong hành trình của nhiều thế hệ.", "storyEn": "The inscription marks the school's 50th anniversary from 1966 to 2016. Its image of the school takes visitors back to a milestone shared by generations.",
+    "stemVi": "Đồ gốm sứ được tạo hình từ nguyên liệu khoáng và nung ở nhiệt độ cao. Lớp men thủy tinh trên bề mặt có thể giúp giảm độ thấm và bảo vệ trang trí.", "stemEn": "Ceramics are shaped from mineral materials and fired at high temperature. A glassy glaze can reduce surface porosity and protect decoration."
+  },
+  {
+    "id": "tt15", "category": "art", "image": "./photos/tt15.jpg",
+    "nameVi": "Vòng Hoa Trang Trí Tím Trắng", "nameEn": "Purple and White Decorative Flower Wreath",
+    "shortVi": "Vòng hoa nhỏ với các bông tím, trắng và dây ruy băng.", "shortEn": "A small wreath of purple and white flowers with ribbon ties.",
+    "storyVi": "Các bông hoa được xếp quanh một vòng, kết hợp dây ruy băng mềm. Vật trang trí gợi không khí của những buổi chụp ảnh và dịp gặp gỡ.", "storyEn": "Flowers are arranged around a ring and paired with soft ribbons. The decoration evokes photographs and special gatherings.",
+    "stemVi": "Khung vòng giữ các phần trang trí theo một đường cong. Màu tím và trắng tạo tương phản thị giác, còn dây buộc giúp điều chỉnh cách cố định vòng.", "stemEn": "The ring supports the decorations along a curve. Purple and white provide visual contrast, while the ribbons allow the wreath to be tied in place."
+  },
+  {
+    "id": "tt16", "category": "art", "image": "./photos/tt16.jpg",
+    "nameVi": "Quạt Xếp Tranh Phong Cảnh", "nameEn": "Landscape Folding Fan",
+    "shortVi": "Quạt xếp có nan màu gỗ và tranh phong cảnh nhiều màu.", "shortEn": "A folding fan with wood-coloured ribs and a colourful landscape.",
+    "storyVi": "Bức tranh trải rộng khi quạt mở và thu lại thành một dải nhỏ khi gấp. Quạt vừa là vật dụng quen thuộc vừa mang một hình ảnh phong cảnh trang trí.", "storyEn": "The landscape spreads out when the fan opens and folds into a narrow bundle when closed. The fan is both a familiar tool and a decorative image.",
+    "stemVi": "Các nan quạt quay quanh một chốt chung, tạo thành hình gần một hình quạt tròn. Khi phe phẩy, quạt đẩy không khí qua da và tăng trao đổi nhiệt đối lưu.", "stemEn": "The ribs pivot around a common pin to form a sector-like shape. Waving the fan moves air across the skin and increases convective heat transfer."
+  },
+  {
+    "id": "tt17", "category": "technology", "image": "./photos/tt17.jpg",
+    "nameVi": "Mô Hình Xe Máy Màu Đen", "nameEn": "Black Motorcycle Model",
+    "shortVi": "Mô hình xe máy có bánh xe, yên và các chi tiết màu kim loại.", "shortEn": "A motorcycle model with wheels, seats and metallic details.",
+    "storyVi": "Mô hình thu nhỏ một chiếc xe máy kiểu cổ điển, từ tay lái đến bánh và động cơ. Việc quan sát các bộ phận giúp hình dung cấu tạo của phương tiện quen thuộc.", "storyEn": "The miniature reproduces a classic-style motorcycle from its handlebars to its wheels and engine. Examining its parts helps us understand a familiar vehicle.",
+    "stemVi": "Bánh xe quay quanh trục và tiếp xúc với mặt đường. Trên xe thực, hệ truyền động đưa mô-men từ động cơ đến bánh chủ động; mô hình thể hiện hình dáng một số bộ phận ấy.", "stemEn": "Wheels rotate around axles and contact the road. On a real motorcycle, the drivetrain transfers torque from the engine to the driven wheel; the model depicts some of those parts."
+  },
+  {
+    "id": "tt18", "category": "technology", "image": "./photos/tt18.jpg",
+    "nameVi": "Mô Hình Xe Đạp Màu Đen", "nameEn": "Black Bicycle Model",
+    "shortVi": "Xe đạp thu nhỏ với giỏ, yên và hai bánh có nan hoa.", "shortEn": "A miniature bicycle with a basket, saddle and spoked wheels.",
+    "storyVi": "Chiếc xe đạp mô hình gợi những con đường đến trường và những chuyến đi gần gũi. Kích thước thu nhỏ cho phép quan sát khung, bàn đạp và bánh xe cùng lúc.", "storyEn": "The miniature bicycle recalls journeys to school and familiar local rides. Its small scale lets visitors view the frame, pedals and wheels together.",
+    "stemVi": "Nan hoa chịu lực kéo và giúp vành bánh giữ hình dạng. Trên xe đạp vận hành bằng xích, tỉ số số răng của hai đĩa xích liên quan đến tỉ số tốc độ quay của chúng.", "stemEn": "Spokes carry tension and help the wheel rim retain its shape. On a chain-driven bicycle, the sprockets' tooth counts determine their rotational speed ratio."
+  },
+  {
+    "id": "tt19", "category": "nature", "image": "./photos/tt19.jpg",
+    "nameVi": "Hộp Hoa Khô Trang Trí", "nameEn": "Dried Botanical Decoration Box",
+    "shortVi": "Hộp trong chứa cánh hoa và các phần thực vật đã làm khô.", "shortEn": "A clear box containing dried petals and other botanical material.",
+    "storyVi": "Những phần hoa và lá khô được giữ trong một hộp nhỏ, lưu lại màu sắc và hình dáng sau khi tươi. Cách sắp đặt gợi một món trang trí lấy cảm hứng từ thiên nhiên.", "storyEn": "Dried flowers and leaves are kept in a small box, preserving shapes and colours after drying. The arrangement suggests a decoration inspired by nature.",
+    "stemVi": "Làm khô loại bớt nước khỏi mô thực vật, làm chậm nhiều quá trình phân hủy. Ánh sáng và độ ẩm vẫn có thể làm vật liệu đổi màu hoặc hư hại theo thời gian.", "stemEn": "Drying removes water from plant tissues and slows many processes of decay. Light and moisture can still cause fading or damage over time."
+  }
+]
