@@ -444,14 +444,13 @@ h1, h2, p { margin-top: 0; }
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 @media print {
-  @page { size: A4 portrait; margin: 10mm; }
+  @page { size: A4 portrait; margin: 8mm; }
   body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body > *:not(.print-sheet) { display: none !important; }
   .print-sheet { display: block !important; }
-  .print-page { display: grid; grid-template-columns: 1fr 1fr; align-content: start; gap: 7mm; break-after: page; }
-  .print-page:last-child { break-after: auto; }
-  .print-card { position: relative; display: grid; grid-template-columns: 1fr 28mm; min-height: 120mm; align-items: start; gap: 3mm; padding: 6mm; break-inside: avoid; border: 1px solid #7a1c1c; outline: 1px solid #7a1c1c; outline-offset: -3mm; color: #1e1b18; }
-  .print-card::after { position: absolute; top: 50%; right: 0; left: 0; border-top: 1px dashed #81745e; content: ""; }
+  .print-page { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, 134mm); align-content: start; gap: 7mm; page-break-after: always; break-after: page; }
+  .print-page:last-child { page-break-after: auto; break-after: auto; }
+  .print-card { position: relative; display: grid; grid-template-columns: 1fr 28mm; height: 134mm; box-sizing: border-box; align-items: start; gap: 3mm; padding: 6mm; break-inside: avoid !important; page-break-inside: avoid !important; border: 1px solid #7a1c1c; outline: 1px solid #7a1c1c; outline-offset: -3mm; color: #1e1b18; }
   .print-card__copy { align-self: start; }
   .print-card__copy h2 { margin: 0; color: #7a1c1c; font-family: "Be Vietnam Pro", sans-serif; font-size: 11pt; font-weight: 800; line-height: 1.3; }
   .print-card__copy h3 { margin: 1mm 0 3mm; color: #51483d; font-family: "Montserrat", sans-serif; font-size: 8pt; font-style: italic; font-weight: 500; line-height: 1.35; }

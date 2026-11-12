@@ -147,136 +147,150 @@ const LEGACY_ITEMS = [
 const DEFAULT_ITEMS = [
   {
     "id": "tt1", "category": "education", "image": "./photos/tt1.jpg",
-    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 2/2002", "nameEn": "Literature and Youth Magazine – February 2002",
-    "shortVi": "Số 2 (68) của đặc san Văn học và Tuổi trẻ, xuất bản tháng 2 năm 2002.", "shortEn": "Issue 2 (68) of Literature and Youth, published in February 2002.",
-    "storyVi": "Trang bìa ghi lại một ấn phẩm văn học dành cho tuổi trẻ đầu những năm 2000. Những cuốn đặc san như thế có thể đưa người đọc trở lại không khí đọc sách và học văn của một thời.", "storyEn": "The cover preserves a literary publication for young readers from the early 2000s. Issues like this evoke the reading and literature lessons of an earlier time.",
+    "nameVi": "Trang Văn Xưa, Mùa Học Trò Còn Mãi", "nameEn": "Old Pages, School Days That Never Fade",
+    "shortVi": "Một trang văn mở lối về những giờ đọc say mê dưới mái trường Hoàng Văn Thụ.", "shortEn": "A literary page leads us back to spellbound reading beneath Hoang Van Thu's school roof.",
+    "storyVi": "Số báo năm 2002 đưa ta về những giờ văn, nơi một câu thơ có thể theo học trò suốt con đường tan lớp. Bao thế hệ đã chuyền nhau niềm vui đọc và lời thương mến dành cho mái trường. Từ trang giấy ấy, ta nhớ giấy được kết thành từ những sợi cellulose mong manh.", "storyEn": "This 2002 issue returns us to literature lessons, where a poem could follow students all the way home. Generations shared the joy of reading and affection for their school. Its pages also remind us that paper is woven from delicate cellulose fibres.",
     "stemVi": "Giấy gồm mạng sợi cellulose; ánh sáng, độ ẩm và nhiệt có thể thúc đẩy quá trình lão hóa. Bảo quản nơi khô, tránh ánh sáng mạnh giúp giảm hư hại.", "stemEn": "Paper consists of a network of cellulose fibres; light, humidity and heat can accelerate ageing. Dry storage away from strong light helps reduce damage."
   },
   {
     "id": "tt2", "category": "nature", "image": "./photos/tt2.jpg",
     "nameVi": "Hoa Phượng Đỏ Ép Hình Bướm", "nameEn": "Pressed Royal Poinciana Flower Butterfly",
-    "shortVi": "Hoa phượng đỏ ép khô, được tạo hình bướm trên nền giấy sáng.", "shortEn": "A dried, pressed royal poinciana flower presented as a butterfly on a light backing.",
-    "storyVi": "Hoa phượng đỏ gắn với mùa hè và những ngày chia tay tuổi học trò. Bông hoa được ép khô và tạo hình bướm như một kỷ vật nhỏ lưu giữ ký ức sân trường.", "storyEn": "The red royal poinciana is associated with summer and schoolday farewells in Vietnam. Pressed and presented as a butterfly, the flower becomes a small keepsake of school memories.",
+    "shortVi": "Cánh phượng giữ hộ tiếng ve, lời hẹn và mùa chia tay sân trường.", "shortEn": "A flamboyant petal keeps the cicadas, farewells, and promises of schoolyard summer.",
+    "storyVi": "Mỗi mùa phượng nở, sân trường lại đỏ lên như trang lịch báo hè đã gần. Có người ép một cánh hoa vào trang vở để giữ lại buổi chia tay và lời hẹn ngày gặp lại. Cánh hoa khô vẫn kể chuyện mùa nắng, khi nước dần rời khỏi mô thực vật.", "storyEn": "Whenever the flamboyant trees bloom, the schoolyard turns red with the promise of summer. Someone pressed a petal into a notebook to remember a farewell and the promise to meet again. The dried flower still tells of sunlight, as water slowly leaves its tissues.",
     "stemVi": "Phượng đỏ (Delonix regia) là cây có hoa thuộc họ Đậu. Khi ép và làm khô, nước rời khỏi mô hoa, giúp hạn chế nấm mốc; sắc hoa vẫn có thể phai hoặc chuyển nâu theo thời gian và dưới ánh sáng.", "stemEn": "Royal poinciana (Delonix regia) is a flowering tree in the pea family. Pressing and drying remove water from flower tissues, helping limit mould; the colour can still fade or turn brown over time and with light exposure."
   },
   {
     "id": "tt3", "category": "education", "image": "./photos/tt3.jpg",
-    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 3/2002", "nameEn": "Literature and Youth Magazine – March 2002",
-    "shortVi": "Số 3 (69), tháng 3 năm 2002, với bìa hình học sinh áo dài trắng.", "shortEn": "Issue 3 (69), March 2002, with students in white áo dài on the cover.",
-    "storyVi": "Hình ảnh học sinh trên bìa gợi đến những giờ học, tình bạn và thói quen đọc của tuổi trẻ. Số báo là một mảnh tư liệu của văn hóa học đường năm 2002.", "storyEn": "The students on the cover evoke classes, friendships and youthful reading habits. The issue is a small record of school culture in 2002.",
+    "nameVi": "Tháng Ba Trên Trang Báo Tuổi Trẻ", "nameEn": "March Days on the Pages of Youth",
+    "shortVi": "Số báo tháng Ba gợi tà áo trắng, giờ văn và tình bạn đầu đời.", "shortEn": "A March issue recalls white ao dai, literature lessons, and friendships just beginning.",
+    "storyVi": "Tháng Ba năm 2002, những trang báo tìm đường vào cặp sách và câu chuyện giờ ra chơi. Áo trắng, bè bạn và niềm háo hức tuổi trẻ gặp nhau trong một miền nhớ chung của nhiều khóa học trò. Màu in được tạo nên khi những chấm mực nhỏ hòa vào mắt người đọc.", "storyEn": "In March 2002, this magazine found its way into schoolbags and recess conversations. White uniforms, friendship, and youthful anticipation meet in a memory shared by generations of students. Printed colours emerge as tiny ink dots blend in the reader's eye.",
     "stemVi": "Trong in màu, các lớp mực cyan, magenta, vàng và đen thường được chồng lên nhau. Các chấm in nhỏ tạo nên hình ảnh và những sắc độ mà mắt cảm nhận.", "stemEn": "Colour printing commonly layers cyan, magenta, yellow and black inks. Small printed dots combine to produce the image and tones perceived by the eye."
   },
   {
     "id": "tt4", "category": "education", "image": "./photos/tt4.jpg",
-    "nameVi": "Tạp Chí Văn Học và Tuổi Trẻ – Tháng 10/2002", "nameEn": "Literature and Youth Magazine – October 2002",
-    "shortVi": "Số 10 (76), tháng 10 năm 2002, với tranh minh họa trên bìa.", "shortEn": "Issue 10 (76), October 2002, with an illustrated cover.",
-    "storyVi": "Một bìa báo khác trong bộ đặc san lưu lại nét minh họa và thiết kế của đầu thập niên 2000. Những trang giấy cũ mở ra cơ hội khám phá cách văn học từng đến với học sinh.", "storyEn": "Another cover in the series preserves the illustration and design of the early 2000s. Its old pages invite us to explore how literature reached students.",
+    "nameVi": "Tháng Mười, Một Mùa Văn Chương", "nameEn": "October, a Season of Stories",
+    "shortVi": "Trang báo tháng Mười nhắc những buổi đọc văn và ước mơ tuổi học trò.", "shortEn": "October's pages recall literature lessons and the dreams of school days.",
+    "storyVi": "Số tháng Mười đưa ta về những chiều tan học, khi câu chuyện trong trang sách còn theo chân về tận ngõ nhà. Qua bao năm, một ấn phẩm nhỏ vẫn nối người đọc hôm nay với những lớp học ngày trước. Mực và giấy tiếp tục đổi thay dưới ánh sáng, không khí và thời gian.", "storyEn": "The October issue recalls afternoons when a story from class followed students all the way home. Years later, a small publication still connects today's readers with classrooms long past. Ink and paper keep changing under light, air, and time.",
     "stemVi": "Mực in và sợi giấy thay đổi theo thời gian do ánh sáng, oxy và độ ẩm. Lưu trữ ổn định, tránh ánh nắng trực tiếp, giúp làm chậm các quá trình này.", "stemEn": "Printing inks and paper fibres change over time through exposure to light, oxygen and moisture. Stable storage away from direct sun slows these processes."
   },
   {
     "id": "tt5", "category": "memory", "image": "./photos/tt5.jpg",
-    "nameVi": "Giấy Viết Thư Hình Mèo và Chó", "nameEn": "Cat-and-Dog Decorative Letter Paper",
-    "shortVi": "Tờ giấy viết thư có viền xanh và hình thú cưng.", "shortEn": "Letter paper with a green border and pet illustrations.",
-    "storyVi": "Tờ giấy trang trí gợi lại thời học trò chọn giấy thật đẹp trước khi viết một lời nhắn. Khoảng trắng ở giữa dành cho những câu chuyện và tình cảm của người viết.", "storyEn": "This decorative sheet recalls choosing special stationery before writing a note. The blank centre leaves room for the writer's stories and feelings.",
+    "nameVi": "Lá Thư Nhỏ Gửi Bạn Bàn Bên", "nameEn": "A Little Letter for the Desk-Mate",
+    "shortVi": "Một tờ thư chờ nét mực tím và lời hỏi thăm người bạn thân thương.", "shortEn": "A letter awaits purple ink and a kind greeting for a cherished friend.",
+    "storyVi": "Có những lời chỉ dám viết lên giấy rồi khẽ đẩy qua mặt bàn gỗ. Một câu hỏi thăm vụng về cũng đủ làm giờ học dài hóa dịu dàng, và tình bạn theo người ta qua nhiều mùa phượng. Giấy giữ lời nhắn bằng mạng sợi cellulose đan vào nhau.", "storyEn": "Some words could only be written down and quietly passed across a wooden desk. A shy greeting made a long lesson gentler, and that friendship lasted through many flamboyant summers. Paper holds the message in a network of interwoven cellulose fibres.",
     "stemVi": "Giấy được tạo từ các sợi cellulose liên kết thành mạng. Thiết kế viền giúp phân chia không gian thị giác giữa hình trang trí và phần dành để viết.", "stemEn": "Paper is made from cellulose fibres bonded into a network. The border visually separates the decoration from the space intended for writing."
   },
   {
     "id": "tt6", "category": "memory", "image": "./photos/tt6.jpg",
-    "nameVi": "Giấy Viết Thư Hoa và Thú Bông", "nameEn": "Floral and Teddy Bear Letter Paper",
-    "shortVi": "Giấy viết thư kẻ dòng, trang trí hoa và hình thú bông.", "shortEn": "Lined writing paper decorated with flowers and teddy bears.",
-    "storyVi": "Những đường kẻ và hình trang trí đầy màu sắc gợi những lá thư viết tay gửi bạn bè. Một tờ giấy nhỏ có thể là nơi lưu giữ những lời hỏi thăm gần gũi.", "storyEn": "Colourful illustrations and ruled lines recall handwritten letters to friends. A small sheet can hold a thoughtful message across time.",
+    "nameVi": "Dòng Kẻ Chở Bao Điều Chưa Nói", "nameEn": "Ruled Lines for Words Unspoken",
+    "shortVi": "Nét chữ học trò gửi thương nhớ qua những dòng kẻ dịu dàng.", "shortEn": "A student's handwriting carries affection along these gentle lines.",
+    "storyVi": "Sau giờ học, từng dòng chữ nhỏ có thể kể chuyện bài kiểm tra, nỗi nhớ hay một niềm vui vừa đến. Lá thư chuyền tay làm chiếc bàn học thành nơi cất giữ những điều khó nói thành lời. Những đường kẻ giúp chữ viết thẳng hàng, còn sắc màu đến từ ánh sáng phản chiếu trên giấy.", "storyEn": "After class, a few handwritten lines could hold exam worries, longing, or a fresh happiness. A passed note turned the desk into a keeper of feelings too shy to speak. Ruled lines guide the writing, while reflected light gives the printed colours their life.",
     "stemVi": "Các đường kẻ song song tạo chuẩn căn hàng cho chữ viết. Hoa văn nhiều màu được tạo bằng mực in; sắc màu nhìn thấy phụ thuộc vào ánh sáng phản xạ từ bề mặt giấy.", "stemEn": "Parallel ruled lines provide a guide for handwriting. Printed colours are perceived through the light reflected from the paper's surface."
   },
   {
     "id": "tt7", "category": "education", "image": "./photos/tt7.jpg",
-    "nameVi": "Thiệp Chúc Mừng Ngày Nhà Giáo Việt Nam", "nameEn": "Vietnamese Teachers' Day Greeting Card",
-    "shortVi": "Thiệp gấp có hình thầy cô, học sinh và lời chúc Ngày Nhà giáo.", "shortEn": "A folded card featuring teachers, students and a Teachers' Day greeting.",
-    "storyVi": "Tấm thiệp gợi dịp học sinh bày tỏ lòng biết ơn với thầy cô nhân Ngày Nhà giáo Việt Nam. Nếp gấp và phần bên trong chừa chỗ cho những lời nhắn riêng.", "storyEn": "The card evokes the occasion when students express gratitude to teachers on Vietnamese Teachers' Day. Its folded form leaves space inside for a personal note.",
+    "nameVi": "Lời Tri Ân Gửi Người Lái Đò", "nameEn": "A Note of Thanks to Our Teachers",
+    "shortVi": "Một lời biết ơn nhỏ dành cho những người thắp sáng bao mùa học.", "shortEn": "A small expression of gratitude to those who illuminate generations of learning.",
+    "storyVi": "Ngày Nhà giáo, học trò gom bao điều muốn nói vào một lời chúc còn ngập ngừng. Thầy cô đón nhận tấm lòng ấy rồi lại lặng lẽ trở về với bài giảng, như đã qua bao thế hệ dưới mái trường này. Nếp gấp biến tấm bìa phẳng thành nơi cất giữ lời tri ân.", "storyEn": "On Teachers' Day, students gather their feelings into a greeting, sometimes still shyly. Their teachers receive it and quietly return to their lessons, as generations have done beneath this school's roof. A crease turns flat card into a keepsake for gratitude.",
     "stemVi": "Nếp gấp biến một tấm bìa phẳng thành cấu trúc mở–đóng. Sợi giấy bị biến dạng tại đường gấp, vì vậy tạo rãnh trước khi gấp có thể giúp hạn chế rách.", "stemEn": "A fold turns a flat piece of card into an opening structure. Paper fibres deform at the crease, so scoring before folding can help prevent tearing."
   },
   {
     "id": "tt8", "category": "memory", "image": "./photos/tt8.jpg",
-    "nameVi": "Giấy Viết Thư Họa Tiết Hoa và Ngôi Sao", "nameEn": "Flower and Star Letter Paper",
-    "shortVi": "Tờ giấy kẻ dòng màu tím nhạt, có hoa và họa tiết ngôi sao.", "shortEn": "Pale purple ruled letter paper with flowers and stars.",
-    "storyVi": "Một mẫu giấy viết thư khác lưu lại gu trang trí đầy màu sắc của thời thư tay. Những dòng kẻ từng chờ đợi một câu chuyện được gửi tới người nhận.", "storyEn": "Another letter-paper design preserves the colourful style of handwritten correspondence. Its lines waited for a story to be sent to someone.",
+    "nameVi": "Ngôi Sao Nhỏ Trên Trang Thư Tím", "nameEn": "A Little Star on a Violet Letter",
+    "shortVi": "Ngôi sao và cánh hoa cùng đợi một lá thư tìm đến người thương.", "shortEn": "A star and flower wait together for a letter to find someone dear.",
+    "storyVi": "Một trang thư đẹp khiến lời nhắn bình thường bỗng trở nên đáng nâng niu. Có lẽ ai đó từng viết vội trước giờ trống, gửi theo một bí mật của tuổi học trò. Mực hấp thụ và phản xạ ánh sáng để sắc màu hiện lên, còn dòng kẻ giữ lời ngay ngắn.", "storyEn": "A lovely sheet could make an ordinary message feel worth treasuring. Perhaps someone hurriedly wrote before the bell, entrusting it with a schoolday secret. Ink absorbs and reflects light to create colour, while the lines keep each word in place.",
     "stemVi": "Khi ánh sáng chiếu lên giấy, mực hấp thụ một phần bước sóng và phản xạ phần còn lại, tạo nên màu sắc quan sát được. Các đường kẻ giúp giữ chữ viết ngay hàng.", "stemEn": "When light falls on the paper, inks absorb some wavelengths and reflect others, producing the colours we see. The lines help keep handwriting aligned."
   },
   {
     "id": "tt9", "category": "design", "image": "./photos/tt9.jpg",
-    "nameVi": "Giá Treo Đồ Hình Cành Cây Màu Xanh", "nameEn": "Green Branch-Shaped Desk Stand",
-    "shortVi": "Giá treo nhỏ có các nhánh và chân đế loe.", "shortEn": "A small branch-shaped stand with a flared base.",
-    "storyVi": "Hình cành cây đưa một nét tự nhiên vào góc bàn học. Các nhánh có thể dùng để treo những vật nhỏ và giúp sắp xếp không gian gọn gàng.", "storyEn": "The branch form brings a touch of nature to a desk. Its branches can hold small objects and help keep a space organised.",
+    "nameVi": "Nhành Xanh Bên Góc Bàn Học", "nameEn": "A Green Bough Beside the School Desk",
+    "shortVi": "Nhành xanh gợi bóng cây sân trường giữa bao mùa học trò qua lại.", "shortEn": "A green bough recalls the schoolyard shade through passing generations of students.",
+    "storyVi": "Giữa trang vở và chồng sách, một nhành xanh nhắc học trò ngẩng lên nhớ bóng cây ngoài sân. Nơi góc bàn thân thuộc, những mùa phượng nối tiếp nhau mà chuyện trò chẳng dứt. Giá đứng vững khi trọng tâm còn nằm trên chân đế, một bài học nhỏ về cân bằng.", "storyEn": "Among notebooks and textbooks, a green bough reminds students to look up and remember the courtyard trees. At the familiar desk, flamboyant seasons pass while conversations carry on. The stand stays upright when its centre of mass remains over its base: a small lesson in balance.",
     "stemVi": "Chân đế rộng giúp giá ổn định hơn khi trọng tâm nằm trên vùng tiếp xúc. Vật treo lệch tạo mô-men lực và có thể khiến giá bị lật nếu quá nặng.", "stemEn": "A wider base improves stability when the centre of mass remains above the support area. An uneven hanging load creates torque and can tip the stand if too heavy."
   },
   {
     "id": "tt10", "category": "art", "image": "./photos/tt10.jpg",
-    "nameVi": "Tượng Trang Trí Người Mặc Áo Dài và Nón Lá", "nameEn": "Decorative Figure in Áo Dài and Conical Hat",
-    "shortVi": "Tượng nhỏ mô tả một người mặc áo dài trắng và đội nón lá.", "shortEn": "A small figure depicting a person in a white áo dài and conical hat.",
-    "storyVi": "Tượng tái hiện trang phục và hình ảnh quen thuộc trong văn hóa Việt Nam. Những nét vẽ nhỏ trên bề mặt tạo nên vẻ riêng cho vật trang trí.", "storyEn": "The figure depicts familiar elements of Vietnamese dress and culture. Small painted details give this decorative object its individual character.",
+    "nameVi": "Dáng Áo Dài Trong Miền Nhớ", "nameEn": "The Ao Dai in Our Schoolday Memories",
+    "shortVi": "Dáng áo dài nhắc sân trường thân thuộc và những người cô tận tụy.", "shortEn": "The ao dai recalls a beloved schoolyard and the devotion of its teachers.",
+    "storyVi": "Dáng áo dài đưa ta về buổi chào cờ sớm, khi lời thầy cô mở đầu một ngày mới. Bao người đã đi qua mái trường, mang theo sự tận tụy của những người từng dìu dắt mình. Sắc màu trên hình tượng được tạo nên khi sắc tố hấp thụ và phản xạ ánh sáng.", "storyEn": "The ao dai brings back early assemblies, when a teacher's words began the day. Generations have passed through this school carrying the care of those who guided them. Pigments create the figure's colours by absorbing and reflecting light.",
     "stemVi": "Sắc tố trong lớp sơn hấp thụ và phản xạ ánh sáng để tạo màu. Bề mặt, độ dày và điều kiện lưu trữ đều ảnh hưởng đến độ bền của lớp trang trí.", "stemEn": "Pigments in paint absorb and reflect light to produce colour. The surface, layer thickness and storage conditions all affect the durability of the decoration."
   },
   {
     "id": "tt11", "category": "technology", "image": "./photos/tt11.jpg",
-    "nameVi": "Băng Cát-Xét Maxell UR 90", "nameEn": "Maxell UR 90 Audio Cassette",
-    "shortVi": "Băng cát-xét Maxell UR 90 với hai cuộn băng trong vỏ nhựa.", "shortEn": "A Maxell UR 90 cassette with two reels inside a plastic shell.",
-    "storyVi": "Cuộn băng gợi lại cách nghe và ghi âm trước thời phát nhạc trực tuyến: lắp băng, tua tới bài hát và lắng nghe. Nhãn viết tay cũng có thể giúp nhận diện nội dung từng được lưu trên băng.", "storyEn": "The cassette recalls listening and recording before streaming: inserting a tape, winding to a track and pressing play. A handwritten label could help identify what was recorded.",
+    "nameVi": "Giai Điệu Cũ Trên Cuộn Băng", "nameEn": "Old Melodies on a Cassette",
+    "shortVi": "Một giai điệu giờ ra chơi quay về theo tiếng băng từ thân quen.", "shortEn": "A familiar tape brings back the melodies that once filled recess.",
+    "storyVi": "Ngày trước, một bài hát được tua đi tua lại thành nhạc nền cho cả tuổi học trò. Giai điệu len qua giờ ra chơi, theo bạn bè trên đường về và ở lại trong ký ức nhiều năm. Hạt từ trên băng lưu âm thanh bằng những biến đổi từ hóa rất nhỏ.", "storyEn": "Once, a favourite song was rewound until it became the soundtrack of school days. Its melody slipped into recess, accompanied friends on the way home, and stayed for years. Tiny changes in magnetisation let particles on the tape preserve sound.",
     "stemVi": "Băng từ chứa các hạt vật liệu từ trên lớp phủ. Đầu ghi thay đổi sự từ hóa theo tín hiệu âm thanh; khi phát, đầu đọc chuyển biến thiên từ trường thành tín hiệu điện.", "stemEn": "Magnetic tape has magnetic particles in its coating. A recording head changes their magnetisation with the audio signal; during playback, a head converts changing magnetic flux into an electrical signal."
   },
   {
     "id": "tt12", "category": "memory", "image": "./photos/tt12.jpg",
-    "nameVi": "Ống Đựng Trang Trí Chữ “Love”", "nameEn": "Decorative “Love” Container",
-    "shortVi": "Ống đựng hình trụ có hình đôi bạn và chữ Love trên trái tim.", "shortEn": "A cylindrical container decorated with two figures and a heart reading Love.",
-    "storyVi": "Ống đựng nhỏ với hình đôi bạn gợi một món quà trang trí hoặc vật dụng để bàn. Các chi tiết nổi và chữ trên trái tim tạo điểm nhấn cho kỷ vật.", "storyEn": "The small container, decorated with a pair of figures, suggests a gift or desk accessory. Raised details and lettering on the heart give it a distinctive character.",
+    "nameVi": "Món Quà Nhỏ, Tình Bạn Dài Lâu", "nameEn": "A Small Gift, a Friendship for Years",
+    "shortVi": "Kỷ vật nhỏ nhắc những tình bạn lớn lên cùng năm tháng dưới mái trường.", "shortEn": "A keepsake recalls friendships that grew through the years beneath the school roof.",
+    "storyVi": "Có món quà chẳng cần đắt giá, chỉ cần nhắc ta nhớ người đã ngồi bên cạnh mình. Tình bạn tuổi học trò lớn lên từ những lần sẻ chia, rồi theo mỗi người qua cổng trường. Dáng trụ rỗng tạo chỗ chứa, còn những chi tiết nổi đổi bóng theo ánh sáng.", "storyEn": "Some gifts need no price tag; they only need to recall the friend who sat beside us. Schoolday friendships grew through small acts of sharing and followed each person beyond the school gate. A hollow cylinder holds keepsakes, while raised details shift their shadows with the light.",
     "stemVi": "Hình trụ bao quanh một khoảng rỗng để chứa đồ. Các chi tiết nổi tạo bóng khác nhau theo hướng chiếu sáng, giúp mắt nhận biết hình dạng bề mặt.", "stemEn": "A cylindrical wall encloses a hollow space for holding objects. Raised details cast different shadows as lighting changes, helping the eye perceive surface shape."
   },
   {
     "id": "tt13", "category": "education", "image": "./photos/tt13.jpg",
-    "nameVi": "Bút Kim Loại Trong Hộp Trưng Bày", "nameEn": "Metal Pen in a Display Case",
-    "shortVi": "Một cây bút màu kim loại được đặt trong hộp có nắp trong.", "shortEn": "A metallic-coloured pen displayed in a transparent-lidded case.",
-    "storyVi": "Cây bút được giữ trong hộp, gợi những món quà lưu niệm và công việc viết lách. Hộp giúp người xem nhìn thấy hình dáng cây bút mà không cần trực tiếp cầm vào.", "storyEn": "Kept in its case, the pen recalls commemorative gifts and the work of writing. The case lets visitors see its shape without handling it directly.",
+    "nameVi": "Cây Bút Gửi Lại Bao Trang Vở", "nameEn": "A Pen That Filled So Many Notebooks",
+    "shortVi": "Ngòi bút nhỏ nối bài giảng, trang vở và những ước mơ đầu đời.", "shortEn": "A pen joins lessons, notebooks, and the first dreams of generations.",
+    "storyVi": "Từ nét chữ đầu tiên đến lời chúc cuối năm, cây bút đã chứng kiến học trò trưởng thành từng trang. Có thầy cô kiên nhẫn sửa từng con chữ, gửi theo đó niềm tin vào một ngày mai rộng mở. Vỏ bút cho điểm cầm vững vàng, còn hình dáng được gìn giữ để tiếp tục câu chuyện.", "storyEn": "From a first careful letter to a final-year greeting, this pen witnessed students grow page by page. Teachers patiently shaped each word and sent along their faith in brighter futures. Its body offers a steady grip, while its preserved form carries the story onward.",
     "stemVi": "Vỏ bút tạo kết cấu bảo vệ và điểm cầm. Nắp trong cho ánh sáng truyền qua, đồng thời giúp hạn chế bụi tiếp xúc trực tiếp với vật bên trong.", "stemEn": "The pen body provides a protective structure and a grip. The transparent lid transmits light while helping limit direct dust exposure to the object inside."
   },
   {
     "id": "tt14", "category": "heritage", "image": "./photos/tt14.jpg",
-    "nameVi": "Đĩa Kỷ Niệm 50 Năm Thành Lập Trường (1966 – 2016)", "nameEn": "School 50th Anniversary Commemorative Plate (1966–2016)",
-    "shortVi": "Đĩa kỷ niệm có hình ngôi trường và dòng chữ kỷ niệm 50 năm.", "shortEn": "A commemorative plate showing the school and its 50th-anniversary dates.",
-    "storyVi": "Dòng chữ trên đĩa ghi dấu 50 năm thành lập trường từ 1966 đến 2016. Hình ảnh ngôi trường trên hiện vật đưa người xem trở về một cột mốc trong hành trình của nhiều thế hệ.", "storyEn": "The inscription marks the school's 50th anniversary from 1966 to 2016. Its image of the school takes visitors back to a milestone shared by generations.",
+    "nameVi": "Nửa Thế Kỷ Chung Một Mái Trường", "nameEn": "Half a Century Beneath One School Roof",
+    "shortVi": "Dấu mốc 1966–2016 tri ân bao thế hệ dựng xây Hoàng Văn Thụ.", "shortEn": "The 1966–2016 milestone honours generations who built Hoang Van Thu.",
+    "storyVi": "Từ năm 1966 đến 2016, bao lớp học trò đã gọi nơi đây là mái nhà thứ hai. Mỗi người góp một mùa thanh xuân vào hành trình chung, để hôm nay trường bước sang năm thứ sáu mươi với lòng biết ơn. Đĩa gốm được tạo hình từ khoáng chất rồi nung nóng để bền chắc qua thời gian.", "storyEn": "From 1966 to 2016, generations of students called this place a second home. Each gave a season of youth to a shared journey, and today the school enters its sixtieth year with gratitude. The ceramic plate is shaped from minerals and fired to endure.",
     "stemVi": "Đồ gốm sứ được tạo hình từ nguyên liệu khoáng và nung ở nhiệt độ cao. Lớp men thủy tinh trên bề mặt có thể giúp giảm độ thấm và bảo vệ trang trí.", "stemEn": "Ceramics are shaped from mineral materials and fired at high temperature. A glassy glaze can reduce surface porosity and protect decoration."
   },
   {
     "id": "tt15", "category": "art", "image": "./photos/tt15.jpg",
-    "nameVi": "Vòng Hoa Trang Trí Tím Trắng", "nameEn": "Purple and White Decorative Flower Wreath",
-    "shortVi": "Vòng hoa nhỏ với các bông tím, trắng và dây ruy băng.", "shortEn": "A small wreath of purple and white flowers with ribbon ties.",
-    "storyVi": "Các bông hoa được xếp quanh một vòng, kết hợp dây ruy băng mềm. Vật trang trí gợi không khí của những buổi chụp ảnh và dịp gặp gỡ.", "storyEn": "Flowers are arranged around a ring and paired with soft ribbons. The decoration evokes photographs and special gatherings.",
+    "nameVi": "Vòng Hoa Cho Ngày Hội Ngộ", "nameEn": "A Wreath for the Homecoming",
+    "shortVi": "Sắc hoa tím trắng đón những cuộc gặp lại sau bao mùa xa cách.", "shortEn": "Purple and white flowers welcome friends reuniting after many years apart.",
+    "storyVi": "Ngày hội trường, những người bạn cũ gặp nhau giữa tiếng cười và bao câu chuyện chưa kể. Vòng hoa như lời chào dịu dàng, gom sắc màu của nhiều thế hệ từng chung một sân trường. Khung vòng giữ các phần trang trí thành đường cong, tạo nên một nhịp điệu hài hòa.", "storyEn": "At a school reunion, old friends meet again among laughter and untold stories. The wreath offers a gentle welcome, gathering the colours of generations who shared one schoolyard. Its circular frame holds the decorations along a curve, creating a quiet visual rhythm.",
     "stemVi": "Khung vòng giữ các phần trang trí theo một đường cong. Màu tím và trắng tạo tương phản thị giác, còn dây buộc giúp điều chỉnh cách cố định vòng.", "stemEn": "The ring supports the decorations along a curve. Purple and white provide visual contrast, while the ribbons allow the wreath to be tied in place."
   },
   {
     "id": "tt16", "category": "art", "image": "./photos/tt16.jpg",
-    "nameVi": "Quạt Xếp Tranh Phong Cảnh", "nameEn": "Landscape Folding Fan",
-    "shortVi": "Quạt xếp có nan màu gỗ và tranh phong cảnh nhiều màu.", "shortEn": "A folding fan with wood-coloured ribs and a colourful landscape.",
-    "storyVi": "Bức tranh trải rộng khi quạt mở và thu lại thành một dải nhỏ khi gấp. Quạt vừa là vật dụng quen thuộc vừa mang một hình ảnh phong cảnh trang trí.", "storyEn": "The landscape spreads out when the fan opens and folds into a narrow bundle when closed. The fan is both a familiar tool and a decorative image.",
+    "nameVi": "Tiếng Quạt Ru Trưa Hè Sân Trường", "nameEn": "A Fan's Whisper Through Schoolyard Summers",
+    "shortVi": "Làn gió nhẹ đưa ta về những trưa hè yên ả bên trang sách.", "shortEn": "A gentle breeze returns us to quiet summer noons beside our books.",
+    "storyVi": "Giữa trưa hè oi ả, tiếng quạt khẽ khàng hòa cùng ve ngân ngoài hiên lớp. Một làn gió mỏng từng giúp học trò nấn ná bên trang sách thêm đôi phút. Những nan quạt xoay quanh một chốt chung, khẽ đẩy không khí qua làn da.", "storyEn": "On a sweltering summer noon, a fan's whisper joined the cicadas beyond the classroom. Its small breeze helped students linger over their books a little longer. The ribs turn around a shared pivot, moving air gently across the skin.",
     "stemVi": "Các nan quạt quay quanh một chốt chung, tạo thành hình gần một hình quạt tròn. Khi phe phẩy, quạt đẩy không khí qua da và tăng trao đổi nhiệt đối lưu.", "stemEn": "The ribs pivot around a common pin to form a sector-like shape. Waving the fan moves air across the skin and increases convective heat transfer."
   },
   {
     "id": "tt17", "category": "technology", "image": "./photos/tt17.jpg",
-    "nameVi": "Mô Hình Xe Máy Màu Đen", "nameEn": "Black Motorcycle Model",
-    "shortVi": "Mô hình xe máy có bánh xe, yên và các chi tiết màu kim loại.", "shortEn": "A motorcycle model with wheels, seats and metallic details.",
-    "storyVi": "Mô hình thu nhỏ một chiếc xe máy kiểu cổ điển, từ tay lái đến bánh và động cơ. Việc quan sát các bộ phận giúp hình dung cấu tạo của phương tiện quen thuộc.", "storyEn": "The miniature reproduces a classic-style motorcycle from its handlebars to its wheels and engine. Examining its parts helps us understand a familiar vehicle.",
+    "nameVi": "Chuyến Xe Chở Bao Mùa Tựu Trường", "nameEn": "A Ride Through Many First Days of School",
+    "shortVi": "Tiếng xe sớm mai gợi những chuyến đưa đón qua sương Lục Yên.", "shortEn": "An early engine recalls rides through the misty mornings of Luc Yen.",
+    "storyVi": "Thuở sớm mai, tiếng xe nổ máy đưa học trò qua con đường còn phủ sương Lục Yên. Có người chở con đến lớp, có người đi qua bao mùa tựu trường rồi lại đưa con mình trở về. Bánh xe quay quanh trục, còn động cơ truyền lực để chuyến đi tiếp tục.", "storyEn": "At dawn, an engine carried students along roads veiled in Luc Yen mist. Some brought children to class; others crossed many first days of school before bringing their own children back. Wheels turn on axles, while an engine sends power onward to keep the journey moving.",
     "stemVi": "Bánh xe quay quanh trục và tiếp xúc với mặt đường. Trên xe thực, hệ truyền động đưa mô-men từ động cơ đến bánh chủ động; mô hình thể hiện hình dáng một số bộ phận ấy.", "stemEn": "Wheels rotate around axles and contact the road. On a real motorcycle, the drivetrain transfers torque from the engine to the driven wheel; the model depicts some of those parts."
   },
   {
     "id": "tt18", "category": "technology", "image": "./photos/tt18.jpg",
-    "nameVi": "Mô Hình Xe Đạp Màu Đen", "nameEn": "Black Bicycle Model",
-    "shortVi": "Xe đạp thu nhỏ với giỏ, yên và hai bánh có nan hoa.", "shortEn": "A miniature bicycle with a basket, saddle and spoked wheels.",
-    "storyVi": "Chiếc xe đạp mô hình gợi những con đường đến trường và những chuyến đi gần gũi. Kích thước thu nhỏ cho phép quan sát khung, bàn đạp và bánh xe cùng lúc.", "storyEn": "The miniature bicycle recalls journeys to school and familiar local rides. Its small scale lets visitors view the frame, pedals and wheels together.",
+    "nameVi": "Chiếc Xe Đạp Và Con Đường Đến Lớp", "nameEn": "The Bicycle and the Road to School",
+    "shortVi": "Bình minh Lục Yên, chiếc xe đạp và con đường thân quen tới trường.", "shortEn": "Luc Yen dawn, a bicycle, and the familiar road that leads to school.",
+    "storyVi": "Sáng sớm, chiếc xe đạp lăn qua màn sương Lục Yên, chở theo sách vở và một ngày mới. Bao thế hệ đã đạp xe đến lớp, nghe tiếng chuông đầu giờ giữa tiếng chim và gió núi. Nan hoa căng giữ vành bánh, biến sức đạp thành chuyển động trên đường.", "storyEn": "At dawn, a bicycle rolled through Luc Yen mist, carrying books and the promise of a new day. Generations pedalled to class, hearing the first bell among birdsong and mountain air. Tensioned spokes steady the rim, turning each pedal stroke into motion along the road.",
     "stemVi": "Nan hoa chịu lực kéo và giúp vành bánh giữ hình dạng. Trên xe đạp vận hành bằng xích, tỉ số số răng của hai đĩa xích liên quan đến tỉ số tốc độ quay của chúng.", "stemEn": "Spokes carry tension and help the wheel rim retain its shape. On a chain-driven bicycle, the sprockets' tooth counts determine their rotational speed ratio."
   },
   {
     "id": "tt19", "category": "nature", "image": "./photos/tt19.jpg",
-    "nameVi": "Hộp Hoa Khô Trang Trí", "nameEn": "Dried Botanical Decoration Box",
-    "shortVi": "Hộp trong chứa cánh hoa và các phần thực vật đã làm khô.", "shortEn": "A clear box containing dried petals and other botanical material.",
-    "storyVi": "Những phần hoa và lá khô được giữ trong một hộp nhỏ, lưu lại màu sắc và hình dáng sau khi tươi. Cách sắp đặt gợi một món trang trí lấy cảm hứng từ thiên nhiên.", "storyEn": "Dried flowers and leaves are kept in a small box, preserving shapes and colours after drying. The arrangement suggests a decoration inspired by nature.",
+    "nameVi": "Mùa Hoa Được Giữ Lại", "nameEn": "A Season of Flowers, Kept in Memory",
+    "shortVi": "Những cánh hoa lưu hương mùa cũ và nhắc một ngày sân trường rộn nắng.", "shortEn": "Petals keep an old season close and recall a sunlit day at school.",
+    "storyVi": "Có người muốn giữ lại một mùa vui nên nâng niu những cánh hoa sau ngày hội trường. Thời gian lặng lẽ đi qua, nhưng sắc hoa vẫn gợi buổi nắng, tiếng cười và bè bạn năm nào. Khi được làm khô, mô thực vật mất nước nên nhiều quá trình phân hủy chậm lại.", "storyEn": "Someone wished to keep a happy season close and treasured its flowers after a school celebration. Time moved quietly on, yet the petals still recall sunshine, laughter, and friends from years ago. As plant tissues dry, they lose water and many processes of decay slow down.",
     "stemVi": "Làm khô loại bớt nước khỏi mô thực vật, làm chậm nhiều quá trình phân hủy. Ánh sáng và độ ẩm vẫn có thể làm vật liệu đổi màu hoặc hư hại theo thời gian.", "stemEn": "Drying removes water from plant tissues and slows many processes of decay. Light and moisture can still cause fading or damage over time."
+  },
+  {
+    "id": "tt20", "category": "technology", "image": "./photos/tt20.jpg",
+    "nameVi": "Tiếng Radio Gọi Về Một Thời Sân Trường", "nameEn": "The Radio Calling Us Back to School Days",
+    "shortVi": "Tiếng radio nối buổi sớm, giờ học và những giai điệu bên mái trường.", "shortEn": "A radio joins early mornings, lessons, and melodies beneath the school roof.",
+    "storyVi": "Trong nhiều mái nhà, người lớn dò từng làn sóng để đón bản tin và giai điệu đầu ngày. Tiếng radio theo buổi sớm đến tận cổng trường, nơi bao thế hệ bắt đầu hành trình học tập của mình. Bên trong máy, mạch thu chọn tần số rồi biến tín hiệu phát thanh thành âm thanh.", "storyEn": "Across many homes, someone once tuned the radio for morning news and music. Its sound travelled toward the school gate, where generations began their daily learning. Inside, a receiver selects a frequency and turns broadcast signals into sound.",
+    "stemVi": "Mạch cộng hưởng chọn tần số của đài; mạch giải điều chế khôi phục tín hiệu âm thanh, rồi bộ khuếch đại đưa tín hiệu đến loa. Loa biến dao động điện thành dao động không khí mà ta nghe được.", "stemEn": "A resonant circuit selects a station's frequency; a demodulator recovers the audio signal, which an amplifier sends to the speaker. The speaker turns electrical changes into vibrations in the air."
+  },
+  {
+    "id": "tt21", "category": "memory", "image": "./photos/tt21.jpg",
+    "nameVi": "Phong Thư Vượt Qua Bao Dặm Xa", "nameEn": "An Envelope Across a Long Distance",
+    "shortVi": "Dấu bưu chính lưu ngày tháng, nối lời nhắn học trò qua những miền xa.", "shortEn": "A postmark keeps its date, carrying a student's message across distance.",
+    "storyVi": "Trước khi tin nhắn đến trong chớp mắt, một lời hỏi thăm có thể đi qua nhiều bàn tay và chặng đường. Dấu bưu chính năm 2008 nhắc ta về nhịp chờ thư hồi âm, về những kết nối bền bỉ giữa người đi xa và mái trường. Mực dấu thấm vào giấy, còn con dấu giúp bưu điện ghi nhận ngày gửi.", "storyEn": "Before messages arrived in an instant, a greeting travelled through many hands and over many miles. Its 2008 postmark recalls the patient wait for a reply and the lasting ties between those far away and their school. Ink settles into paper fibres, while the postmark records when the letter entered the mail.",
+    "stemVi": "Giấy thấm một phần mực vào mạng sợi cellulose, còn dấu bưu chính giúp ghi nhận thời điểm xử lý thư. Tem xác nhận cước phí và được bưu điện hủy dấu để tránh sử dụng lại.", "stemEn": "Paper absorbs some ink into its cellulose-fibre network, while a postmark records when mail is processed. The stamp pays postage and is cancelled to prevent reuse."
   }
 ];
 
